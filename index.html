@@ -97,8 +97,11 @@
 
       <div class="sample-grid" id="sampleGrid">
 
-        <article class="sample-card">
-          <h3>SRR17635184</h3>
+        <article class="sample-card" data-run="SRR17635184">
+          <h3>
+            <span class="sample-run">SRR17635184</span>
+            <span class="sample-species"></span>
+          </h3>
           <p>Relatório completo da execução da pipeline para a amostra.</p>
 
           <div class="button-row">
@@ -107,8 +110,11 @@
           </div>
         </article>
 
-        <article class="sample-card">
-          <h3>SRR22534738</h3>
+        <article class="sample-card" data-run="SRR22534738">
+          <h3>
+            <span class="sample-run">SRR22534738</span>
+            <span class="sample-species"></span>
+          </h3>
           <p>Relatório completo da execução da pipeline para a amostra.</p>
 
           <div class="button-row">
@@ -117,15 +123,20 @@
           </div>
         </article>
 
-        <!-- <article class="sample-card">
-          <h3>SRRXXXXXXX</h3>
+        <!-- Para novas amostras, copie este modelo:
+        <article class="sample-card" data-run="SRRXXXXXXX">
+          <h3>
+            <span class="sample-run">SRRXXXXXXX</span>
+            <span class="sample-species"></span>
+          </h3>
           <p>Relatório completo da execução da pipeline para a amostra.</p>
 
           <div class="button-row">
             <a class="btn-primary" href="SRRXXXXXXX/index.html">Abrir relatório</a>
             <a class="btn-secondary" href="SRRXXXXXXX/arquivos.html">Arquivos gerados</a>
           </div>
-        </article> -->
+        </article>
+        -->
 
       </div>
     </section>
@@ -139,16 +150,123 @@
   </footer>
 
   <script>
+    function parseCSV(text) {
+      const rows = [];
+      let row = [];
+      let value = "";
+      let insideQuotes = false;
+
+      for (let i = 0; i < text.length; i++) {
+        const char = text[i];
+        const nextChar = text[i + 1];
+
+        if (char === '"' && insideQuotes && nextChar === '"') {
+          value += '"';
+          i++;
+        } else if (char === '"') {
+          insideQuotes = !insideQuotes;
+        } else if (char === "," && !insideQuotes) {
+          row.push(value);
+          value = "";
+        } else if ((char === "\n" || char === "\r") && !insideQuotes) {
+          if (value !== "" || row.length > 0) {
+            row.push(value);
+            rows.push(row);
+            row = [];
+            value = "";
+          }
+
+          if (char === "\r" && nextChar === "\n") {
+            i++;
+          }
+        } else {
+          value += char;
+        }
+      }
+
+      if (value !== "" || row.length > 0) {
+        row.push(value);
+        rows.push(row);
+      }
+
+      return rows;
+    }
+
+    function normalizeText(value) {
+      return String(value || "").trim();
+    }
+
+    function isValidSpecies(value) {
+      const v = normalizeText(value);
+      const lower = v.toLowerCase();
+
+      return (
+        v !== "" &&
+        lower !== "nan" &&
+        lower !== "na" &&
+        lower !== "n/a" &&
+        lower !== "none" &&
+        lower !== "null"
+      );
+    }
+
+    async function loadSampleSpecies() {
+      try {
+        const response = await fetch("data/dioscorea_runinfo_com_biosample_geo.csv");
+        const text = await response.text();
+        const rows = parseCSV(text);
+
+        if (!rows || rows.length === 0) {
+          return;
+        }
+
+        const header = rows[0].map(col => normalizeText(col));
+        const runIndex = header.indexOf("Run");
+        const scientificNameIndex = header.indexOf("ScientificName");
+
+        if (runIndex === -1 || scientificNameIndex === -1) {
+          console.warn("Colunas Run ou ScientificName não encontradas no CSV.");
+          return;
+        }
+
+        const speciesByRun = {};
+
+        rows.slice(1).forEach(row => {
+          const run = normalizeText(row[runIndex]);
+          const species = normalizeText(row[scientificNameIndex]);
+
+          if (run && isValidSpecies(species)) {
+            speciesByRun[run] = species;
+          }
+        });
+
+        document.querySelectorAll(".sample-card").forEach(card => {
+          const run = normalizeText(card.dataset.run);
+          const species = speciesByRun[run];
+
+          if (species) {
+            const speciesSpan = card.querySelector(".sample-species");
+            speciesSpan.textContent = ` (${species})`;
+          }
+        });
+
+      } catch (error) {
+        console.warn("Não foi possível carregar os nomes científicos das amostras.", error);
+      }
+    }
+
     function filterSamples() {
       const input = document.getElementById("sampleSearch");
       const filter = input.value.toUpperCase();
       const cards = document.querySelectorAll(".sample-card");
 
       cards.forEach(card => {
-        const sampleName = card.querySelector("h3").textContent.toUpperCase();
-        card.style.display = sampleName.includes(filter) ? "" : "none";
+        const cardText = card.textContent.toUpperCase();
+        card.style.display = cardText.includes(filter) ? "" : "none";
       });
     }
+
+    document.addEventListener("DOMContentLoaded", loadSampleSpecies);
   </script>
 
 </body>

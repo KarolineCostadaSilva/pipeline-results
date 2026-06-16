@@ -435,3 +435,9 @@ body {
 .csv-table tbody tr:hover {
   background: rgba(219, 30, 47, 0.06);
 }
+
+.sample-species {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--muted);
+}
