@@ -1,0 +1,437 @@
+:root {
+  --cin-red: #DB1E2F;
+  --cin-dark-red: #AF0421;
+  --cin-black: #231F20;
+  --cin-light-gray: #E0E1E0;
+  --page-bg: #F7F7F7;
+  --white: #FFFFFF;
+  --text: #231F20;
+  --muted: #5F6368;
+  --border: #DADCE0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--page-bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.site-header {
+  background: var(--white);
+  border-top: 10px solid var(--cin-red);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 24px 14px 24px;
+}
+
+.cin-logo {
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+}
+
+.institutional-block {
+  text-align: center;
+  padding: 10px 24px 30px 24px;
+  color: var(--cin-black);
+}
+
+.institutional-block p {
+  margin: 3px 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.institutional-block .student {
+  margin-top: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 36px 24px 48px 24px;
+}
+
+.intro-card {
+  background: var(--white);
+  border-left: 8px solid var(--cin-red);
+  border-radius: 8px;
+  padding: 30px 34px;
+  box-shadow: 0 4px 14px rgba(35, 31, 32, 0.08);
+}
+
+.intro-card .label {
+  margin: 0 0 10px 0;
+  color: var(--cin-dark-red);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 13px;
+}
+
+.intro-card h1 {
+  margin: 0 0 16px 0;
+  color: var(--cin-black);
+  font-size: 28px;
+  line-height: 1.25;
+}
+
+.dissertation-title {
+  font-weight: 700;
+  color: var(--cin-dark-red);
+  margin-bottom: 18px;
+}
+
+.search-section {
+  margin: 34px 0 24px 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-section label {
+  font-weight: 700;
+}
+
+.search-section input {
+  min-width: 280px;
+  padding: 11px 13px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 15px;
+  background: var(--white);
+}
+
+.search-section input:focus {
+  outline: 3px solid rgba(219, 30, 47, 0.18);
+  border-color: var(--cin-red);
+}
+
+.sample-section h2 {
+  margin: 0 0 18px 0;
+  font-size: 22px;
+  color: var(--cin-black);
+}
+
+.sample-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.sample-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 22px;
+  box-shadow: 0 2px 8px rgba(35, 31, 32, 0.06);
+}
+
+.sample-card h3 {
+  margin: 0 0 8px 0;
+  color: var(--cin-black);
+  font-size: 21px;
+}
+
+.sample-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* .sample-card a {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 14px;
+  background: var(--cin-red);
+  color: var(--white);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+} */
+
+.sample-card a:hover,
+.sample-card a:focus {
+  background: var(--cin-dark-red);
+}
+
+.site-footer {
+  background: var(--cin-black);
+  color: var(--white);
+  text-align: center;
+  padding: 22px 24px;
+  font-size: 14px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .cin-logo {
+    max-width: 260px;
+  }
+
+  .institutional-block p {
+    font-size: 13px;
+  }
+
+  .intro-card {
+    padding: 24px 22px;
+  }
+
+  .intro-card h1 {
+    font-size: 23px;
+  }
+
+  .search-section input {
+    width: 100%;
+    min-width: 0;
+  }
+}
+/*  */
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: var(--cin-red);
+  color: var(--white);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: var(--cin-dark-red);
+}
+
+.btn-secondary {
+  background: var(--white);
+  color: var(--cin-red);
+  border: 1px solid var(--cin-red);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background: rgba(219, 30, 47, 0.08);
+}
+
+.dataset-section {
+  margin: 34px 0;
+}
+
+.dataset-section h2,
+.files-section h2 {
+  color: var(--cin-black);
+  margin-bottom: 10px;
+}
+
+.dataset-section p {
+  max-width: 900px;
+  color: var(--muted);
+}
+
+.dataset-grid,
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.dataset-card,
+.file-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(35, 31, 32, 0.06);
+}
+
+.dataset-card {
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+  border-left: 6px solid var(--cin-red);
+}
+
+.dataset-card:hover,
+.dataset-card:focus {
+  border-color: var(--cin-dark-red);
+  box-shadow: 0 4px 14px rgba(35, 31, 32, 0.12);
+}
+
+.dataset-title {
+  display: block;
+  color: var(--cin-dark-red);
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.dataset-description {
+  display: block;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.file-card h3 {
+  margin-top: 0;
+  color: var(--cin-dark-red);
+}
+
+.file-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.file-card li {
+  margin: 7px 0;
+}
+
+.file-card a {
+  color: var(--cin-red);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.file-card a:hover {
+  text-decoration: underline;
+}
+
+.compact-header .brand-bar {
+  padding-bottom: 8px;
+}
+
+.compact-header .institutional-block {
+  padding-bottom: 22px;
+}
+/*  */
+
+.dataset-section {
+  margin: 34px 0;
+}
+
+.dataset-section h2 {
+  color: var(--cin-black);
+  margin-bottom: 10px;
+}
+
+.dataset-section p {
+  max-width: 900px;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.dataset-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.dataset-button {
+  display: inline-block;
+  padding: 11px 15px;
+  background: var(--white);
+  color: var(--cin-red);
+  border: 1px solid var(--cin-red);
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(35, 31, 32, 0.06);
+}
+
+.dataset-button:hover,
+.dataset-button:focus {
+  background: var(--cin-red);
+  color: var(--white);
+}
+
+.table-viewer-section {
+  margin-top: 34px;
+}
+
+.table-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.table-toolbar label {
+  font-weight: 700;
+}
+
+.table-toolbar input {
+  min-width: 280px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(35, 31, 32, 0.06);
+}
+
+.csv-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.csv-table th {
+  background: var(--cin-black);
+  color: var(--white);
+  text-align: left;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.csv-table td {
+  padding: 9px 10px;
+  border-top: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.csv-table tbody tr:nth-child(even) {
+  background: #f7f7f7;
+}
+
+.csv-table tbody tr:hover {
+  background: rgba(219, 30, 47, 0.06);
+}

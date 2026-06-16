@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anexo Digital | Relatórios da Pipeline HTS</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand-bar">
+      <img
+        src="assets/logo-cin-horizontal-colorida.png"
+        alt="Centro de Informática da Universidade Federal de Pernambuco"
+        class="cin-logo"
+      >
+    </div>
+
+    <div class="institutional-block">
+      <p>UNIVERSIDADE FEDERAL DE PERNAMBUCO</p>
+      <p>CENTRO DE INFORMÁTICA</p>
+      <p>PROGRAMA DE PÓS-GRADUAÇÃO EM CIÊNCIA DA COMPUTAÇÃO</p>
+      <p class="student">Discente: Karoline Juliana Costa da Silva</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="intro-card">
+      <p class="label">Anexo digital da dissertação</p>
+
+      <h1>
+        Resultados das amostras processadas pela pipeline bioinformática
+      </h1>
+
+      <p class="dissertation-title">
+        Desenvolvimento de uma Pipeline Bioinformática aplicada ao Diagnóstico Viral em Plantas via Sequenciamento de Alto Rendimento
+      </p>
+
+      <p>
+        Esta página reúne os relatórios gerados a partir da execução da pipeline proposta
+        sobre as amostras utilizadas no estudo de caso da dissertação. Cada relatório
+        apresenta os resultados das etapas de controle de qualidade, montagem, anotação,
+        mapeamento contra referências virais, geração de consensos e arquivos auxiliares
+        produzidos durante o processamento bioinformático.
+      </p>
+    </section>
+
+    <section class="search-section">
+      <label for="sampleSearch">Filtrar amostra:</label>
+      <input
+        type="text"
+        id="sampleSearch"
+        placeholder="Digite o código da amostra..."
+        onkeyup="filterSamples()"
+      >
+    </section>
+
+    <section class="dataset-section">
+      <h2>Dados complementares</h2>
+
+      <p>
+        Os arquivos abaixo reúnem dados auxiliares utilizados na organização,
+        seleção e interpretação das amostras e referências virais consideradas
+        neste anexo digital.
+      </p>
+
+      <div class="dataset-actions">
+
+        <a
+          class="dataset-button"
+          href="csv-viewer.html?file=data/dioscorea_runinfo_com_biosample_geo.csv&title=Metadados%20das%20amostras"
+        >
+          Metadados das amostras
+        </a>
+
+        <a
+          class="dataset-button"
+          href="csv-viewer.html?file=data/selected_refseqs.csv&title=Referências%20virais%20selecionadas"
+        >
+          Referências virais selecionadas
+        </a>
+
+        <a
+          class="dataset-button"
+          href="csv-viewer.html?file=data/taxonomy_trees_SRRs.csv&title=Árvores%20taxonômicas%20dos%20vírus%20por%20amostra"
+        >
+          Árvores taxonômicas dos vírus por amostra
+        </a>
+
+      </div>
+    </section>
+
+    <section class="sample-section">
+      <h2>Amostras disponíveis</h2>
+
+      <div class="sample-grid" id="sampleGrid">
+
+        <article class="sample-card">
+          <h3>SRR17635184</h3>
+          <p>Relatório completo da execução da pipeline para a amostra.</p>
+
+          <div class="button-row">
+            <a class="btn-primary" href="SRR17635184/index.html">Abrir relatório</a>
+            <a class="btn-secondary" href="SRR17635184/arquivos.html">Arquivos gerados</a>
+          </div>
+        </article>
+
+        <article class="sample-card">
+          <h3>SRR22534738</h3>
+          <p>Relatório completo da execução da pipeline para a amostra.</p>
+
+          <div class="button-row">
+            <a class="btn-primary" href="SRR22534738/index.html">Abrir relatório</a>
+            <a class="btn-secondary" href="SRR22534738/arquivos.html">Arquivos gerados</a>
+          </div>
+        </article>
+
+        <!-- <article class="sample-card">
+          <h3>SRRXXXXXXX</h3>
+          <p>Relatório completo da execução da pipeline para a amostra.</p>
+
+          <div class="button-row">
+            <a class="btn-primary" href="SRRXXXXXXX/index.html">Abrir relatório</a>
+            <a class="btn-secondary" href="SRRXXXXXXX/arquivos.html">Arquivos gerados</a>
+          </div>
+        </article> -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Anexo digital de dissertação de mestrado — Programa de Pós-Graduação em Ciência da Computação, CIn-UFPE.
+    </p>
+  </footer>
+
+  <script>
+    function filterSamples() {
+      const input = document.getElementById("sampleSearch");
+      const filter = input.value.toUpperCase();
+      const cards = document.querySelectorAll(".sample-card");
+
+      cards.forEach(card => {
+        const sampleName = card.querySelector("h3").textContent.toUpperCase();
+        card.style.display = sampleName.includes(filter) ? "" : "none";
+      });
+    }
+  </script>
+
+</body>
+</html>

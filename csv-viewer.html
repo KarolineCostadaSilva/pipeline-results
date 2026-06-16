@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados complementares</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="site-header compact-header">
+    <div class="brand-bar">
+      <img
+        src="assets/logo-cin-horizontal-colorida.png"
+        alt="Centro de Informática da Universidade Federal de Pernambuco"
+        class="cin-logo"
+      >
+    </div>
+
+    <div class="institutional-block">
+      <p>UNIVERSIDADE FEDERAL DE PERNAMBUCO</p>
+      <p>CENTRO DE INFORMÁTICA</p>
+      <p>PROGRAMA DE PÓS-GRADUAÇÃO EM CIÊNCIA DA COMPUTAÇÃO</p>
+      <p class="student">Discente: Karoline Juliana Costa da Silva</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="intro-card">
+      <p class="label">Dados complementares</p>
+      <h1 id="pageTitle">Tabela</h1>
+
+      <p>
+        Esta página apresenta dados auxiliares utilizados na organização,
+        seleção e interpretação das amostras e referências virais consideradas
+        no anexo digital da dissertação.
+      </p>
+
+      <div class="button-row">
+        <a class="btn-secondary" href="index.html">Voltar à página inicial</a>
+      </div>
+    </section>
+
+    <section class="table-viewer-section">
+      <div class="table-toolbar">
+        <label for="tableSearch">Filtrar tabela:</label>
+        <input
+          type="text"
+          id="tableSearch"
+          placeholder="Digite um termo..."
+          onkeyup="filterTable()"
+        >
+      </div>
+
+      <div class="table-wrapper">
+        <table id="csvTable" class="csv-table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Anexo digital de dissertação de mestrado — Programa de Pós-Graduação em Ciência da Computação, CIn-UFPE.
+    </p>
+  </footer>
+
+  <script>
+    function getQueryParam(name) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name);
+    }
+
+    function parseCSV(text) {
+      const rows = [];
+      let row = [];
+      let value = "";
+      let insideQuotes = false;
+
+      for (let i = 0; i < text.length; i++) {
+        const char = text[i];
+        const nextChar = text[i + 1];
+
+        if (char === '"' && insideQuotes && nextChar === '"') {
+          value += '"';
+          i++;
+        } else if (char === '"') {
+          insideQuotes = !insideQuotes;
+        } else if (char === "," && !insideQuotes) {
+          row.push(value);
+          value = "";
+        } else if ((char === "\n" || char === "\r") && !insideQuotes) {
+          if (value !== "" || row.length > 0) {
+            row.push(value);
+            rows.push(row);
+            row = [];
+            value = "";
+          }
+
+          if (char === "\r" && nextChar === "\n") {
+            i++;
+          }
+        } else {
+          value += char;
+        }
+      }
+
+      if (value !== "" || row.length > 0) {
+        row.push(value);
+        rows.push(row);
+      }
+
+      return rows;
+    }
+
+    function renderTable(rows) {
+      const tableHead = document.querySelector("#csvTable thead");
+      const tableBody = document.querySelector("#csvTable tbody");
+
+      tableHead.innerHTML = "";
+      tableBody.innerHTML = "";
+
+      if (!rows || rows.length === 0) {
+        tableBody.innerHTML = "<tr><td>Nenhum dado encontrado.</td></tr>";
+        return;
+      }
+
+      const headerRow = document.createElement("tr");
+
+      rows[0].forEach(col => {
+        const th = document.createElement("th");
+        th.textContent = col;
+        headerRow.appendChild(th);
+      });
+
+      tableHead.appendChild(headerRow);
+
+      rows.slice(1).forEach(row => {
+        const tr = document.createElement("tr");
+
+        row.forEach(cell => {
+          const td = document.createElement("td");
+          td.textContent = cell;
+          tr.appendChild(td);
+        });
+
+        tableBody.appendChild(tr);
+      });
+    }
+
+    function filterTable() {
+      const input = document.getElementById("tableSearch");
+      const filter = input.value.toUpperCase();
+      const rows = document.querySelectorAll("#csvTable tbody tr");
+
+      rows.forEach(row => {
+        const text = row.textContent.toUpperCase();
+        row.style.display = text.includes(filter) ? "" : "none";
+      });
+    }
+
+    async function loadCSV() {
+      const file = getQueryParam("file");
+      const title = getQueryParam("title") || "Tabela";
+
+      document.getElementById("pageTitle").textContent = title;
+
+      if (!file) {
+        document.querySelector("#csvTable tbody").innerHTML =
+          "<tr><td>Arquivo CSV não informado.</td></tr>";
+        return;
+      }
+
+      try {
+        const response = await fetch(file);
+        const text = await response.text();
+        const rows = parseCSV(text);
+        renderTable(rows);
+      } catch (error) {
+        document.querySelector("#csvTable tbody").innerHTML =
+          "<tr><td>Não foi possível carregar o arquivo CSV.</td></tr>";
+      }
+    }
+
+    loadCSV();
+  </script>
+
+</body>
+</html>
