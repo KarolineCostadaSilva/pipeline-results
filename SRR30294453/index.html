@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; }
+    header { background-color: #666; padding: 10px; text-align: center; font-size: 35px; color: white; }
+    .sidenav {
+      height: 100%; width: 200px; position: fixed; z-index: 1; top: 0; left: 0;
+      background-color: #eee; overflow-x: hidden; padding-top: 20px;
+    }
+    .sidenav a { padding: 6px 8px 6px; text-decoration: none; font-size: 16px; color: #2196F3; display: block; }
+    .sidenav a:hover { color: #064579; }
+    .main { margin-left: 200px; font-size: 16px; padding: 0px 10px; }
+    article { float: left; padding: 20px; background-color: #f1f1f1; width: 100%; }
+  </style>
+  <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, alltables;
+      alltables = document.querySelectorAll("table[data-name=mytable]");
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      alltables.forEach(function(table){
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      });
+    }
+  </script>
+</head>
+<body>
+  <header><h1>HTS Report</h1></header>
+
+  <section>
+    <div class="sidenav">
+      <a href="#summary">Summary</a>
+      <h4>Sample QC</h4>
+      <a href="#rawQC">Raw reads QC</a>
+      <a href="#cleanQC">Clean reads QC</a>
+      <a href="#numQC">Reads number track</a>
+      <a href="#assemblyQC">Assembly QC</a>
+      <h4>Contig annotation</h4>
+      <a href="#blastx">Blastx (RVDB)</a>
+      <a href="#selectContig">Selected contigs</a>
+      <a href="#megan">MEGAN6 files</a>
+      <h4>Mapping</h4>
+      <a href="#mapping">Map reads to reference</a>
+    </div>
+
+    <div class="main">
+      <br>
+      <div class="card-body row no-gutters align-items-center pull-right">
+        <label>Filter sample </label>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="A sample name" title="Type in a sample name">
+      </div>
+
+      <article id="summary">
+        <h1>Virus NCBI blast</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>RefId</th>
+      <th>BlastHitAccession</th>
+      <th>Species</th>
+      <th>BlastType</th>
+      <th>BlastEvalue</th>
+      <th>BlastIdentity</th>
+      <th>BlastQueryCoverage</th>
+      <th>BlastDescription</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR30294453</td>
+      <td>NC_026248.1</td>
+      <td>NC_026248</td>
+      <td>Yam latent virus</td>
+      <td>consensus.blastn.online</td>
+      <td>0.0</td>
+      <td>88.17</td>
+      <td>100.0</td>
+      <td>Yam latent virus isolate SG1, complete genome</td>
+    </tr>
+    <tr>
+      <td>SRR30294453</td>
+      <td>NC_003003.1</td>
+      <td>NC_003003</td>
+      <td>Broad bean wilt virus 2</td>
+      <td>consensus.blastn.online</td>
+      <td>0.0</td>
+      <td>92.3</td>
+      <td>100.0</td>
+      <td>Broad bean wilt virus 2 RNA 1, complete sequence</td>
+    </tr>
+    <tr>
+      <td>SRR30294453</td>
+      <td>NC_003004.1</td>
+      <td>NC_003004</td>
+      <td>Broad bean wilt virus 2</td>
+      <td>consensus.blastn.online</td>
+      <td>0.0</td>
+      <td>91.91</td>
+      <td>100.0</td>
+      <td>Broad bean wilt virus 2 RNA 2, complete sequence</td>
+    </tr>
+  </tbody>
+</table>
+        <h3><a href="finalConsensus.txt" target="_blank">View consensus</a></h3><br />
+      </article>
+
+      <article id="rawQC">
+        <h1>Raw reads QC</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Total Sequences</th>
+      <th>Total Bases</th>
+      <th>Sequences flagged as poor quality</th>
+      <th>Sequence length</th>
+      <th>%GC</th>
+      <th>total_deduplicated_percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR30294453_R1</td>
+      <td>25299806.0</td>
+      <td>3.8 Gbp</td>
+      <td>0.0</td>
+      <td>151.0</td>
+      <td>45.0</td>
+      <td>45.333641</td>
+    </tr>
+    <tr>
+      <td>SRR30294453_R2</td>
+      <td>25299806.0</td>
+      <td>3.8 Gbp</td>
+      <td>0.0</td>
+      <td>151.0</td>
+      <td>45.0</td>
+      <td>43.145129</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3>View raw reads FastQC report:</h3> <a href="html/SRR30294453_R1_fastqc.html" target="_blank">SRR30294453_R1</a> &emsp;&emsp; <a href="html/SRR30294453_R2_fastqc.html" target="_blank">SRR30294453_R2</a>
+        <br><br>
+        <a href="html/raw_multiqc.html">All samples raw reads multiQC</a>
+      </article>
+
+      <article id="cleanQC">
+        <h1>Clean reads QC</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Total Sequences</th>
+      <th>Total Bases</th>
+      <th>Sequences flagged as poor quality</th>
+      <th>Sequence length</th>
+      <th>%GC</th>
+      <th>total_deduplicated_percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR30294453_R1</td>
+      <td>23464689.0</td>
+      <td>3.5 Gbp</td>
+      <td>0.0</td>
+      <td>36-151</td>
+      <td>45.0</td>
+      <td>70.261665</td>
+    </tr>
+    <tr>
+      <td>SRR30294453_R2</td>
+      <td>23464689.0</td>
+      <td>3.5 Gbp</td>
+      <td>0.0</td>
+      <td>36-151</td>
+      <td>45.0</td>
+      <td>65.788773</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3>View clean reads FastQC report:</h3> <a href="html/SRR30294453_R1.trimmed_fastqc.html" target="_blank">SRR30294453_R1</a> &emsp;&emsp; <a href="html/SRR30294453_R2.trimmed_fastqc.html" target="_blank">SRR30294453_R2</a>
+        <br><br>
+        <a href="html/trimmed_multiqc.html">All samples clean reads multiQC</a>
+      </article>
+
+      <article id="numQC">
+        <h1>Read numbers in each QC step</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>RawReads</th>
+      <th>RawYield(Mbases)</th>
+      <th>Percent>=Q30Bases</th>
+      <th>RawMeanQualityScore</th>
+      <th>RibosomalRNA</th>
+      <th>ReadsAfterRemoveDuplicates</th>
+      <th>ControlReads</th>
+      <th>ReadsAfterTrim</th>
+      <th>PossiblePathogenReads</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR30294453</td>
+      <td>25299806(F)|25299806(R)</td>
+      <td>3820(F)|3820(R)</td>
+      <td>95.40(F)|96.10(R)</td>
+      <td>39.07(F)|39.20(R)</td>
+      <td>1.78%</td>
+      <td>0 (0.00%)</td>
+      <td>0(F)|0(R)</td>
+      <td>46929378 (92.75%)</td>
+      <td>0 (0.00%)</td>
+    </tr>
+  </tbody>
+</table>
+      </article>
+
+      <article id="assemblyQC">
+        <h1>Assembly QC</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Assembly</th>
+      <th># contigs (>= 0 bp)</th>
+      <th># contigs (>= 1000 bp)</th>
+      <th># contigs</th>
+      <th>Largest contig</th>
+      <th>Total length</th>
+      <th>GC (%)</th>
+      <th>N50</th>
+      <th>N90</th>
+      <th>auN</th>
+      <th>L50</th>
+      <th>L90</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR30294453</td>
+      <td>27824</td>
+      <td>1458</td>
+      <td>25043</td>
+      <td>8579</td>
+      <td>11064681</td>
+      <td>44.86</td>
+      <td>514</td>
+      <td>240</td>
+      <td>666.7</td>
+      <td>6567</td>
+      <td>19191</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3><a href="assembly_qc.tsv" target="_blank">View full Assembly QC table</a></h3>
+        <h3>View assembly QC quast report:</h3> <a href="html/SRR30294453.quast.html" target="_blank">SRR30294453</a>&emsp;&emsp;
+        <br>
+        <h3>View contigs FASTA files:</h3> <a href="assembly/SRR30294453.contigs.fasta" target="_blank">SRR30294453</a>&emsp;&emsp;
+        <br><br>
+        <a href="html/quast_multiqc.html" target="_blank">All samples quast multiQC</a>
+      </article>
+
+      <article id="selectContig">
+        <h1>Selected contigs and their annotation</h1>No annotated contigs passed the reporting thresholds (Percent_identity >= 70.0, Contig_length >= 300, RefCoverage >= 70.0).
+        <br>
+        <h3><a href="blastx.summary.tsv" target="_blank">View full DIAMOND blastx summary table</a></h3>
+        <h3><a href="blast.nx.tsv" target="_blank">View full blast.nx compatibility table</a></h3>
+      </article>
+
+      <article id="megan">
+      <h1>MEGAN6 visualization files</h1>
+      <p>
+        These files were generated from DIAMOND blastx results.
+        Open the MEGANized DAA files in MEGAN6 for interactive taxonomic visualization.
+      </p>
+      <h3>Open/download MEGAN6 DAA files:</h3>
+      <a href="megan/SRR30294453.blastx.meganized.daa" target="_blank">SRR30294453 - MEGANized DAA</a>&emsp;&emsp;
+      </article>
+
+      <article id="mapping">
+        <h1>Mapping reads to references</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>RefId</th>
+      <th>BlastHitAccession</th>
+      <th>Species</th>
+      <th>RefLen</th>
+      <th>MappedReads</th>
+      <th>RPKM</th>
+      <th>PercentMappedreads</th>
+      <th>PercentGenomeCovered</th>
+      <th>MeanCoverage</th>
+      <th>BlastIdentity</th>
+      <th>BlastQueryCoverage</th>
+      <th>Taxonomy</th>
+      <th>RefTitle</th>
+      <th>MappingGraph</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR30294453</td>
+      <td>NC_026248.1</td>
+      <td>NC_026248</td>
+      <td>Yam latent virus</td>
+      <td>8531</td>
+      <td>2990326</td>
+      <td>1.298240e+10</td>
+      <td>10964528.67</td>
+      <td>92.64</td>
+      <td>42954.2</td>
+      <td>88.17</td>
+      <td>100.0</td>
+      <td>Quinvirinae;Betaflexiviridae</td>
+      <td>NC_026248.1 Yam latent virus isolate SG1, complete genome</td>
+      <td><a href="image/SRR30294453.NC_026248.1.coverage.png" target="_blank">SRR30294453 NC_026248.1</a></td>
+    </tr>
+    <tr>
+      <td>SRR30294453</td>
+      <td>NC_003003.1</td>
+      <td>NC_003003</td>
+      <td>Broad bean wilt virus 2</td>
+      <td>5951</td>
+      <td>727757</td>
+      <td>4.529317e+09</td>
+      <td>2668442.33</td>
+      <td>62.90</td>
+      <td>10392.4</td>
+      <td>92.3</td>
+      <td>100.0</td>
+      <td>Comovirinae;Secoviridae</td>
+      <td>NC_003003.1 Broad bean wilt virus 2 RNA 1, complete sequence</td>
+      <td><a href="image/SRR30294453.NC_003003.1.coverage.png" target="_blank">SRR30294453 NC_003003.1</a></td>
+    </tr>
+    <tr>
+      <td>SRR30294453</td>
+      <td>NC_003004.1</td>
+      <td>NC_003004</td>
+      <td>Broad bean wilt virus 2</td>
+      <td>3607</td>
+      <td>1951082</td>
+      <td>2.003391e+10</td>
+      <td>7153967.33</td>
+      <td>66.23</td>
+      <td>44601.0</td>
+      <td>91.91</td>
+      <td>100.0</td>
+      <td>Comovirinae;Secoviridae</td>
+      <td>NC_003004.1 Broad bean wilt virus 2 RNA 2, complete sequence</td>
+      <td><a href="image/SRR30294453.NC_003004.1.coverage.png" target="_blank">SRR30294453 NC_003004.1</a></td>
+    </tr>
+    <tr>
+      <td>SRR30294453</td>
+      <td>NC_000947.1</td>
+      <td>nan</td>
+      <td>Japanese yam mosaic virus</td>
+      <td>9760</td>
+      <td>1770425</td>
+      <td>6.718371e+09</td>
+      <td>6491558.33</td>
+      <td>74.50</td>
+      <td>17697.5</td>
+      <td>nan</td>
+      <td>nan</td>
+      <td>Potyvirus;Potyviridae</td>
+      <td>NC_000947.1 Japanese yam mosaic virus, complete genome</td>
+      <td><a href="image/SRR30294453.NC_000947.1.coverage.png" target="_blank">SRR30294453 NC_000947.1</a></td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3><a href="report.txt" target="_blank">View full mapping/report table</a></h3>
+      </article>
+
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,5 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR30294453|NC_000947.1	SRR30294453	NC_000947.1	error							/data/output/report/ncbiBlast/xml/SRR30294453_NC_000947.1.xml	<urlopen error [Errno -2] Name or service not known>
+SRR30294453|NC_003003.1	SRR30294453	NC_003003.1	hit	consensus.blastn.online	NC_003003	0.0	92.3	100.0	Broad bean wilt virus 2 RNA 1, complete sequence	/data/output/report/ncbiBlast/xml/SRR30294453_NC_003003.1.xml	
+SRR30294453|NC_003004.1	SRR30294453	NC_003004.1	hit	consensus.blastn.online	NC_003004	0.0	91.91	100.0	Broad bean wilt virus 2 RNA 2, complete sequence	/data/output/report/ncbiBlast/xml/SRR30294453_NC_003004.1.xml	
+SRR30294453|NC_026248.1	SRR30294453	NC_026248.1	hit	consensus.blastn.online	NC_026248	0.0	88.17	100.0	Yam latent virus isolate SG1, complete genome	/data/output/report/ncbiBlast/xml/SRR30294453_NC_026248.1.xml	

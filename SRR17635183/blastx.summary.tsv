@@ -1,0 +1,337 @@
+Sample	Contig	Percent_identity	Contig_length	Reference_length	RefCoverage	E-value	Reference_name	Species	blastType
+SRR17635183	NODE_1156_length_4412_cov_7.370303	99.3	4412	1870	0.770053	0.00e+00	acc|GENBANK|ANF06855.1|NEIGHBOR|KU641565|polyprotein [Broad bean wilt virus 2]	Broad bean wilt virus 2	Blastx
+SRR17635183	NODE_1598_length_3549_cov_26.368197	98.1	3549	1064	1.000000	0.00e+00	acc|GENBANK|ANF06856.1|NEIGHBOR|KU309314|polyprotein [Broad bean wilt virus 2]	Broad bean wilt virus 2	Blastx
+SRR17635183	NODE_905_length_1920_cov_1694.537125	83.0	1920	1960	0.326531	0.00e+00	acc|REFSEQ|YP_009134730.1|REFSEQ|NC_026248|replicase polyprotein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_855_length_1197_cov_3014.624150	98.0	1197	1960	0.176020	7.22e-232	acc|REFSEQ|YP_009134730.1|REFSEQ|NC_026248|replicase polyprotein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_906_length_1040_cov_2469.838077	86.1	1040	1960	0.176531	6.29e-198	acc|REFSEQ|YP_009134730.1|REFSEQ|NC_026248|replicase polyprotein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_474_length_892_cov_4.128588	93.3	892	1335	0.222472	9.26e-195	acc|GENBANK|AJD23416.1|GENBANK|KM009120|putative RNA-dependent RNA polymerase [Yam virus X]	Yam virus X	Blastx
+SRR17635183	NODE_1892_length_927_cov_5.591611	97.1	927	1870	0.165241	6.31e-192	acc|GENBANK|ANF06855.1|NEIGHBOR|KU641565|polyprotein [Broad bean wilt virus 2]	Broad bean wilt virus 2	Blastx
+SRR17635183	NODE_1849_length_769_cov_2.632353	91.0	769	1335	0.191011	3.65e-157	acc|GENBANK|AJD23371.1|GENBANK|KJ789131|putative RNA-dependent RNA polymerase [Yam virus X]	Yam virus X	Blastx
+SRR17635183	NODE_894_length_705_cov_2484.662281	90.6	705	1960	0.119898	4.14e-140	acc|REFSEQ|YP_009134730.1|REFSEQ|NC_026248|replicase polyprotein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_1618_length_2050_cov_4.682602	86.2	2050	246	1.000000	2.01e-137	acc|GENBANK|AJD23385.1|GENBANK|KJ789133|coat protein [Yam virus X]	Yam virus X	Blastx
+SRR17635183	NODE_1724_length_468_cov_4.125280	82.0	468	224	0.669643	2.82e-86	acc|GENBANK|QDH89109.1|GENBANK|MN034603|hypothetical protein [Picornavirales sp.]	Picornavirales sp.	Blastx
+SRR17635183	NODE_4_length_987_cov_8.533126	39.4	987	455	0.747253	9.67e-85	acc|GENBANK|QFG73745.1|GENBANK|MN448270|elongation factor Tu GTP binding domain protein [Megaviridae environmental sample]	Megaviridae environmental sample	Blastx
+SRR17635183	NODE_879_length_509_cov_8277.649590	83.4	509	3118	0.054201	2.40e-79	acc|GENBANK|AJD23397.1|NEIGHBOR|KJ789139|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_1605_length_502_cov_2.544699	74.7	502	630	0.263492	4.87e-79	acc|REFSEQ|YP_004061438.1|REFSEQ|NC_014765|hypothetical protein [Bathycoccus sp. RCC1105 virus BpV1]	Bathycoccus sp. RCC1105 virus BpV1	Blastx
+SRR17635183	NODE_1608_length_422_cov_2.765586	92.0	422	1335	0.102622	2.76e-77	acc|GENBANK|AJD23416.1|GENBANK|KM009120|putative RNA-dependent RNA polymerase [Yam virus X]	Yam virus X	Blastx
+SRR17635183	NODE_488_length_493_cov_2.671610	68.3	493	405	0.404938	9.92e-77	acc|GENBANK|WGU26824.1|GENBANK|OQ503488|eukaryotic initiation factor 4A-III B-like [Triticum monococcum]	Triticum monococcum	Blastx
+SRR17635183	NODE_3570_length_385_cov_1.769231	93.8	385	1335	0.095880	3.84e-73	acc|GENBANK|AJD23371.1|GENBANK|KJ789131|putative RNA-dependent RNA polymerase [Yam virus X]	Yam virus X	Blastx
+SRR17635183	NODE_1584_length_457_cov_1.665138	77.5	457	602	0.250831	3.17e-70	acc|GENBANK|QIG59839.1|GENBANK|MN940578|heat shock protein 70 [Dishui Lake phycodnavirus 3]	Dishui Lake phycodnavirus 3	Blastx
+SRR17635183	NODE_1648_length_468_cov_1.982103	71.8	468	676	0.230769	1.15e-68	acc|REFSEQ|YP_009173627.1|REFSEQ|NC_028094|Hsp70 protein [Chrysochromulina ericina virus]	Chrysochromulina ericina virus	Blastx
+SRR17635183	NODE_3543_length_330_cov_2.087379	95.4	330	472	0.228814	4.65e-68	acc|GENBANK|QXN75449.1|GENBANK|MW648538|RNA-dependent RNA polymerase [Grapevine-associated tymo-like virus 3]	Grapevine-associated tymo-like virus 3	Blastx
+SRR17635183	NODE_3538_length_324_cov_1.277228	86.0	324	258	0.414729	1.59e-65	acc|GENBANK|WMV02893.1|GENBANK|OP630990|alpha-tubulin [Diderma spumarioides]	Diderma spumarioides	Blastx
+SRR17635183	NODE_20_length_327_cov_2.084967	96.3	327	1335	0.080899	4.01e-62	acc|GENBANK|AJD23371.1|GENBANK|KJ789131|putative RNA-dependent RNA polymerase [Yam virus X]	Yam virus X	Blastx
+SRR17635183	NODE_1636_length_1087_cov_1.974672	37.4	1087	919	0.375408	7.06e-56	acc|GENBANK|AYV75146.1|GENBANK|MK071979|plasma membrane ATPase [Terrestrivirus sp.]	Terrestrivirus sp.	Blastx
+SRR17635183	NODE_1563_length_620_cov_2.517529	58.7	620	783	0.234994	8.42e-56	acc|GENBANK|QFG73724.1|GENBANK|MN448270|Hsp90 protein [Megaviridae environmental sample]	Megaviridae environmental sample	Blastx
+SRR17635183	NODE_1550_length_381_cov_2.416667	70.2	381	405	0.306173	8.33e-54	acc|GENBANK|WGU26824.1|GENBANK|OQ503488|eukaryotic initiation factor 4A-III B-like [Triticum monococcum]	Triticum monococcum	Blastx
+SRR17635183	NODE_878_length_296_cov_4155.560000	92.9	296	1960	0.050000	2.74e-53	acc|REFSEQ|YP_009134730.1|REFSEQ|NC_026248|replicase polyprotein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_112_length_425_cov_2.529703	63.6	425	1359	0.103017	1.15e-52	acc|GENBANK|ABD78322.1|GENBANK|DQ381432|polyprotein [Primula vulgaris]	Primula vulgaris	Blastx
+SRR17635183	NODE_1078_length_436_cov_1.828916	57.9	436	341	0.410557	2.21e-52	acc|GENBANK|ARF11691.1|GENBANK|KY684109|glutamine synthetase [Klosneuvirus KNV1]	Klosneuvirus KNV1	Blastx
+SRR17635183	NODE_1009_length_275_cov_1.440945	78.0	275	224	0.406250	3.88e-49	acc|GENBANK|QDH89109.1|GENBANK|MN034603|hypothetical protein [Picornavirales sp.]	Picornavirales sp.	Blastx
+SRR17635183	NODE_1625_length_452_cov_2.419954	58.8	452	405	0.335802	1.20e-48	acc|GENBANK|WGU26824.1|GENBANK|OQ503488|eukaryotic initiation factor 4A-III B-like [Triticum monococcum]	Triticum monococcum	Blastx
+SRR17635183	NODE_1781_length_328_cov_1.680782	76.1	328	324	0.336420	1.55e-48	acc|GENBANK|QIG60113.1|GENBANK|MN940580|hypothetical protein [Dishui Lake large algae virus 1]	Dishui Lake large algae virus 1	Blastx
+SRR17635183	NODE_79_length_228_cov_1.169082	100	228	1935	0.038760	2.33e-47	acc|GENBANK|QQG34637.1|GENBANK|MW328746|RdRp [Triticum polonicum deltaflexivirus 1]	Triticum polonicum deltaflexivirus 1	Blastx
+SRR17635183	NODE_910_length_255_cov_4545.188034	92.8	255	229	0.362445	3.26e-47	acc|REFSEQ|YP_009116869.1|REFSEQ|NC_026248|triple gene block protein 1 [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_864_length_286_cov_4797.966038	87.4	286	3118	0.030468	3.39e-46	acc|GENBANK|AJD23397.1|NEIGHBOR|KJ789139|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_3416_length_267_cov_1.573171	100	267	177	0.451977	2.57e-44	acc|GENBANK|QQG34630.1|GENBANK|MW328744|HP3 [Agrostis stolonifera deltaflexivirus 1]	Agrostis stolonifera deltaflexivirus 1	Blastx
+SRR17635183	NODE_74_length_608_cov_2.988075	45.5	608	1508	0.132626	2.93e-44	acc|GENBANK|CAJ00274.1|GENBANK|AJ966991|hypothetical protein [Lotus japonicus]	Lotus japonicus	Blastx
+SRR17635183	NODE_1071_length_359_cov_1.050296	62.1	359	224	0.517857	5.95e-44	acc|GENBANK|QDH89109.1|GENBANK|MN034603|hypothetical protein [Picornavirales sp.]	Picornavirales sp.	Blastx
+SRR17635183	NODE_1792_length_411_cov_1.312821	66.4	411	575	0.212174	1.67e-43	acc|GENBANK|CAE02704.1|GENBANK|AJ575660|putative sugar transporter [Yarrowia lipolytica]	Yarrowia lipolytica	Blastx
+SRR17635183	NODE_859_length_287_cov_2565.680451	77.9	287	1960	0.048469	2.74e-42	acc|REFSEQ|YP_009134730.1|REFSEQ|NC_026248|replicase polyprotein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_1787_length_413_cov_2.091837	59.9	413	919	0.149075	4.80e-41	acc|GENBANK|AYV75146.1|GENBANK|MK071979|plasma membrane ATPase [Terrestrivirus sp.]	Terrestrivirus sp.	Blastx
+SRR17635183	NODE_228_length_225_cov_929.063725	97.3	225	1960	0.037755	3.14e-40	acc|REFSEQ|YP_009134730.1|REFSEQ|NC_026248|replicase polyprotein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_758_length_197_cov_19104.471591	96.9	197	182	0.357143	5.56e-40	acc|GENBANK|BAG16179.1|GENBANK|AB430808|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_406_length_364_cov_3.285714	57.9	364	464	0.260776	8.25e-40	acc|GENBANK|ARF10763.1|GENBANK|KY684105|elongation Factor 1-alpha EF1-alpha [Hokovirus HKV1]	Hokovirus HKV1	Blastx
+SRR17635183	NODE_1589_length_286_cov_2.943396	80.0	286	127	0.669291	1.07e-39	acc|GENBANK|QZB49175.1|GENBANK|MZ645207|histone H4-like protein [Cotesia vestalis bracovirus]	Cotesia vestalis bracovirus	Blastx
+SRR17635183	NODE_1218_length_244_cov_1.035874	75.3	244	150	0.540000	6.96e-39	acc|REFSEQ|YP_009173309.1|REFSEQ|NC_028094|ubiquitin conjugating enzyme E2 [Chrysochromulina ericina virus]	Chrysochromulina ericina virus	Blastx
+SRR17635183	NODE_2000_length_348_cov_1.207951	58.1	348	341	0.307918	3.15e-38	acc|GENBANK|ARF11691.1|GENBANK|KY684109|glutamine synthetase [Klosneuvirus KNV1]	Klosneuvirus KNV1	Blastx
+SRR17635183	NODE_857_length_200_cov_18039.536313	98.5	200	495	0.133333	7.74e-38	acc|GENBANK|ALG64835.1|GENBANK|KR229934|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_1353_length_398_cov_1.050398	53.7	398	182	0.675824	1.90e-37	acc|REFSEQ|YP_009163818.1|REFSEQ|NC_027778|ORF_057R [Scale drop disease virus]	Scale drop disease virus	Blastx
+SRR17635183	NODE_890_length_212_cov_9349.277487	94.3	212	3118	0.022450	1.11e-36	acc|GENBANK|AJD23399.1|NEIGHBOR|KJ789140|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_646_length_288_cov_2.917603	67.0	288	385	0.244156	2.82e-36	acc|GENBANK|UUT40455.1|GENBANK|ON887238|hypothetical protein [carnivorous sponge associated iridovirus]	carnivorous sponge associated iridovirus	Blastx
+SRR17635183	NODE_1782_length_346_cov_1.473846	61.3	346	815	0.136196	3.57e-36	acc|REFSEQ|YP_010782648.1|REFSEQ|NC_075039|elongation factor 2 [Tupanvirus soda lake]	Tupanvirus soda lake	Blastx
+SRR17635183	NODE_2837_length_220_cov_1.944724	84.1	220	214	0.322430	1.88e-34	acc|GENBANK|UZE89726.1|GENBANK|ON704650|hypothetical protein [Parapoynx stagnalis nucleopolyhedrovirus]	Parapoynx stagnalis nucleopolyhedrovirus	Blastx
+SRR17635183	NODE_2904_length_225_cov_1.264706	80.6	225	143	0.468531	1.31e-33	acc|GENBANK|ADF46020.1|GENBANK|GU976802|reverse transcriptase [Eleocharis erythropoda]	Eleocharis erythropoda	Blastx
+SRR17635183	NODE_852_length_171_cov_4027.300000	89.5	171	108	0.527778	1.80e-33	acc|REFSEQ|YP_009116870.1|REFSEQ|NC_026248|triple gene block protein 2 [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_1339_length_361_cov_3.744118	50.4	361	1058	0.114367	1.09e-32	acc|REFSEQ|YP_008052628.1|REFSEQ|NC_021312|ABC transporter [Phaeocystis globosa virus]	Phaeocystis globosa virus	Blastx
+SRR17635183	NODE_2585_length_204_cov_1.409836	79.1	204	204	0.328431	1.52e-32	acc|GENBANK|AYV75810.1|GENBANK|MK071981|GTP-binding protein ypt1 [Terrestrivirus sp.]	Terrestrivirus sp.	Blastx
+SRR17635183	NODE_1051_length_322_cov_2.096346	60.0	322	143	0.664336	2.73e-32	acc|GENBANK|ACU42180.1|GENBANK|GQ372895|reverse transcriptase [Prunus mume]	Prunus mume	Blastx
+SRR17635183	NODE_1015_length_227_cov_6.786408	95.4	227	1880	0.034574	2.88e-32	acc|GENBANK|AZF99050.1|NEIGHBOR|MH645159|orf1 [Broad bean wilt virus 2]	Broad bean wilt virus 2	Blastx
+SRR17635183	NODE_1270_length_195_cov_2.936782	95.3	195	165	0.387879	3.77e-32	acc|GENBANK|AYV86520.1|GENBANK|MK072508|polyubiquitin [Sylvanvirus sp.]	Sylvanvirus sp.	Blastx
+SRR17635183	NODE_143_length_189_cov_3.815476	95.2	189	1335	0.046442	4.35e-32	acc|GENBANK|AJD23371.1|GENBANK|KJ789131|putative RNA-dependent RNA polymerase [Yam virus X]	Yam virus X	Blastx
+SRR17635183	NODE_1422_length_336_cov_2.180952	52.3	336	170	0.652941	5.04e-32	acc|REFSEQ|YP_003358229.2|REFSEQ|NC_013668|nucleoside diphosphate kinase [Anguillid herpesvirus 1]	Anguillid herpesvirus 1	Blastx
+SRR17635183	NODE_712_length_591_cov_19.370175	53.3	591	219	0.625571	5.94e-32	acc|GENBANK|XHA87591.1|GENBANK|PQ054798|hypothetical protein [Qianjiang picobirna-like virus 2]	Qianjiang picobirna-like virus 2	Blastx
+SRR17635183	NODE_2919_length_226_cov_1.258537	83.6	226	144	0.465278	9.00e-32	acc|GENBANK|AAH74588.1|GENBANK|BC074588|intracisternal A particle-promoted polypeptide [Xenopus tropicalis]	Xenopus tropicalis	Blastx
+SRR17635183	NODE_3564_length_369_cov_1.853448	52.6	369	324	0.351852	1.37e-31	acc|GENBANK|QIG60113.1|GENBANK|MN940580|hypothetical protein [Dishui Lake large algae virus 1]	Dishui Lake large algae virus 1	Blastx
+SRR17635183	NODE_1239_length_310_cov_4.000000	66.3	310	900	0.095556	1.68e-31	acc|REFSEQ|YP_009701987.1|REFSEQ|NC_044937|ABC transporter [Paramecium bursaria Chlorella virus CVA-1]	Paramecium bursaria Chlorella virus CVA-1	Blastx
+SRR17635183	NODE_1183_length_216_cov_4.446154	76.1	216	282	0.251773	9.18e-31	acc|GENBANK|AAL14448.1|GENBANK|AF397035|heat shock protein Hsc70t [Mus musculus]	Mus musculus	Blastx
+SRR17635183	NODE_721_length_180_cov_7668.698113	94.9	180	2508	0.023525	2.97e-30	acc|GENBANK|ANF06854.1|NEIGHBOR|KU309315|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_2197_length_176_cov_1.664516	98.2	176	74	0.756757	3.23e-30	acc|REFSEQ|YP_004347213.1|REFSEQ|NC_015326|ubiquitin family protein [Lausannevirus]	Lausannevirus	Blastx
+SRR17635183	NODE_813_length_149_cov_5286.195312	100	149	316	0.155063	1.46e-29	acc|GENBANK|WEY07642.1|GENBANK|OP219484|coat protein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_1450_length_249_cov_1.078947	67.9	249	411	0.197080	1.81e-29	acc|GENBANK|QBK89188.1|GENBANK|MK500409|uncharacterized protein [Mimivirus LCMiAC02]	Mimivirus LCMiAC02	Blastx
+SRR17635183	NODE_797_length_158_cov_12923.233577	98.1	158	3117	0.016683	3.42e-29	acc|GENBANK|AJD23395.1|NEIGHBOR|KJ789138|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_3600_length_571_cov_2.450909	49.6	571	477	0.241090	5.14e-29	acc|GENBANK|AYV78014.1|GENBANK|MK072068|elongation factor 1 alpha long form [Edafosvirus sp.]	Edafosvirus sp.	Blastx
+SRR17635183	NODE_1317_length_206_cov_1.000000	74.2	206	241	0.273859	1.54e-28	acc|GENBANK|AYV79183.1|GENBANK|MK072135|hypothetical protein [Faunusvirus sp.]	Faunusvirus sp.	Blastx
+SRR17635183	NODE_1474_length_244_cov_1.883408	63.0	244	491	0.164969	3.74e-28	acc|GENBANK|QBK88163.1|GENBANK|MK500377|phosphoenolpyruvate carboxykinase [Marseillevirus LCMAC202]	Marseillevirus LCMAC202	Blastx
+SRR17635183	NODE_2219_length_178_cov_1.643312	86.2	178	1335	0.043446	5.62e-28	acc|GENBANK|AJD23371.1|GENBANK|KJ789131|putative RNA-dependent RNA polymerase [Yam virus X]	Yam virus X	Blastx
+SRR17635183	NODE_673_length_154_cov_8506.714286	89.8	154	110	0.445455	9.07e-28	acc|REFSEQ|YP_009116873.1|REFSEQ|NC_026248|nucleic acid binding protein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_1068_length_206_cov_6.745946	85.3	206	189	0.359788	1.40e-27	acc|REFSEQ|YP_009465730.1|REFSEQ|NC_037057|hypothetical protein [Dishui lake phycodnavirus 1]	Dishui lake phycodnavirus 1	Blastx
+SRR17635183	NODE_529_length_164_cov_5381.055944	94.4	164	3117	0.017324	1.57e-27	acc|GENBANK|AJD23395.1|NEIGHBOR|KJ789138|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_1950_length_228_cov_1.323671	73.3	228	674	0.111276	3.85e-27	acc|GENBANK|BDT63357.1|GENBANK|LC738883|heat shock protein 70-like protein [Armadillidium vulgare clopovirus]	Armadillidium vulgare clopovirus	Blastx
+SRR17635183	NODE_3400_length_266_cov_1.048980	61.4	266	128	0.648438	4.94e-27	acc|GENBANK|CAA42007.1|GENBANK|X59357|Epstein-Barr virus small RNA associated protein [Homo sapiens]	Homo sapiens	Blastx
+SRR17635183	NODE_2078_length_303_cov_1.968085	49.5	303	320	0.309375	5.62e-27	acc|GENBANK|ARF09286.1|GENBANK|KY684084|serine/threonine protein kinase [Catovirus CTV1]	Catovirus CTV1	Blastx
+SRR17635183	NODE_2102_length_182_cov_1.602484	84.5	182	1335	0.043446	7.07e-27	acc|GENBANK|AJD23371.1|GENBANK|KJ789131|putative RNA-dependent RNA polymerase [Yam virus X]	Yam virus X	Blastx
+SRR17635183	NODE_2106_length_214_cov_1.321244	68.1	214	135	0.511111	4.95e-26	acc|GENBANK|QBK87277.1|GENBANK|MK500347|NifU-like protein [Marseillevirus LCMAC201]	Marseillevirus LCMAC201	Blastx
+SRR17635183	NODE_1314_length_357_cov_2.297619	78.8	357	189	0.349206	5.90e-26	acc|REFSEQ|YP_009465730.1|REFSEQ|NC_037057|hypothetical protein [Dishui lake phycodnavirus 1]	Dishui lake phycodnavirus 1	Blastx
+SRR17635183	NODE_3265_length_254_cov_1.660944	69.7	254	197	0.335025	7.48e-26	acc|REFSEQ|YP_009449015.1|REFSEQ|NC_036594|GTP ras-related protein Rac1 [Orpheovirus IHUMI-LCC2]	Orpheovirus IHUMI-LCC2	Blastx
+SRR17635183	NODE_2931_length_227_cov_1.252427	68.0	227	324	0.231481	8.75e-26	acc|GENBANK|QIG60113.1|GENBANK|MN940580|hypothetical protein [Dishui Lake large algae virus 1]	Dishui Lake large algae virus 1	Blastx
+SRR17635183	NODE_846_length_225_cov_1753.147059	93.9	225	110	0.445455	1.17e-25	acc|REFSEQ|YP_009116873.1|REFSEQ|NC_026248|nucleic acid binding protein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_1186_length_193_cov_3.087209	69.8	193	682	0.092375	2.53e-25	acc|GENBANK|QOI90314.1|GENBANK|MT663535|hypothetical protein [Pyramimonas orientalis virus]	Pyramimonas orientalis virus	Blastx
+SRR17635183	NODE_882_length_155_cov_14145.470149	96.1	155	3118	0.016357	2.72e-25	acc|GENBANK|AJD23397.1|NEIGHBOR|KJ789139|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_1559_length_199_cov_4.915730	95.8	199	117	0.410256	2.82e-25	acc|GENBANK|QDH76138.1|GENBANK|MK948413|putative gag protein [Porcine endogenous retrovirus]	Porcine endogenous retrovirus	Blastx
+SRR17635183	NODE_3426_length_269_cov_1.560484	52.9	269	179	0.486034	3.30e-25	acc|GENBANK|AYV77848.1|GENBANK|MK072067|peptide-methionine (S)-S-oxide reductase [Edafosvirus sp.]	Edafosvirus sp.	Blastx
+SRR17635183	NODE_191_length_275_cov_1.515748	53.9	275	542	0.164207	3.31e-25	acc|REFSEQ|YP_010780426.1|REFSEQ|NC_075038|ATP binding cassette sub family F [Tupanvirus deep ocean]	Tupanvirus deep ocean	Blastx
+SRR17635183	NODE_704_length_321_cov_4.110000	73.1	321	221	0.303167	6.45e-25	acc|GENBANK|WWU03978.1|GENBANK|OR798672|polyprotein [Flaviviridae sp.]	Flaviviridae sp.	Blastx
+SRR17635183	NODE_964_length_267_cov_1.008130	91.7	267	117	0.410256	7.16e-25	acc|GENBANK|QDH76138.1|GENBANK|MK948413|putative gag protein [Porcine endogenous retrovirus]	Porcine endogenous retrovirus	Blastx
+SRR17635183	NODE_898_length_157_cov_13591.080882	100	157	647	0.078825	9.67e-25	acc|GENBANK|BAI60051.1|GENBANK|AB539021|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_2452_length_196_cov_2.211429	72.6	196	101	0.613861	9.96e-25	acc|GENBANK|ARF11440.1|GENBANK|KY684108|cyclophilin type peptidyl-prolyl cis-trans [Klosneuvirus KNV1]	Klosneuvirus KNV1	Blastx
+SRR17635183	NODE_3302_length_257_cov_1.631356	61.9	257	815	0.103067	1.57e-24	acc|REFSEQ|YP_010781262.1|REFSEQ|NC_075038|mimivirus elongation factor aef-2 [Tupanvirus deep ocean]	Tupanvirus deep ocean	Blastx
+SRR17635183	NODE_1344_length_199_cov_1.078652	69.7	199	543	0.121547	7.36e-24	acc|GENBANK|QFG74725.1|GENBANK|MN448290|phosphoenolpyruvate carboxykinase [Megaviridae environmental sample]	Megaviridae environmental sample	Blastx
+SRR17635183	NODE_101_length_277_cov_1.507812	53.1	277	2224	0.044065	7.46e-24	acc|GENBANK|AYV81995.1|GENBANK|MK072332|putative CAD protein isoform X1 [Homavirus sp.]	Homavirus sp.	Blastx
+SRR17635183	NODE_865_length_334_cov_5228.731629	77.6	334	58	1.000000	7.64e-24	acc|REFSEQ|YP_009116871.1|REFSEQ|NC_026248|triple gene block protein 3 [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_3583_length_234_cov_2.154930	61.0	234	134	0.574627	8.53e-24	acc|GENBANK|CAJ65877.1|GENBANK|AM182883|putative integrase [Cucumis melo]	Cucumis melo	Blastx
+SRR17635183	NODE_706_length_338_cov_3.365931	79.4	338	221	0.307692	2.43e-23	acc|GENBANK|WWU03978.1|GENBANK|OR798672|polyprotein [Flaviviridae sp.]	Flaviviridae sp.	Blastx
+SRR17635183	NODE_1173_length_197_cov_1.346591	73.4	197	1054	0.060721	2.87e-23	acc|GENBANK|QSG30226.1|GENBANK|MW176035|MvcIVH1_02416 [Monilinia vaccinii-corymbosi]	Monilinia vaccinii-corymbosi	Blastx
+SRR17635183	NODE_3237_length_252_cov_2.233766	65.8	252	338	0.215976	3.34e-23	acc|GENBANK|ARF08831.1|GENBANK|KY684083|glutamine synthetase [Catovirus CTV1]	Catovirus CTV1	Blastx
+SRR17635183	NODE_1918_length_204_cov_1.710383	68.7	204	994	0.067404	4.44e-23	acc|GENBANK|AGE56084.1|GENBANK|JX997175|elongation factor 3 [Acanthocystis turfacea Chlorella virus MO0605SPH]	Acanthocystis turfacea Chlorella virus MO0605SPH	Blastx
+SRR17635183	NODE_1814_length_239_cov_1.577982	63.0	239	917	0.079607	1.31e-22	acc|GENBANK|AGE53657.1|GENBANK|JX997168|elongation factor 3 [Acanthocystis turfacea Chlorella virus GM0701.1]	Acanthocystis turfacea Chlorella virus GM0701.1	Blastx
+SRR17635183	NODE_849_length_196_cov_2641.434286	68.8	196	1960	0.032653	1.37e-22	acc|REFSEQ|YP_009134730.1|REFSEQ|NC_026248|replicase polyprotein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_3084_length_238_cov_1.188940	63.3	238	461	0.171367	2.24e-22	acc|REFSEQ|YP_010780251.1|REFSEQ|NC_075038|alanyl-tRNA synthetase [Tupanvirus deep ocean]	Tupanvirus deep ocean	Blastx
+SRR17635183	NODE_1458_length_190_cov_1.928994	63.5	190	993	0.063444	2.32e-22	acc|REFSEQ|YP_001427160.1|REFSEQ|NC_008724|ABC transporter [Acanthocystis turfacea chlorella virus 1]	Acanthocystis turfacea chlorella virus 1	Blastx
+SRR17635183	NODE_839_length_142_cov_4683.157025	100	142	316	0.145570	4.11e-22	acc|GENBANK|WEY07644.1|GENBANK|OP219486|coat protein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_63_length_404_cov_2.187990	38.2	404	436	0.311927	4.26e-22	acc|GENBANK|QJX71132.1|GENBANK|MN534311|hypothetical protein [Faustovirus]	Faustovirus	Blastx
+SRR17635183	NODE_1070_length_262_cov_1.008299	56.5	262	676	0.125740	4.56e-22	acc|REFSEQ|YP_009173627.1|REFSEQ|NC_028094|Hsp70 protein [Chrysochromulina ericina virus]	Chrysochromulina ericina virus	Blastx
+SRR17635183	NODE_1978_length_244_cov_1.690583	50.6	244	360	0.219444	5.55e-22	acc|GENBANK|QKF94354.1|GENBANK|MT418680|UTP--glucose-1-phosphate uridylyltransferase [Fadolivirus FV1/VV64]	Fadolivirus FV1/VV64	Blastx
+SRR17635183	NODE_3415_length_267_cov_1.048780	65.4	267	518	0.150579	5.75e-22	acc|GENBANK|ABY48142.1|GENBANK|EU306659|serine-hydroxymethyltransferase [Medicago truncatula]	Medicago truncatula	Blastx
+SRR17635183	NODE_3347_length_261_cov_1.612500	66.7	261	1502	0.047936	6.42e-22	acc|GENBANK|QFG74851.1|GENBANK|MN448294|RNA polymerase Rpb1, domain 1 [Megaviridae environmental sample]	Megaviridae environmental sample	Blastx
+SRR17635183	NODE_2122_length_357_cov_2.267857	57.1	357	143	0.489510	1.19e-21	acc|GENBANK|UOG94409.1|NEIGHBOR|OM876856|eukaryotic translation initiation factor [Aureococcus anophagefferens virus]	Aureococcus anophagefferens virus	Blastx
+SRR17635183	NODE_2424_length_194_cov_2.236994	71.4	194	477	0.132075	1.22e-21	acc|GENBANK|AYV78014.1|GENBANK|MK072068|elongation factor 1 alpha long form [Edafosvirus sp.]	Edafosvirus sp.	Blastx
+SRR17635183	NODE_3524_length_301_cov_1.382143	62.2	301	376	0.196809	1.92e-21	acc|GENBANK|WPR17152.1|GENBANK|OQ987512|RNA-dependent RNA polymerase [Moss associated narna-like virus 14]	Moss associated narna-like virus 14	Blastx
+SRR17635183	NODE_773_length_131_cov_5899.527273	100	131	3117	0.013795	2.94e-21	acc|GENBANK|AJD23395.1|NEIGHBOR|KJ789138|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_2705_length_212_cov_1.350785	63.4	212	543	0.130755	4.78e-21	acc|GENBANK|QFG74725.1|GENBANK|MN448290|phosphoenolpyruvate carboxykinase [Megaviridae environmental sample]	Megaviridae environmental sample	Blastx
+SRR17635183	NODE_1033_length_221_cov_1.225000	65.6	221	502	0.127490	6.85e-21	acc|GENBANK|ARF12409.1|GENBANK|KY684112|phosphoenolpyruvate carboxykinase [Klosneuvirus KNV1]	Klosneuvirus KNV1	Blastx
+SRR17635183	NODE_1121_length_922_cov_4.984462	26.4	922	408	0.752451	7.87e-21	acc|REFSEQ|YP_010781447.1|REFSEQ|NC_075039|Zn-dependent alcohol dehydrogenase [Tupanvirus soda lake]	Tupanvirus soda lake	Blastx
+SRR17635183	NODE_3382_length_265_cov_1.586066	56.1	265	1281	0.064012	8.03e-21	acc|GENBANK|AAL17972.1|GENBANK|AY053456|pORF2 [Mus musculus domesticus]	Mus musculus domesticus	Blastx
+SRR17635183	NODE_2008_length_657_cov_2.231132	36.1	657	261	0.605364	3.43e-20	acc|REFSEQ|YP_010780651.1|REFSEQ|NC_075038|putative peptidase inhibitor 15-like isoform X2 [Tupanvirus deep ocean]	Tupanvirus deep ocean	Blastx
+SRR17635183	NODE_3340_length_260_cov_2.698745	49.4	260	647	0.122102	4.66e-20	acc|GENBANK|AYV86775.1|GENBANK|MK072515|CMGC/MAPK protein kinase, variant 1 [Sylvanvirus sp.]	Sylvanvirus sp.	Blastx
+SRR17635183	NODE_1822_length_173_cov_2.414474	69.1	173	621	0.088567	6.61e-20	acc|GENBANK|XCA47333.1|GENBANK|PP911589|movement protein hsp70h [Micromonas commoda virus]	Micromonas commoda virus	Blastx
+SRR17635183	NODE_862_length_143_cov_14944.459016	87.2	143	501	0.093812	7.34e-20	acc|GENBANK|AJD23404.1|GENBANK|KJ789143|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_821_length_126_cov_17923.076190	95.1	126	322	0.127329	7.43e-20	acc|GENBANK|AWD38322.1|GENBANK|MF156592|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_1443_length_359_cov_1.156805	78.2	359	258	0.213178	1.18e-19	acc|GENBANK|WMV02893.1|GENBANK|OP630990|alpha-tubulin [Diderma spumarioides]	Diderma spumarioides	Blastx
+SRR17635183	NODE_824_length_124_cov_4321.592233	100	124	316	0.129747	2.51e-19	acc|GENBANK|WEY07645.1|GENBANK|OP219487|coat protein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_832_length_129_cov_22187.046296	95.3	129	182	0.236264	4.39e-19	acc|GENBANK|BAG16179.1|GENBANK|AB430808|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_1413_length_177_cov_1.692308	61.4	177	477	0.119497	7.82e-19	acc|GENBANK|AYV78014.1|GENBANK|MK072068|elongation factor 1 alpha long form [Edafosvirus sp.]	Edafosvirus sp.	Blastx
+SRR17635183	NODE_866_length_118_cov_4317.989691	92.3	118	229	0.170306	9.44e-19	acc|REFSEQ|YP_009116869.1|REFSEQ|NC_026248|triple gene block protein 1 [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_182_length_247_cov_3.703540	49.3	247	1577	0.046290	2.34e-18	acc|GENBANK|AAO73529.1|GENBANK|AY205612|gag-pol polyprotein [Glycine max]	Glycine max	Blastx
+SRR17635183	NODE_805_length_125_cov_9880.750000	97.6	125	3118	0.013149	2.55e-18	acc|GENBANK|AJD23397.1|NEIGHBOR|KJ789139|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_985_length_317_cov_1.709459	38.1	317	499	0.210421	2.73e-18	acc|GENBANK|CCQ71356.1|GENBANK|HF586477|hypothetical E3 ubiquitin-protein ligase ARI [Cotesia congregata]	Cotesia congregata	Blastx
+SRR17635183	NODE_1488_length_268_cov_1.016194	61.5	268	1281	0.050742	3.10e-18	acc|GENBANK|AAA67727.1|GENBANK|U15647|reverse transcriptase [Mus musculus domesticus]	Mus musculus domesticus	Blastx
+SRR17635183	NODE_3389_length_265_cov_1.586066	50.6	265	566	0.146643	3.88e-18	acc|GENBANK|ARF10863.1|GENBANK|KY684105|ABC transporter [Hokovirus HKV1]	Hokovirus HKV1	Blastx
+SRR17635183	NODE_1206_length_260_cov_2.054393	69.2	260	53	0.981132	4.62e-18	acc|GENBANK|XDO01897.1|GENBANK|PP542043|Ubiquitin-60S Ribosomal Protein L40 [Florenciella sp. virus SA2]	Florenciella sp. virus SA2	Blastx
+SRR17635183	NODE_2218_length_178_cov_2.464968	65.5	178	189	0.306878	5.68e-18	acc|GENBANK|ARF11765.1|GENBANK|KY684109|Ras-like GTPase [Klosneuvirus KNV1]	Klosneuvirus KNV1	Blastx
+SRR17635183	NODE_1599_length_601_cov_3.339655	74.6	601	317	0.186120	9.73e-18	acc|GENBANK|AFD33690.1|GENBANK|JQ679016|polyprotein [Hepatitis E virus]	Hepatitis E virus	Blastx
+SRR17635183	NODE_3009_length_233_cov_1.216981	55.3	233	662	0.114804	1.21e-17	acc|GENBANK|QOR60541.1|GENBANK|MK522038|hypothetical protein [Bathycoccus sp. RCC716 virus 2]	Bathycoccus sp. RCC716 virus 2	Blastx
+SRR17635183	NODE_1279_length_252_cov_1.393939	51.4	252	189	0.391534	1.56e-17	acc|REFSEQ|YP_009448796.1|REFSEQ|NC_036594|Fatty acid hydroxylase (C-4 methyl sterol [Orpheovirus IHUMI-LCC2]	Orpheovirus IHUMI-LCC2	Blastx
+SRR17635183	NODE_1396_length_191_cov_1.670588	61.3	191	491	0.126273	1.62e-17	acc|GENBANK|QBK88163.1|GENBANK|MK500377|phosphoenolpyruvate carboxykinase [Marseillevirus LCMAC202]	Marseillevirus LCMAC202	Blastx
+SRR17635183	NODE_586_length_107_cov_6213.255814	97.1	107	3132	0.011175	1.71e-17	acc|REFSEQ|NP_051161.1|REFSEQ|NC_000947|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_486_length_119_cov_7271.540816	97.4	119	3118	0.012508	2.06e-17	acc|GENBANK|AJD23397.1|NEIGHBOR|KJ789139|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_710_length_110_cov_9609.876404	100	110	3118	0.011546	2.45e-17	acc|GENBANK|AJD23397.1|NEIGHBOR|KJ789139|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_2814_length_219_cov_1.303030	61.0	219	286	0.206294	2.64e-17	acc|GENBANK|ARF09529.1|GENBANK|KY684085|cyclophilin type peptidyl-prolyl cis-trans [Indivirus ILV1]	Indivirus ILV1	Blastx
+SRR17635183	NODE_1656_length_397_cov_3.978723	50.0	397	128	0.671875	2.94e-17	acc|GENBANK|CAA42007.1|GENBANK|X59357|Epstein-Barr virus small RNA associated protein [Homo sapiens]	Homo sapiens	Blastx
+SRR17635183	NODE_1500_length_279_cov_1.399225	46.2	279	202	0.386139	4.04e-17	acc|GENBANK|QBK85419.1|GENBANK|MK500327|fatty acid desaturase [Marseillevirus LCMAC101]	Marseillevirus LCMAC101	Blastx
+SRR17635183	NODE_897_length_856_cov_9.494611	41.7	856	1369	0.096421	4.31e-17	acc|GENBANK|BAG72152.1|GENBANK|AB430326|hypothetical protein [Lotus japonicus]	Lotus japonicus	Blastx
+SRR17635183	NODE_683_length_122_cov_13082.584158	97.5	122	3118	0.012829	5.50e-17	acc|GENBANK|AJD23397.1|NEIGHBOR|KJ789139|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_2774_length_217_cov_1.311224	54.3	217	575	0.121739	8.63e-17	acc|GENBANK|CAE02704.1|GENBANK|AJ575660|putative sugar transporter [Yarrowia lipolytica]	Yarrowia lipolytica	Blastx
+SRR17635183	NODE_1930_length_227_cov_5.033981	80.5	227	64	0.640625	9.27e-17	acc|GENBANK|AAK62473.1|GENBANK|AY032741|heat shock protein Hsp70Ab [Drosophila melanogaster]	Drosophila melanogaster	Blastx
+SRR17635183	NODE_3128_length_241_cov_1.172727	83.3	241	98	0.428571	1.36e-16	acc|GENBANK|AAC51808.1|GENBANK|U92818|unnamed HERV-H protein [Homo sapiens]	Homo sapiens	Blastx
+SRR17635183	NODE_536_length_125_cov_7417.673077	92.5	125	3134	0.012763	1.47e-16	acc|GENBANK|AIT13016.1|NEIGHBOR|KJ701427|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_781_length_125_cov_7577.096154	97.6	125	3118	0.013149	2.00e-16	acc|GENBANK|AJD23397.1|NEIGHBOR|KJ789139|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_2960_length_229_cov_3.100962	51.4	229	299	0.234114	3.56e-16	acc|GENBANK|UOG94093.1|NEIGHBOR|OM876856|serine threonine-protein phosphatase [Aureococcus anophagefferens virus]	Aureococcus anophagefferens virus	Blastx
+SRR17635183	NODE_1211_length_215_cov_2.298969	63.8	215	1281	0.045277	7.51e-16	acc|GENBANK|AAA67727.1|GENBANK|U15647|reverse transcriptase [Mus musculus domesticus]	Mus musculus domesticus	Blastx
+SRR17635183	NODE_1203_length_237_cov_1.009259	59.7	237	760	0.094737	7.56e-16	acc|GENBANK|QFG74349.1|GENBANK|MN448286|Hsp90 protein [Megaviridae environmental sample]	Megaviridae environmental sample	Blastx
+SRR17635183	NODE_3365_length_263_cov_2.132231	46.3	263	836	0.098086	1.05e-15	acc|GENBANK|AYV84014.1|GENBANK|MK072397|aminopeptidase 1 [Hyperionvirus sp.]	Hyperionvirus sp.	Blastx
+SRR17635183	NODE_1903_length_257_cov_2.199153	44.7	257	378	0.224868	1.78e-15	acc|GENBANK|ACN72775.1|GENBANK|FJ791046|delta-12 oleate desaturase [Helianthus annuus]	Helianthus annuus	Blastx
+SRR17635183	NODE_1333_length_173_cov_1.111842	58.9	173	537	0.104283	1.93e-15	acc|REFSEQ|YP_010781718.1|REFSEQ|NC_075039|ATP binding cassette sub family F [Tupanvirus soda lake]	Tupanvirus soda lake	Blastx
+SRR17635183	NODE_2779_length_217_cov_1.316327	52.1	217	922	0.077007	1.98e-15	acc|GENBANK|QBK88440.1|GENBANK|MK500389|insulinase [Mimivirus LCMiAC01]	Mimivirus LCMiAC01	Blastx
+SRR17635183	NODE_2444_length_195_cov_2.224138	57.8	195	477	0.134172	3.61e-15	acc|GENBANK|AYV78014.1|GENBANK|MK072068|elongation factor 1 alpha long form [Edafosvirus sp.]	Edafosvirus sp.	Blastx
+SRR17635183	NODE_2551_length_203_cov_2.126374	57.4	203	815	0.083436	4.09e-15	acc|REFSEQ|YP_010782648.1|REFSEQ|NC_075039|elongation factor 2 [Tupanvirus soda lake]	Tupanvirus soda lake	Blastx
+SRR17635183	NODE_3604_length_209_cov_2.744681	50.0	209	1643	0.040170	6.14e-15	acc|GENBANK|AAG52949.1|GENBANK|AY016208|gag/pol polyprotein [Arabidopsis thaliana]	Arabidopsis thaliana	Blastx
+SRR17635183	NODE_1942_length_262_cov_1.813278	51.6	262	193	0.471503	9.06e-15	acc|REFSEQ|YP_009481299.1|REFSEQ|NC_037665|Histone H2B domain containing protein [Pandoravirus macleodensis]	Pandoravirus macleodensis	Blastx
+SRR17635183	NODE_2593_length_205_cov_1.402174	54.5	205	919	0.071817	1.09e-14	acc|GENBANK|AYV75146.1|GENBANK|MK071979|plasma membrane ATPase [Terrestrivirus sp.]	Terrestrivirus sp.	Blastx
+SRR17635183	NODE_990_length_229_cov_1.192308	45.9	229	691	0.107091	1.10e-14	acc|GENBANK|ATZ80963.1|GENBANK|MF782455|putative chaperone Hsp70/DnaK [Bodo saltans virus]	Bodo saltans virus	Blastx
+SRR17635183	NODE_2659_length_209_cov_1.372340	56.5	209	617	0.111831	1.54e-14	acc|GENBANK|ADX06244.1|GENBANK|HQ704803|putative heat shock protein 70 [Organic Lake phycodnavirus 2]	Organic Lake phycodnavirus 2	Blastx
+SRR17635183	NODE_2032_length_228_cov_2.531401	71.1	228	175	0.257143	1.64e-14	acc|GENBANK|ARF09402.1|GENBANK|KY684085|ubiquitin-conjugating enzyme E2 [Indivirus ILV1]	Indivirus ILV1	Blastx
+SRR17635183	NODE_1762_length_383_cov_4.988950	35.8	383	1471	0.091094	2.29e-14	acc|GENBANK|AGW47867.1|GENBANK|KF303287|polyprotein [Phaseolus vulgaris]	Phaseolus vulgaris	Blastx
+SRR17635183	NODE_3460_length_273_cov_1.535714	45.8	273	239	0.347280	3.19e-14	acc|GENBANK|AAB92355.1|GENBANK|U89438|nonstructural protein P125-2 [Bovine viral diarrhea virus 1]	Bovine viral diarrhea virus 1	Blastx
+SRR17635183	NODE_1507_length_763_cov_6.708895	34.9	763	1369	0.108839	7.41e-14	acc|GENBANK|BAG72152.1|GENBANK|AB430326|hypothetical protein [Lotus japonicus]	Lotus japonicus	Blastx
+SRR17635183	NODE_3531_length_180_cov_2.433962	64.9	180	2224	0.025629	9.47e-14	acc|GENBANK|AYV81995.1|GENBANK|MK072332|putative CAD protein isoform X1 [Homavirus sp.]	Homavirus sp.	Blastx
+SRR17635183	NODE_1555_length_395_cov_1.168449	41.7	395	500	0.216000	1.51e-13	acc|REFSEQ|YP_009448979.1|REFSEQ|NC_036594|Cytochrome P450-like protein E-class [Orpheovirus IHUMI-LCC2]	Orpheovirus IHUMI-LCC2	Blastx
+SRR17635183	NODE_1384_length_315_cov_1.357143	44.1	315	1281	0.046058	1.67e-13	acc|GENBANK|AAA67727.1|GENBANK|U15647|reverse transcriptase [Mus musculus domesticus]	Mus musculus domesticus	Blastx
+SRR17635183	NODE_3245_length_252_cov_1.112554	54.0	252	516	0.122093	1.81e-13	acc|GENBANK|ARR74933.1|GENBANK|KY565516|hypothetical protein [Mimivirus AB-566-O17]	Mimivirus AB-566-O17	Blastx
+SRR17635183	NODE_1946_length_185_cov_1.713415	58.9	185	111	0.504505	1.93e-13	acc|GENBANK|WZO79716.1|GENBANK|PP681873|elongation factor 3 [Chlorovirus sp.]	Chlorovirus sp.	Blastx
+SRR17635183	NODE_2817_length_220_cov_2.587940	48.7	220	337	0.225519	2.14e-13	acc|GENBANK|ARF11488.1|GENBANK|KY684108|thioredoxin-disulfide reductase [Klosneuvirus KNV1]	Klosneuvirus KNV1	Blastx
+SRR17635183	NODE_547_length_286_cov_8.588679	66.7	286	144	0.333333	3.86e-13	acc|GENBANK|WZH61589.1|GENBANK|PP173858|putative capsid protein [Sonafor virus]	Sonafor virus	Blastx
+SRR17635183	NODE_1306_length_283_cov_1.248092	48.5	283	145	0.455172	5.37e-13	acc|GENBANK|AYV82182.1|GENBANK|MK072344|acetyltransferase GNAT family protein [Homavirus sp.]	Homavirus sp.	Blastx
+SRR17635183	NODE_89_length_224_cov_1.270936	48.5	224	89	0.741573	7.57e-13	acc|GENBANK|AYV84005.1|GENBANK|MK072397|hypothetical protein [Hyperionvirus sp.]	Hyperionvirus sp.	Blastx
+SRR17635183	NODE_2663_length_210_cov_1.365079	58.2	210	341	0.196481	9.72e-13	acc|GENBANK|ARF12218.1|GENBANK|KY684111|gelsolin repeat protein [Klosneuvirus KNV1]	Klosneuvirus KNV1	Blastx
+SRR17635183	NODE_1831_length_270_cov_1.140562	48.7	270	360	0.216667	1.20e-12	acc|GENBANK|QKF94354.1|GENBANK|MT418680|UTP--glucose-1-phosphate uridylyltransferase [Fadolivirus FV1/VV64]	Fadolivirus FV1/VV64	Blastx
+SRR17635183	NODE_1374_length_206_cov_1.032432	44.9	206	819	0.084249	1.60e-12	acc|GENBANK|QKF94107.1|GENBANK|MT418680|eukaryotic translation elongation factor 2 [Fadolivirus FV1/VV64]	Fadolivirus FV1/VV64	Blastx
+SRR17635183	NODE_2669_length_210_cov_1.365079	50.7	210	1263	0.054632	1.76e-12	acc|GENBANK|AAD26531.1|GENBANK|AF087141|valyl-tRNA synthetase [Mus musculus]	Mus musculus	Blastx
+SRR17635183	NODE_3544_length_332_cov_3.318328	41.4	332	465	0.187097	2.21e-12	acc|GENBANK|WBF70192.1|GENBANK|OP925046|adenylosuccinate synthetase [Megavirus caiporensis]	Megavirus caiporensis	Blastx
+SRR17635183	NODE_2894_length_224_cov_2.541872	46.7	224	528	0.142045	2.76e-12	acc|GENBANK|QKF94573.1|GENBANK|MT418680|methionyl-tRNA synthetase [Fadolivirus FV1/VV64]	Fadolivirus FV1/VV64	Blastx
+SRR17635183	NODE_2549_length_202_cov_2.138122	55.6	202	518	0.121622	2.83e-12	acc|GENBANK|ABY48142.1|GENBANK|EU306659|serine-hydroxymethyltransferase [Medicago truncatula]	Medicago truncatula	Blastx
+SRR17635183	NODE_3558_length_360_cov_2.283186	40.4	360	309	0.336570	3.65e-12	acc|REFSEQ|YP_009507462.1|REFSEQ|NC_038553|putative spermidine synthase [Heterosigma akashiwo virus 01]	Heterosigma akashiwo virus 01	Blastx
+SRR17635183	NODE_3437_length_271_cov_1.032000	46.4	271	322	0.260870	5.03e-12	acc|GENBANK|QBK92099.1|GENBANK|MK500567|pyridine nucleotide-disulfide oxidoreductase [Pithovirus LCPAC304]	Pithovirus LCPAC304	Blastx
+SRR17635183	NODE_3066_length_237_cov_1.194444	56.1	237	431	0.132251	8.32e-12	acc|REFSEQ|YP_009041983.1|REFSEQ|NC_024303|ornithine decarboxylase [Bovine gammaherpesvirus 6]	Bovine gammaherpesvirus 6	Blastx
+SRR17635183	NODE_2053_length_220_cov_1.296482	61.9	220	170	0.247059	8.97e-12	acc|REFSEQ|YP_003358229.2|REFSEQ|NC_013668|nucleoside diphosphate kinase [Anguillid herpesvirus 1]	Anguillid herpesvirus 1	Blastx
+SRR17635183	NODE_1354_length_250_cov_5.026201	59.1	250	647	0.068006	1.02e-11	acc|GENBANK|AYV86775.1|GENBANK|MK072515|CMGC/MAPK protein kinase, variant 1 [Sylvanvirus sp.]	Sylvanvirus sp.	Blastx
+SRR17635183	NODE_2377_length_190_cov_1.526627	47.5	190	531	0.114878	1.56e-11	acc|GENBANK|QBK88836.1|GENBANK|MK500400|CTP synthetase [Mimivirus LCMiAC01]	Mimivirus LCMiAC01	Blastx
+SRR17635183	NODE_988_length_373_cov_4.471591	40.9	373	291	0.319588	1.84e-11	acc|GENBANK|QDY52327.1|GENBANK|MK250090|hypothetical protein [Mimiviridae sp. ChoanoV1]	Mimiviridae sp. ChoanoV1	Blastx
+SRR17635183	NODE_3574_length_424_cov_1.280397	33.1	424	575	0.210435	2.25e-11	acc|GENBANK|CAE02704.1|GENBANK|AJ575660|putative sugar transporter [Yarrowia lipolytica]	Yarrowia lipolytica	Blastx
+SRR17635183	NODE_18_length_342_cov_4.725857	39.2	342	1359	0.075055	3.39e-11	acc|GENBANK|ABD78322.1|GENBANK|DQ381432|polyprotein [Primula vulgaris]	Primula vulgaris	Blastx
+SRR17635183	NODE_1571_length_334_cov_5.300319	35.4	334	262	0.377863	3.41e-11	acc|GENBANK|ABO45232.1|GENBANK|EF113398|desaturase [Ostrinia nubilalis]	Ostrinia nubilalis	Blastx
+SRR17635183	NODE_900_length_387_cov_49.161202	70.7	387	83	0.493976	3.49e-11	acc|GENBANK|WZI33504.1|GENBANK|PP272751|polymerase [Langya virus]	Langya virus	Blastx
+SRR17635183	NODE_2732_length_214_cov_1.336788	73.8	214	144	0.291667	3.91e-11	acc|GENBANK|AAH74588.1|GENBANK|BC074588|intracisternal A particle-promoted polypeptide [Xenopus tropicalis]	Xenopus tropicalis	Blastx
+SRR17635183	NODE_3369_length_263_cov_1.061983	36.0	263	417	0.206235	3.92e-11	acc|GENBANK|QBK89261.1|GENBANK|MK500411|DEAD/SNF2-like helicase [Mimivirus LCMiAC02]	Mimivirus LCMiAC02	Blastx
+SRR17635183	NODE_1369_length_191_cov_1.029412	54.8	191	845	0.073373	4.03e-11	acc|GENBANK|AYV77843.1|GENBANK|MK072067|mimivirus elongation factor aef-2 [Edafosvirus sp.]	Edafosvirus sp.	Blastx
+SRR17635183	NODE_1990_length_289_cov_2.888060	33.3	289	466	0.199571	5.65e-11	acc|GENBANK|ACD54811.1|GENBANK|EU643495|endo-xylogalacturonan hydrolase-like protein [Adineta vaga]	Adineta vaga	Blastx
+SRR17635183	NODE_1380_length_275_cov_1.019685	41.1	275	695	0.129496	6.62e-11	acc|GENBANK|XDO02062.1|GENBANK|PP542043|Type I Glyceraldehyde-3-Phosphate Dehydrogenase [Florenciella sp. virus SA2]	Florenciella sp. virus SA2	Blastx
+SRR17635183	NODE_795_length_100_cov_2558.037975	93.8	100	1960	0.016327	9.31e-11	acc|REFSEQ|YP_009134730.1|REFSEQ|NC_026248|replicase polyprotein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_1360_length_456_cov_3.259770	33.3	456	575	0.250435	1.48e-10	acc|GENBANK|CAE02704.1|GENBANK|AJ575660|putative sugar transporter [Yarrowia lipolytica]	Yarrowia lipolytica	Blastx
+SRR17635183	NODE_3052_length_236_cov_1.200000	48.0	236	651	0.115207	1.89e-10	acc|GENBANK|QBK86751.1|GENBANK|MK500335|uncharacterized protein [Marseillevirus LCMAC103]	Marseillevirus LCMAC103	Blastx
+SRR17635183	NODE_1383_length_221_cov_1.300000	75.0	221	280	0.142857	1.89e-10	acc|GENBANK|AAW63045.1|GENBANK|AY878356|reverse transcriptase-like protein [Homo sapiens]	Homo sapiens	Blastx
+SRR17635183	NODE_3449_length_272_cov_2.055777	37.0	272	521	0.155470	2.97e-10	acc|GENBANK|CAE02702.1|GENBANK|AJ575660|hypothetical protein [Yarrowia lipolytica]	Yarrowia lipolytica	Blastx
+SRR17635183	NODE_1435_length_182_cov_1.770186	53.4	182	651	0.089094	3.15e-10	acc|GENBANK|QBK86751.1|GENBANK|MK500335|uncharacterized protein [Marseillevirus LCMAC103]	Marseillevirus LCMAC103	Blastx
+SRR17635183	NODE_2256_length_181_cov_2.412500	48.3	181	420	0.142857	5.78e-10	acc|GENBANK|ARF12269.1|GENBANK|KY684111|ornithine decarboxylase [Klosneuvirus KNV1]	Klosneuvirus KNV1	Blastx
+SRR17635183	NODE_1368_length_180_cov_1.018868	41.7	180	491	0.122200	5.85e-10	acc|GENBANK|QBK88163.1|GENBANK|MK500377|phosphoenolpyruvate carboxykinase [Marseillevirus LCMAC202]	Marseillevirus LCMAC202	Blastx
+SRR17635183	NODE_1357_length_212_cov_1.356021	42.3	212	552	0.128623	8.88e-10	acc|GENBANK|AYV75783.1|GENBANK|MK071981|ATP binding cassette sub family F [Terrestrivirus sp.]	Terrestrivirus sp.	Blastx
+SRR17635183	NODE_471_length_288_cov_1.898876	45.6	288	526	0.108365	9.48e-10	acc|GENBANK|QKF94253.1|GENBANK|MT418680|ABC transporter [Fadolivirus FV1/VV64]	Fadolivirus FV1/VV64	Blastx
+SRR17635183	NODE_3584_length_199_cov_2.303371	57.5	199	356	0.112360	1.31e-09	acc|GENBANK|ARF12398.1|GENBANK|KY684112|UTP--glucose-1-phosphate uridylyltransferase [Klosneuvirus KNV1]	Klosneuvirus KNV1	Blastx
+SRR17635183	NODE_2943_length_228_cov_2.492754	53.4	228	551	0.105263	1.54e-09	acc|GENBANK|AYV83901.1|GENBANK|MK072395|dna topoisomerase 1b [Hyperionvirus sp.]	Hyperionvirus sp.	Blastx
+SRR17635183	NODE_2603_length_206_cov_2.086486	51.2	206	105	0.409524	1.90e-09	acc|GENBANK|QPI16506.1|GENBANK|MW030569|thioredoxin domain-containing protein [Virus NIOZ-UU157]	Virus NIOZ-UU157	Blastx
+SRR17635183	NODE_3200_length_248_cov_1.136564	33.8	248	142	0.500000	2.51e-09	acc|GENBANK|QFG73609.1|GENBANK|MN448266|thioredoxin [Megaviridae environmental sample]	Megaviridae environmental sample	Blastx
+SRR17635183	NODE_3462_length_273_cov_1.535714	37.1	273	443	0.200903	2.69e-09	acc|REFSEQ|YP_010782291.1|REFSEQ|NC_075039|alcohol dehydrogenase [Tupanvirus soda lake]	Tupanvirus soda lake	Blastx
+SRR17635183	NODE_1465_length_176_cov_1.754839	57.7	176	114	0.456140	3.13e-09	acc|GENBANK|UMO78252.1|GENBANK|MZ420562|Phospho-2-dehydro-3-deoxyheptonate aldolase [Pandoravirus belohorizontensis]	Pandoravirus belohorizontensis	Blastx
+SRR17635183	NODE_3386_length_265_cov_2.114754	45.8	265	464	0.155172	3.31e-09	acc|REFSEQ|YP_008438720.1|REFSEQ|NC_022098|Formate/glycerate dehydrogenase [Pandoravirus salinus]	Pandoravirus salinus	Blastx
+SRR17635183	NODE_3336_length_260_cov_1.079498	41.2	260	495	0.171717	4.22e-09	acc|GENBANK|ARF08656.1|GENBANK|KY684083|lysyl-tRNA synthetase [Catovirus CTV1]	Catovirus CTV1	Blastx
+SRR17635183	NODE_2570_length_204_cov_1.923497	48.3	204	2007	0.029895	7.49e-09	acc|GENBANK|ADB85388.1|GENBANK|GQ252879|putative retrotransposon protein [Phyllostachys edulis]	Phyllostachys edulis	Blastx
+SRR17635183	NODE_2988_length_231_cov_1.842857	55.1	231	331	0.148036	9.40e-09	acc|GENBANK|AYV78159.1|GENBANK|MK072071|UDP-glucose 4-epimerase GalE [Edafosvirus sp.]	Edafosvirus sp.	Blastx
+SRR17635183	NODE_2459_length_196_cov_1.474286	45.5	196	521	0.126679	1.20e-08	acc|GENBANK|CAE02702.1|GENBANK|AJ575660|hypothetical protein [Yarrowia lipolytica]	Yarrowia lipolytica	Blastx
+SRR17635183	NODE_1168_length_235_cov_6.514019	40.4	235	148	0.385135	1.35e-08	acc|GENBANK|QBK86330.1|GENBANK|MK500334|ubiquitin-conjugating enzyme E2 [Marseillevirus LCMAC102]	Marseillevirus LCMAC102	Blastx
+SRR17635183	NODE_355_length_584_cov_2.587922	66.0	584	764	0.065445	1.40e-08	acc|GENBANK|UZH25335.1|GENBANK|OL695857|ORF2 [Mamastrovirus 3]	Mamastrovirus 3	Blastx
+SRR17635183	NODE_1343_length_449_cov_2.665888	36.7	449	143	0.552448	1.47e-08	acc|GENBANK|UOG94409.1|NEIGHBOR|OM876856|eukaryotic translation initiation factor [Aureococcus anophagefferens virus]	Aureococcus anophagefferens virus	Blastx
+SRR17635183	NODE_2681_length_211_cov_1.357895	41.4	211	562	0.124555	1.48e-08	acc|GENBANK|QDY52375.1|GENBANK|MK250091|asparagine synthase [Mimiviridae sp. ChoanoV1]	Mimiviridae sp. ChoanoV1	Blastx
+SRR17635183	NODE_2541_length_202_cov_2.138122	48.9	202	319	0.141066	1.60e-08	acc|REFSEQ|YP_008436953.1|REFSEQ|NC_022098|Ring domain [Pandoravirus salinus]	Pandoravirus salinus	Blastx
+SRR17635183	NODE_3164_length_245_cov_1.151786	43.9	245	776	0.085052	1.70e-08	acc|GENBANK|ABY48135.1|GENBANK|EU306659|beta-D-xylosidase [Medicago truncatula]	Medicago truncatula	Blastx
+SRR17635183	NODE_1462_length_308_cov_4.222997	66.7	308	231	0.194805	1.85e-08	acc|GENBANK|WZH59703.1|GENBANK|PP172777|RNA-dependent RNA polymerase [Ripafren virus]	Ripafren virus	Blastx
+SRR17635183	NODE_3575_length_444_cov_2.550827	36.8	444	775	0.122581	1.91e-08	acc|GENBANK|AAL68643.1|GENBANK|AF458767|polyprotein [Oryza sativa Japonica Group]	Oryza sativa Japonica Group	Blastx
+SRR17635183	NODE_1976_length_341_cov_4.231250	34.5	341	461	0.245119	2.04e-08	acc|GENBANK|WZO86142.1|GENBANK|PP681890|ABC transporter [Chlorovirus sp.]	Chlorovirus sp.	Blastx
+SRR17635183	NODE_2176_length_174_cov_1.686275	41.8	174	575	0.116522	2.30e-08	acc|GENBANK|CAE02704.1|GENBANK|AJ575660|putative sugar transporter [Yarrowia lipolytica]	Yarrowia lipolytica	Blastx
+SRR17635183	NODE_2501_length_199_cov_1.449438	46.3	199	320	0.209375	2.91e-08	acc|GENBANK|AUS94177.1|GENBANK|KY434117|oxidoreductase [Trichoplusia ni ascovirus 6b]	Trichoplusia ni ascovirus 6b	Blastx
+SRR17635183	NODE_2861_length_221_cov_1.290000	34.9	221	631	0.131537	3.14e-08	acc|GENBANK|AYV76068.1|GENBANK|MK071982|hypothetical protein [Terrestrivirus sp.]	Terrestrivirus sp.	Blastx
+SRR17635183	NODE_677_length_118_cov_1067.855670	73.7	118	3117	0.012191	4.70e-08	acc|GENBANK|AJD23395.1|NEIGHBOR|KJ789138|polyprotein [Japanese yam mosaic virus]	Japanese yam mosaic virus	Blastx
+SRR17635183	NODE_1795_length_234_cov_3.131455	35.1	234	195	0.379487	5.44e-08	acc|GENBANK|ARF09118.1|GENBANK|KY684084|Ras family GTPase [Catovirus CTV1]	Catovirus CTV1	Blastx
+SRR17635183	NODE_3573_length_403_cov_2.026178	39.2	403	1261	0.062649	6.10e-08	acc|GENBANK|ACN78974.1|GENBANK|FJ225394|retrotransposon protein [Glycine max]	Glycine max	Blastx
+SRR17635183	NODE_1334_length_253_cov_2.599138	40.7	253	676	0.119822	6.63e-08	acc|REFSEQ|YP_009173627.1|REFSEQ|NC_028094|Hsp70 protein [Chrysochromulina ericina virus]	Chrysochromulina ericina virus	Blastx
+SRR17635183	NODE_840_length_493_cov_30.413136	58.3	493	764	0.062827	7.52e-08	acc|GENBANK|UZH25335.1|GENBANK|OL695857|ORF2 [Mamastrovirus 3]	Mamastrovirus 3	Blastx
+SRR17635183	NODE_2314_length_186_cov_1.563636	47.4	186	395	0.144304	9.37e-08	acc|GENBANK|AYV79137.1|GENBANK|MK072134|serine/threonine protein kinase [Faunusvirus sp.]	Faunusvirus sp.	Blastx
+SRR17635183	NODE_3357_length_262_cov_1.605809	37.5	262	397	0.221662	1.33e-07	acc|REFSEQ|YP_009173589.1|REFSEQ|NC_028094|Helicase 45 [Chrysochromulina ericina virus]	Chrysochromulina ericina virus	Blastx
+SRR17635183	NODE_321_length_501_cov_9.600000	28.6	501	268	0.496269	1.59e-07	acc|GENBANK|QBK91399.1|GENBANK|MK500535|mitochondrial carrier-like protein [Pithovirus LCPAC302]	Pithovirus LCPAC302	Blastx
+SRR17635183	NODE_2153_length_259_cov_2.710084	35.3	259	695	0.122302	1.83e-07	acc|GENBANK|XDO02062.1|GENBANK|PP542043|Type I Glyceraldehyde-3-Phosphate Dehydrogenase [Florenciella sp. virus SA2]	Florenciella sp. virus SA2	Blastx
+SRR17635183	NODE_3181_length_247_cov_1.141593	54.4	247	836	0.068182	2.16e-07	acc|GENBANK|AYV84814.1|GENBANK|MK072423|DNA topoisomerase IA [Hyperionvirus sp.]	Hyperionvirus sp.	Blastx
+SRR17635183	NODE_2575_length_204_cov_2.114754	50.0	204	385	0.155844	2.23e-07	acc|GENBANK|UUT40455.1|GENBANK|ON887238|hypothetical protein [carnivorous sponge associated iridovirus]	carnivorous sponge associated iridovirus	Blastx
+SRR17635183	NODE_1328_length_206_cov_1.416216	41.2	206	993	0.068479	2.32e-07	acc|REFSEQ|YP_001427160.1|REFSEQ|NC_008724|ABC transporter [Acanthocystis turfacea chlorella virus 1]	Acanthocystis turfacea chlorella virus 1	Blastx
+SRR17635183	NODE_2580_length_204_cov_2.819672	43.5	204	1158	0.059585	2.32e-07	acc|GENBANK|ADK47522.1|GENBANK|HM124452|NBS2-RDG2A [Hordeum vulgare subsp. vulgare]	Hordeum vulgare subsp. vulgare	Blastx
+SRR17635183	NODE_1217_length_323_cov_2.039735	42.6	323	91	0.516484	2.45e-07	acc|GENBANK|QBP06492.1|NEIGHBOR|MK514405|hypothetical protein [Ostreococcus lucimarinus virus 1]	Ostreococcus lucimarinus virus 1	Blastx
+SRR17635183	NODE_2718_length_213_cov_1.343750	46.8	213	578	0.107266	2.58e-07	acc|GENBANK|QFG74616.1|GENBANK|MN448289|myo-inositol oxygenase [Megaviridae environmental sample]	Megaviridae environmental sample	Blastx
+SRR17635183	NODE_2472_length_197_cov_2.198864	41.1	197	507	0.110454	2.75e-07	acc|GENBANK|ARF09167.1|GENBANK|KY684084|translation initiation factor 4A-III [Catovirus CTV1]	Catovirus CTV1	Blastx
+SRR17635183	NODE_2676_length_210_cov_3.412698	49.0	210	510	0.100000	3.37e-07	acc|GENBANK|ARF08384.1|GENBANK|KY684083|choline dehydrogenase / GMC-type oxidoreductase [Catovirus CTV1]	Catovirus CTV1	Blastx
+SRR17635183	NODE_1300_length_412_cov_8.445013	28.7	412	278	0.413669	3.82e-07	acc|GENBANK|AYV76390.1|GENBANK|MK071984|mitochondrial carrier [Terrestrivirus sp.]	Terrestrivirus sp.	Blastx
+SRR17635183	NODE_3294_length_256_cov_1.646809	36.5	256	543	0.136280	4.43e-07	acc|GENBANK|QFG74725.1|GENBANK|MN448290|phosphoenolpyruvate carboxykinase [Megaviridae environmental sample]	Megaviridae environmental sample	Blastx
+SRR17635183	NODE_1626_length_574_cov_3.960217	34.7	574	513	0.140351	4.54e-07	acc|GENBANK|QBK91708.1|GENBANK|MK500565|phosphoenolpyruvate carboxykinase [Pithovirus LCPAC304]	Pithovirus LCPAC304	Blastx
+SRR17635183	NODE_1158_length_244_cov_1.000000	54.5	244	1166	0.037736	5.37e-07	acc|REFSEQ|YP_009465836.1|REFSEQ|NC_037057|ribonucleotide reductase [Dishui lake phycodnavirus 1]	Dishui lake phycodnavirus 1	Blastx
+SRR17635183	NODE_2265_length_182_cov_1.602484	43.9	182	378	0.150794	5.64e-07	acc|GENBANK|ACN72775.1|GENBANK|FJ791046|delta-12 oleate desaturase [Helianthus annuus]	Helianthus annuus	Blastx
+SRR17635183	NODE_541_length_460_cov_3.492027	28.7	460	299	0.478261	6.39e-07	acc|GENBANK|QBK91775.1|GENBANK|MK500565|mitochondrial carrier-like protein [Pithovirus LCPAC304]	Pithovirus LCPAC304	Blastx
+SRR17635183	NODE_2795_length_218_cov_1.309645	42.4	218	503	0.117296	6.81e-07	acc|GENBANK|WLY67775.1|GENBANK|OR078387|TYG73p [Saccharomyces cerevisiae]	Saccharomyces cerevisiae	Blastx
+SRR17635183	NODE_1083_length_977_cov_11.916318	32.4	977	471	0.295117	7.31e-07	acc|GENBANK|AFV13457.1|GENBANK|JQ314445|UDPG-flavonoid 3-O-glucosyl transferase [Tripsacum dactyloides]	Tripsacum dactyloides	Blastx
+SRR17635183	NODE_3508_length_281_cov_1.488462	35.4	281	521	0.151631	8.11e-07	acc|GENBANK|CAE02702.1|GENBANK|AJ575660|hypothetical protein [Yarrowia lipolytica]	Yarrowia lipolytica	Blastx
+SRR17635183	NODE_1899_length_256_cov_1.646809	37.0	256	503	0.161034	8.23e-07	acc|GENBANK|WLY67775.1|GENBANK|OR078387|TYG73p [Saccharomyces cerevisiae]	Saccharomyces cerevisiae	Blastx
+SRR17635183	NODE_2994_length_232_cov_1.222749	36.1	232	479	0.150313	1.13e-06	acc|GENBANK|ARF12415.1|GENBANK|KY684112|cytidylyltransferase [Klosneuvirus KNV1]	Klosneuvirus KNV1	Blastx
+SRR17635183	NODE_3107_length_240_cov_1.178082	49.1	240	577	0.095321	1.28e-06	acc|GENBANK|QFG73958.1|GENBANK|MN448274|aromatic amino acid lyase [Megaviridae environmental sample]	Megaviridae environmental sample	Blastx
+SRR17635183	NODE_78_length_172_cov_3.688742	92.0	172	214	0.116822	1.57e-06	acc|GENBANK|UZE89726.1|GENBANK|ON704650|hypothetical protein [Parapoynx stagnalis nucleopolyhedrovirus]	Parapoynx stagnalis nucleopolyhedrovirus	Blastx
+SRR17635183	NODE_1266_length_186_cov_2.260606	45.2	186	642	0.096573	1.60e-06	acc|GENBANK|ARF10282.1|GENBANK|KY684103|dynamin family protein [Hokovirus HKV1]	Hokovirus HKV1	Blastx
+SRR17635183	NODE_99_length_401_cov_2.865789	31.7	401	539	0.233766	2.22e-06	acc|GENBANK|QDY52400.1|GENBANK|MK250091|aldehyde dehydrogenase family protein [Mimiviridae sp. ChoanoV1]	Mimiviridae sp. ChoanoV1	Blastx
+SRR17635183	NODE_2987_length_231_cov_1.228571	39.1	231	302	0.211921	2.65e-06	acc|REFSEQ|YP_009254946.1|REFSEQ|NC_030230|mannosyltransferase OCH1 and related enzymes [Tokyovirus A1]	Tokyovirus A1	Blastx
+SRR17635183	NODE_2301_length_185_cov_1.902439	54.2	185	651	0.090630	2.87e-06	acc|GENBANK|QBK86751.1|GENBANK|MK500335|uncharacterized protein [Marseillevirus LCMAC103]	Marseillevirus LCMAC103	Blastx
+SRR17635183	NODE_3006_length_233_cov_1.825472	34.2	233	350	0.208571	3.83e-06	acc|GENBANK|QIG60220.1|GENBANK|MN940580|hypothetical protein [Dishui Lake large algae virus 1]	Dishui Lake large algae virus 1	Blastx
+SRR17635183	NODE_3046_length_236_cov_1.800000	47.1	236	225	0.226667	3.84e-06	acc|GENBANK|QBK89122.1|GENBANK|MK500408|translation initiation factor 4E [Mimivirus LCMiAC02]	Mimivirus LCMiAC02	Blastx
+SRR17635183	NODE_222_length_173_cov_440.828947	100	173	1960	0.012755	4.58e-06	acc|REFSEQ|YP_009134730.1|REFSEQ|NC_026248|replicase polyprotein [Yam latent virus]	Yam latent virus	Blastx
+SRR17635183	NODE_3606_length_269_cov_1.262097	32.9	269	152	0.480263	4.94e-06	acc|REFSEQ|YP_010780185.1|REFSEQ|NC_075038|mimivirus translation initiation factor 5A [Tupanvirus deep ocean]	Tupanvirus deep ocean	Blastx
+SRR17635183	NODE_2717_length_213_cov_1.343750	44.2	213	70	0.742857	5.78e-06	acc|GENBANK|URH28964.1|NEIGHBOR|MW558081|phospholipid hydroperoxide glutathione [Fowlpox virus]	Fowlpox virus	Blastx
+SRR17635183	NODE_2297_length_184_cov_1.582822	52.7	184	128	0.429688	6.56e-06	acc|GENBANK|CAA42007.1|GENBANK|X59357|Epstein-Barr virus small RNA associated protein [Homo sapiens]	Homo sapiens	Blastx
+SRR17635183	NODE_1643_length_302_cov_13.007117	62.5	302	533	0.075047	6.76e-06	acc|GENBANK|WAX26015.1|GENBANK|OP721220|putative major capsid protein L1 [Human papillomavirus]	Human papillomavirus	Blastx
+SRR17635183	NODE_1332_length_185_cov_2.463415	51.9	185	549	0.094718	7.32e-06	acc|GENBANK|WAX25994.1|GENBANK|OP721198|putative major capsid protein L1 [Human papillomavirus]	Human papillomavirus	Blastx
+SRR17635183	NODE_2071_length_224_cov_1.906404	40.0	224	282	0.230496	8.08e-06	acc|REFSEQ|YP_004063462.1|REFSEQ|NC_014789|putative 3-methyl-2-oxobutanoate [Ostreococcus tauri virus 2]	Ostreococcus tauri virus 2	Blastx
+SRR17635183	NODE_3154_length_244_cov_2.313901	78.6	244	405	0.069136	8.49e-06	acc|GENBANK|WGU26824.1|GENBANK|OQ503488|eukaryotic initiation factor 4A-III B-like [Triticum monococcum]	Triticum monococcum	Blastx
+SRR17635183	NODE_2189_length_175_cov_1.675325	46.4	175	653	0.085758	8.85e-06	acc|GENBANK|QBK88577.1|GENBANK|MK500392|threonyl-tRNA synthetase [Mimivirus LCMiAC01]	Mimivirus LCMiAC01	Blastx
+SRR17635183	NODE_3003_length_233_cov_1.825472	49.2	233	224	0.272321	9.77e-06	acc|GENBANK|AYV77353.1|GENBANK|MK072038|UTP--glucose-1-phosphate uridylyltransferase [Barrevirus sp.]	Barrevirus sp.	Blastx
+SRR17635183	NODE_2790_length_218_cov_1.964467	43.1	218	207	0.314010	9.94e-06	acc|GENBANK|AYV78105.1|GENBANK|MK072070|Rab1 [Edafosvirus sp.]	Edafosvirus sp.	Blastx
+SRR17635183	NODE_2620_length_207_cov_1.387097	46.3	207	502	0.107570	1.01e-05	acc|GENBANK|QIG60155.1|GENBANK|MN940580|2-polyprenylphenol 6-hydroxylase [Dishui Lake large algae virus 1]	Dishui Lake large algae virus 1	Blastx
+SRR17635183	NODE_1596_length_237_cov_1.990741	57.1	237	134	0.313433	1.01e-05	acc|GENBANK|CAJ65875.1|GENBANK|AM182881|putative integrase [Cucumis melo]	Cucumis melo	Blastx
+SRR17635183	NODE_1748_length_188_cov_1.622754	52.6	188	259	0.146718	1.24e-05	acc|GENBANK|QBK88018.1|GENBANK|MK500373|high mobility group box [Marseillevirus LCMAC202]	Marseillevirus LCMAC202	Blastx
+SRR17635183	NODE_65_length_297_cov_1.402174	40.6	297	1261	0.054718	1.28e-05	acc|GENBANK|ACN78974.1|GENBANK|FJ225394|retrotransposon protein [Glycine max]	Glycine max	Blastx
+SRR17635183	NODE_2249_length_180_cov_2.433962	81.5	180	819	0.032967	1.32e-05	acc|GENBANK|QKF94107.1|GENBANK|MT418680|eukaryotic translation elongation factor 2 [Fadolivirus FV1/VV64]	Fadolivirus FV1/VV64	Blastx
+SRR17635183	NODE_1641_length_486_cov_4.096774	55.3	486	62	0.758065	1.53e-05	acc|GENBANK|AYV82647.1|GENBANK|MK072384|hypothetical protein [Hyperionvirus sp.]	Hyperionvirus sp.	Blastx
+SRR17635183	NODE_1954_length_438_cov_2.086331	28.6	438	919	0.121872	1.61e-05	acc|GENBANK|AYV75146.1|GENBANK|MK071979|plasma membrane ATPase [Terrestrivirus sp.]	Terrestrivirus sp.	Blastx
+SRR17635183	NODE_819_length_443_cov_17.862559	58.5	443	764	0.053665	1.62e-05	acc|GENBANK|UZH25335.1|GENBANK|OL695857|ORF2 [Mamastrovirus 3]	Mamastrovirus 3	Blastx
+SRR17635183	NODE_2760_length_216_cov_1.323077	60.0	216	117	0.256410	1.62e-05	acc|GENBANK|AUF82320.1|GENBANK|KY322437|CCCH-type zinc finger domain-containing protein [Tetraselmis virus 1]	Tetraselmis virus 1	Blastx
+SRR17635183	NODE_2564_length_203_cov_1.417582	35.4	203	447	0.145414	1.74e-05	acc|GENBANK|AAR26884.1|GENBANK|AY225134|FirrV-1-B9 [Feldmannia irregularis virus a]	Feldmannia irregularis virus a	Blastx
+SRR17635183	NODE_1729_length_400_cov_2.327177	32.0	400	467	0.214133	1.88e-05	acc|REFSEQ|YP_009481382.1|REFSEQ|NC_037665|Formate/glycerate dehydrogenase [Pandoravirus macleodensis]	Pandoravirus macleodensis	Blastx
+SRR17635183	NODE_2317_length_186_cov_1.563636	62.3	186	757	0.070013	1.97e-05	acc|GENBANK|AYV76070.1|GENBANK|MK071982|hsp82-like protein [Terrestrivirus sp.]	Terrestrivirus sp.	Blastx
+SRR17635183	NODE_945_length_222_cov_1.885572	47.8	222	328	0.140244	2.22e-05	acc|GENBANK|AYV82419.1|GENBANK|MK072382|elongation factor 1-alpha-like protein [Homavirus sp.]	Homavirus sp.	Blastx
+SRR17635183	NODE_1390_length_209_cov_2.441489	41.8	209	695	0.096403	2.62e-05	acc|GENBANK|XDO02062.1|GENBANK|PP542043|Type I Glyceraldehyde-3-Phosphate Dehydrogenase [Florenciella sp. virus SA2]	Florenciella sp. virus SA2	Blastx
+SRR17635183	NODE_3318_length_258_cov_1.088608	52.9	258	36	0.944444	2.72e-05	acc|GENBANK|AUN43545.1|GENBANK|MG645696|RPSA [Myzomela eques]	Myzomela eques	Blastx
+SRR17635183	NODE_1242_length_225_cov_1.612745	58.6	225	377	0.076923	3.22e-05	acc|GENBANK|ABB00038.1|GENBANK|DQ070849|reverse transcriptase family member [Glycine max]	Glycine max	Blastx
+SRR17635183	NODE_1791_length_181_cov_2.250000	45.5	181	378	0.116402	3.32e-05	acc|GENBANK|ACN72775.1|GENBANK|FJ791046|delta-12 oleate desaturase [Helianthus annuus]	Helianthus annuus	Blastx
+SRR17635183	NODE_2083_length_255_cov_3.307692	38.8	255	575	0.139130	3.53e-05	acc|GENBANK|CAE02704.1|GENBANK|AJ575660|putative sugar transporter [Yarrowia lipolytica]	Yarrowia lipolytica	Blastx
+SRR17635183	NODE_2278_length_182_cov_3.204969	39.6	182	702	0.068376	4.63e-05	acc|GENBANK|ARF12034.1|GENBANK|KY684110|copper amine oxidase [Klosneuvirus KNV1]	Klosneuvirus KNV1	Blastx
+SRR17635183	NODE_3404_length_267_cov_1.048780	95.5	267	74	0.297297	4.76e-05	acc|GENBANK|XDO02293.1|GENBANK|PP542043|Ubiquitin [Florenciella sp. virus SA2]	Florenciella sp. virus SA2	Blastx
+SRR17635183	NODE_1237_length_214_cov_1.020725	45.0	214	1715	0.023324	5.43e-05	acc|GENBANK|WDS48439.1|GENBANK|ON798805|essential for potexvirus accumulation 1 [Solanum tuberosum]	Solanum tuberosum	Blastx
+SRR17635183	NODE_55_length_253_cov_2.224138	39.3	253	357	0.170868	6.11e-05	acc|GENBANK|BAC42306.1|GENBANK|AK117652|putative retroelement pol polyprotein [Arabidopsis thaliana]	Arabidopsis thaliana	Blastx
+SRR17635183	NODE_2009_length_325_cov_10.440789	34.1	325	592	0.138514	7.91e-05	acc|GENBANK|ADB85290.1|GENBANK|GQ252818|putative retrotransposon protein [Phyllostachys edulis]	Phyllostachys edulis	Blastx
+SRR17635183	NODE_3582_length_175_cov_2.435065	52.5	175	510	0.078431	7.91e-05	acc|REFSEQ|YP_009352665.1|REFSEQ|NC_034249|Oxidoreductase, GMC family [Kaumoebavirus]	Kaumoebavirus	Blastx
+SRR17635183	NODE_2081_length_398_cov_1.710875	32.1	398	344	0.380814	7.97e-05	acc|GENBANK|QDY51896.1|GENBANK|MK250085|hypothetical protein [Mimiviridae sp. ChoanoV1]	Mimiviridae sp. ChoanoV1	Blastx
+SRR17635183	NODE_2276_length_182_cov_1.602484	47.8	182	141	0.326241	8.47e-05	acc|REFSEQ|YP_009255120.1|REFSEQ|NC_030230|conserved thioredoxin [Tokyovirus A1]	Tokyovirus A1	Blastx
+SRR17635183	NODE_1751_length_188_cov_1.497006	36.7	188	309	0.194175	9.05e-05	acc|GENBANK|AYV80835.1|GENBANK|MK072249|SDR family NAD(P)-dependent oxidoreductase [Harvfovirus sp.]	Harvfovirus sp.	Blastx
+SRR17635183	NODE_2336_length_187_cov_1.554217	59.5	187	575	0.064348	9.39e-05	acc|GENBANK|CAE02704.1|GENBANK|AJ575660|putative sugar transporter [Yarrowia lipolytica]	Yarrowia lipolytica	Blastx
+SRR17635183	NODE_1265_length_176_cov_1.096774	43.2	176	81	0.543210	1.04e-04	acc|GENBANK|AGE49098.1|GENBANK|JX997155|chitosanase [Acanthocystis turfacea Chlorella virus Br0604L]	Acanthocystis turfacea Chlorella virus Br0604L	Blastx
+SRR17635183	NODE_92_length_263_cov_2.132231	50.0	263	239	0.217573	1.05e-04	acc|GENBANK|AAB92355.1|GENBANK|U89438|nonstructural protein P125-2 [Bovine viral diarrhea virus 1]	Bovine viral diarrhea virus 1	Blastx
+SRR17635183	NODE_1445_length_278_cov_4.505837	31.9	278	476	0.144958	1.15e-04	acc|GENBANK|AGD92486.1|GENBANK|JX885207|putative BTB/POZ domain-containing protein [Megavirus lba]	Megavirus lba	Blastx
+SRR17635183	NODE_3485_length_276_cov_1.011765	42.0	276	193	0.259067	1.28e-04	acc|GENBANK|AAA49078.1|GENBANK|M57290|pp60c-scr [Gallus gallus]	Gallus gallus	Blastx
+SRR17635183	NODE_1275_length_215_cov_1.551546	43.5	215	394	0.116751	1.33e-04	acc|GENBANK|ARF11626.1|GENBANK|KY684109|translation initiation factor 4A-III [Klosneuvirus KNV1]	Klosneuvirus KNV1	Blastx
+SRR17635183	NODE_2148_length_458_cov_2.645309	27.3	458	539	0.237477	1.50e-04	acc|GENBANK|QDY52400.1|GENBANK|MK250091|aldehyde dehydrogenase family protein [Mimiviridae sp. ChoanoV1]	Mimiviridae sp. ChoanoV1	Blastx
+SRR17635183	NODE_1897_length_179_cov_1.291139	41.2	179	518	0.098456	1.55e-04	acc|GENBANK|QPI16131.1|GENBANK|MW030532|hypothetical protein [Virus NIOZ-UU157]	Virus NIOZ-UU157	Blastx
+SRR17635183	NODE_2617_length_207_cov_2.080645	35.8	207	549	0.122040	1.71e-04	acc|GENBANK|QBK88023.1|GENBANK|MK500373|ATP-sulfurylase [Marseillevirus LCMAC202]	Marseillevirus LCMAC202	Blastx
+SRR17635183	NODE_809_length_186_cov_35.745455	69.4	186	219	0.164384	1.91e-04	acc|GENBANK|XHA87591.1|GENBANK|PQ054798|hypothetical protein [Qianjiang picobirna-like virus 2]	Qianjiang picobirna-like virus 2	Blastx
+SRR17635183	NODE_3124_length_241_cov_1.759091	42.6	241	1334	0.035232	1.98e-04	acc|GENBANK|CAC37622.1|GENBANK|AJ292423|polyprotein [Arabidopsis thaliana]	Arabidopsis thaliana	Blastx
+SRR17635183	NODE_3445_length_271_cov_2.064000	42.9	271	507	0.138067	2.00e-04	acc|GENBANK|AYV76216.1|GENBANK|MK071983|dehydrogenase [Terrestrivirus sp.]	Terrestrivirus sp.	Blastx
+SRR17635183	NODE_1870_length_180_cov_1.465409	34.5	180	497	0.116700	2.20e-04	acc|GENBANK|AYV83822.1|GENBANK|MK072394|cytochrome P450 704B1 [Hyperionvirus sp.]	Hyperionvirus sp.	Blastx
+SRR17635183	NODE_284_length_259_cov_1.067227	32.6	259	380	0.226316	2.31e-04	acc|GENBANK|QBK85873.1|GENBANK|MK500328|hypothetical protein [Marseillevirus LCMAC101]	Marseillevirus LCMAC101	Blastx
+SRR17635183	NODE_1351_length_188_cov_1.419162	37.5	188	333	0.168168	2.35e-04	acc|GENBANK|QDY52116.1|GENBANK|MK250087|D-isomer specific 2-hydroxyacid dehydrogenase, [Mimiviridae sp. ChoanoV1]	Mimiviridae sp. ChoanoV1	Blastx
+SRR17635183	NODE_1259_length_202_cov_1.060773	51.2	202	116	0.353448	2.91e-04	acc|GENBANK|AYV86493.1|GENBANK|MK072507|hypothetical protein [Sylvanvirus sp.]	Sylvanvirus sp.	Blastx
+SRR17635183	NODE_3282_length_255_cov_2.756410	33.3	255	417	0.158273	3.08e-04	acc|GENBANK|QBK89261.1|GENBANK|MK500411|DEAD/SNF2-like helicase [Mimivirus LCMiAC02]	Mimivirus LCMiAC02	Blastx
+SRR17635183	NODE_1964_length_246_cov_1.613333	33.7	246	575	0.144348	3.86e-04	acc|GENBANK|CAE02704.1|GENBANK|AJ575660|putative sugar transporter [Yarrowia lipolytica]	Yarrowia lipolytica	Blastx
+SRR17635183	NODE_1398_length_289_cov_1.447761	47.3	289	135	0.407407	3.86e-04	acc|GENBANK|QFG73915.1|GENBANK|MN448274|potato inhibitor I family protein [Megaviridae environmental sample]	Megaviridae environmental sample	Blastx
+SRR17635183	NODE_1722_length_246_cov_1.422222	32.9	246	695	0.117986	5.34e-04	acc|GENBANK|XDO02062.1|GENBANK|PP542043|Type I Glyceraldehyde-3-Phosphate Dehydrogenase [Florenciella sp. virus SA2]	Florenciella sp. virus SA2	Blastx
+SRR17635183	NODE_2328_length_186_cov_1.557576	38.1	186	452	0.139381	6.12e-04	acc|GENBANK|WZO83348.1|GENBANK|PP681883|ATP-dependent helicase [Chlorovirus sp.]	Chlorovirus sp.	Blastx
+SRR17635183	NODE_1634_length_200_cov_5.206704	64.7	200	533	0.063790	9.92e-04	acc|GENBANK|WAX26015.1|GENBANK|OP721220|putative major capsid protein L1 [Human papillomavirus]	Human papillomavirus	Blastx

@@ -1,0 +1,2 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR30294449|NC_026248.1	SRR30294449	NC_026248.1	hit	consensus.blastn.online	NC_026248	0.0	88.75	100.0	Yam latent virus isolate SG1, complete genome	/data/output/report/ncbiBlast/xml/SRR30294449_NC_026248.1.xml	
