@@ -1,0 +1,3 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR22534743|NC_000947.1	SRR22534743	NC_000947.1	hit	consensus.blastn.online	NC_000947	0.0	90.2	100.0	Japanese yam mosaic virus, complete genome	/data/output/report/ncbiBlast/xml/SRR22534743_NC_000947.1.xml	
+SRR22534743|NC_026248.1	SRR22534743	NC_026248.1	hit	consensus.blastn.online	NC_026248	0.0	92.1	100.0	Yam latent virus isolate SG1, complete genome	/data/output/report/ncbiBlast/xml/SRR22534743_NC_026248.1.xml	
