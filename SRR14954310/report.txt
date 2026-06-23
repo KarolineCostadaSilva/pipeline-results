@@ -1,0 +1,2 @@
+Sample	ReadLength	TotalReads	CleanReadLength	CleanReads	RefId	TaxonId	Species	Taxonomy	Acronym	RefTitle	RefLen	MappedReads	RPKM	PercentMappedreads	PercentGenomeCovered	MeanCoverage	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	Sequence
+SRR14954310	150.0	49858038	146.88	16251746	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan
