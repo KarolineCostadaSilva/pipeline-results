@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; }
+    header { background-color: #666; padding: 10px; text-align: center; font-size: 35px; color: white; }
+    .sidenav {
+      height: 100%; width: 200px; position: fixed; z-index: 1; top: 0; left: 0;
+      background-color: #eee; overflow-x: hidden; padding-top: 20px;
+    }
+    .sidenav a { padding: 6px 8px 6px; text-decoration: none; font-size: 16px; color: #2196F3; display: block; }
+    .sidenav a:hover { color: #064579; }
+    .main { margin-left: 200px; font-size: 16px; padding: 0px 10px; }
+    article { float: left; padding: 20px; background-color: #f1f1f1; width: 100%; }
+  </style>
+  <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, alltables;
+      alltables = document.querySelectorAll("table[data-name=mytable]");
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      alltables.forEach(function(table){
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      });
+    }
+  </script>
+</head>
+<body>
+  <header><h1>HTS Report</h1></header>
+
+  <section>
+    <div class="sidenav">
+      <a href="#summary">Summary</a>
+      <h4>Sample QC</h4>
+      <a href="#rawQC">Raw reads QC</a>
+      <a href="#cleanQC">Clean reads QC</a>
+      <a href="#numQC">Reads number track</a>
+      <a href="#assemblyQC">Assembly QC</a>
+      <h4>Contig annotation</h4>
+      <a href="#blastx">Blastx (RVDB)</a>
+      <a href="#selectContig">Selected contigs</a>
+      <a href="#krona">Krona BLASTX</a>
+      <h4>Mapping</h4>
+      <a href="#mapping">Map reads to reference</a>
+    </div>
+
+    <div class="main">
+      <br>
+      <div class="card-body row no-gutters align-items-center pull-right">
+        <label>Filter sample </label>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="A sample name" title="Type in a sample name">
+      </div>
+
+      <article id="summary">
+        <h1>Virus NCBI blast</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>RefId</th>
+      <th>BlastHitAccession</th>
+      <th>Species</th>
+      <th>BlastType</th>
+      <th>BlastEvalue</th>
+      <th>BlastIdentity</th>
+      <th>BlastQueryCoverage</th>
+      <th>BlastDescription</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DRR208399</td>
+      <td>NC_031763.1</td>
+      <td>NC_031763</td>
+      <td>Dioscorea mosaic associated virus</td>
+      <td>consensus.blastn.online</td>
+      <td>0.0</td>
+      <td>92.13</td>
+      <td>100.0</td>
+      <td>Dioscorea mosaic-associated virus isolate goiana segment RNA2, complete sequence</td>
+    </tr>
+    <tr>
+      <td>DRR208399</td>
+      <td>NC_031766.1</td>
+      <td>NC_031766</td>
+      <td>Dioscorea mosaic associated virus</td>
+      <td>consensus.blastn.online</td>
+      <td>0.0</td>
+      <td>94.11</td>
+      <td>100.0</td>
+      <td>Dioscorea mosaic-associated virus isolate goiana segment RNA1, complete sequence</td>
+    </tr>
+    <tr>
+      <td>DRR208399</td>
+      <td>NC_004752.1</td>
+      <td>NC_004752</td>
+      <td>Yam mosaic virus</td>
+      <td>consensus.blastn.online</td>
+      <td>0.0</td>
+      <td>92.42</td>
+      <td>100.0</td>
+      <td>Yam mosaic virus, complete genome</td>
+    </tr>
+  </tbody>
+</table>
+        <h3><a href="finalConsensus.txt" target="_blank">View consensus</a></h3><br />
+      </article>
+
+      <article id="rawQC">
+        <h1>Raw reads QC</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Total Sequences</th>
+      <th>Total Bases</th>
+      <th>Sequences flagged as poor quality</th>
+      <th>Sequence length</th>
+      <th>%GC</th>
+      <th>total_deduplicated_percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DRR208399_R1</td>
+      <td>14226893.0</td>
+      <td>2.1 Gbp</td>
+      <td>0.0</td>
+      <td>150.0</td>
+      <td>55.0</td>
+      <td>19.875451</td>
+    </tr>
+    <tr>
+      <td>DRR208399_R2</td>
+      <td>14226893.0</td>
+      <td>2.1 Gbp</td>
+      <td>0.0</td>
+      <td>150.0</td>
+      <td>55.0</td>
+      <td>22.448506</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3>View raw reads FastQC report:</h3> <a href="html/DRR208399_R1_fastqc.html" target="_blank">DRR208399_R1</a> &emsp;&emsp; <a href="html/DRR208399_R2_fastqc.html" target="_blank">DRR208399_R2</a>
+        <br><br>
+        <a href="html/raw_multiqc.html">All samples raw reads multiQC</a>
+      </article>
+
+      <article id="cleanQC">
+        <h1>Clean reads QC</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Total Sequences</th>
+      <th>Total Bases</th>
+      <th>Sequences flagged as poor quality</th>
+      <th>Sequence length</th>
+      <th>%GC</th>
+      <th>total_deduplicated_percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DRR208399_R1</td>
+      <td>3887400.0</td>
+      <td>573.6 Mbp</td>
+      <td>0.0</td>
+      <td>36-150</td>
+      <td>47.0</td>
+      <td>73.465988</td>
+    </tr>
+    <tr>
+      <td>DRR208399_R2</td>
+      <td>3887400.0</td>
+      <td>561.4 Mbp</td>
+      <td>0.0</td>
+      <td>36-150</td>
+      <td>47.0</td>
+      <td>69.916891</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3>View clean reads FastQC report:</h3> <a href="html/DRR208399_R1.trimmed_fastqc.html" target="_blank">DRR208399_R1</a> &emsp;&emsp; <a href="html/DRR208399_R2.trimmed_fastqc.html" target="_blank">DRR208399_R2</a>
+        <br><br>
+        <a href="html/trimmed_multiqc.html">All samples clean reads multiQC</a>
+      </article>
+
+      <article id="numQC">
+        <h1>Read numbers in each QC step</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>RawReads</th>
+      <th>RawYield(Mbases)</th>
+      <th>Percent>=Q30Bases</th>
+      <th>RawMeanQualityScore</th>
+      <th>RibosomalRNA</th>
+      <th>ReadsAfterRemoveDuplicates</th>
+      <th>ControlReads</th>
+      <th>ReadsAfterTrim</th>
+      <th>PossiblePathogenReads</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DRR208399</td>
+      <td>14226893(F)|14226893(R)</td>
+      <td>2134(F)|2134(R)</td>
+      <td>96.12(F)|93.19(R)</td>
+      <td>39.51(F)|38.64(R)</td>
+      <td>69.04%</td>
+      <td>0 (0.00%)</td>
+      <td>26319(F)|25790(R)</td>
+      <td>7774800 (27.32%)</td>
+      <td>0 (0.00%)</td>
+    </tr>
+  </tbody>
+</table>
+      </article>
+
+      <article id="assemblyQC">
+        <h1>Assembly QC</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Assembly</th>
+      <th># contigs (>= 0 bp)</th>
+      <th># contigs (>= 1000 bp)</th>
+      <th># contigs</th>
+      <th>Largest contig</th>
+      <th>Total length</th>
+      <th>GC (%)</th>
+      <th>N50</th>
+      <th>N90</th>
+      <th>auN</th>
+      <th>L50</th>
+      <th>L90</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DRR208399</td>
+      <td>31681</td>
+      <td>222</td>
+      <td>30396</td>
+      <td>7666</td>
+      <td>8605004</td>
+      <td>50.74</td>
+      <td>268</td>
+      <td>194</td>
+      <td>376.0</td>
+      <td>10213</td>
+      <td>25394</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3><a href="assembly_qc.tsv" target="_blank">View full Assembly QC table</a></h3>
+        <h3>View assembly QC quast report:</h3> <a href="html/DRR208399.quast.html" target="_blank">DRR208399</a>&emsp;&emsp;
+        <br>
+        <h3>View contigs FASTA files:</h3> <a href="assembly/DRR208399.contigs.fasta" target="_blank">DRR208399</a>&emsp;&emsp;
+        <br><br>
+        <a href="html/quast_multiqc.html" target="_blank">All samples quast multiQC</a>
+      </article>
+
+      <article id="blastx">
+        <h1>DIAMOND blastx against RVDB</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Contig</th>
+      <th>Percent_identity</th>
+      <th>E-value</th>
+      <th>Reference_name</th>
+      <th>Species</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DRR208399</td>
+      <td>NODE_89_length_2174_cov_156.641756</td>
+      <td>100.0</td>
+      <td>0.000000e+00</td>
+      <td>acc|GENBANK|UOF93224.1|NEIGHBOR|OM471973|polyprotein [Yam mosaic virus]</td>
+      <td>Yam mosaic virus</td>
+    </tr>
+    <tr>
+      <td>DRR208399</td>
+      <td>NODE_394_length_550_cov_963.760155</td>
+      <td>100.0</td>
+      <td>1.220000e-116</td>
+      <td>acc|REFSEQ|YP_009316187.1|REFSEQ|NC_031766|polyprotein [Dioscorea mosaic associated virus]</td>
+      <td>Dioscorea mosaic associated virus</td>
+    </tr>
+    <tr>
+      <td>DRR208399</td>
+      <td>NODE_30959_length_322_cov_2.429066</td>
+      <td>100.0</td>
+      <td>1.610000e-65</td>
+      <td>acc|GENBANK|ANV20878.1|NEIGHBOR|KX008571|ORF3 protein [Dioscorea bacilliform AL virus]</td>
+      <td>Dioscorea bacilliform AL virus</td>
+    </tr>
+    <tr>
+      <td>DRR208399</td>
+      <td>NODE_276_length_241_cov_141.581731</td>
+      <td>100.0</td>
+      <td>2.450000e-52</td>
+      <td>acc|GENBANK|ASU09690.1|GENBANK|KX610195|RNA-dependent RNA polymerase [Yam necrosis-associated virus]</td>
+      <td>Yam necrosis-associated virus</td>
+    </tr>
+    <tr>
+      <td>DRR208399</td>
+      <td>NODE_24592_length_227_cov_1.206186</td>
+      <td>100.0</td>
+      <td>2.380000e-08</td>
+      <td>acc|GENBANK|WPR17152.1|GENBANK|OQ987512|RNA-dependent RNA polymerase [Moss associated narna-like virus 14]</td>
+      <td>Moss associated narna-like virus 14</td>
+    </tr>
+    <tr>
+      <td>DRR208399</td>
+      <td>NODE_6466_length_219_cov_1.177419</td>
+      <td>100.0</td>
+      <td>7.320000e-07</td>
+      <td>acc|GENBANK|ADE10202.1|NEIGHBOR|GQ265901|viral replicase [Hydrangea ringspot virus]</td>
+      <td>Hydrangea ringspot virus</td>
+    </tr>
+    <tr>
+      <td>DRR208399</td>
+      <td>NODE_5629_length_340_cov_3.019544</td>
+      <td>99.1</td>
+      <td>6.510000e-76</td>
+      <td>acc|GENBANK|QHA94619.1|GENBANK|MK213601|polyprotein [Dioscorea bacilliform virus]</td>
+      <td>Dioscorea bacilliform virus</td>
+    </tr>
+    <tr>
+      <td>DRR208399</td>
+      <td>NODE_13173_length_331_cov_3.926174</td>
+      <td>99.1</td>
+      <td>1.030000e-63</td>
+      <td>acc|REFSEQ|YP_010797564.1|REFSEQ|NC_076205|ORF3 protein [Dioscorea bacilliform RT virus]</td>
+      <td>Dioscorea bacilliform RT virus</td>
+    </tr>
+    <tr>
+      <td>DRR208399</td>
+      <td>NODE_23721_length_221_cov_1.244681</td>
+      <td>98.6</td>
+      <td>8.730000e-41</td>
+      <td>acc|GENBANK|AAD44039.1|GENBANK|AF104022|polyprotein [Bovine viral diarrhea virus 2]</td>
+      <td>Bovine viral diarrhea virus 2</td>
+    </tr>
+    <tr>
+      <td>DRR208399</td>
+      <td>NODE_20935_length_205_cov_1.360465</td>
+      <td>98.5</td>
+      <td>6.950000e-44</td>
+      <td>acc|GENBANK|XEQ86943.1|GENBANK|PQ164815|capsid protein precursor pIIIa [Human adenovirus sp.]</td>
+      <td>Human adenovirus sp.</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3><a href="blastx.summary.tsv" target="_blank">View full DIAMOND blastx summary table</a></h3>
+      </article>
+    
+      <article id="krona">
+        <h1>Krona BLASTX visualization</h1>
+        <p>
+            Interactive Krona reports generated from filtered DIAMOND blastx results.
+            The filters are the same configured for selected contigs in the report.
+        </p>
+        <h3>Open Krona BLASTX reports:</h3>
+        <a href="html/krona_index.html" target="_blank">All BLASTX Krona reports</a>&emsp;&emsp;<a href="html/DRR208399.blastx.krona.html" target="_blank">DRR208399 - BLASTX Krona</a><br />
+      </article>
+
+      <article id="selectContig">
+        <h1>Selected contigs and their annotation</h1>No annotated contigs passed the reporting thresholds (Percent_identity >= 70.0, Contig_length >= 500, RefCoverage >= 70.0).
+        <br>
+        <h3><a href="blastx.summary.tsv" target="_blank">View full DIAMOND blastx summary table</a></h3>
+        <h3><a href="blast.nx.tsv" target="_blank">View full blast.nx compatibility table</a></h3>
+      </article>
+
+      <article id="mapping">
+        <h1>Mapping reads to references</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>RefId</th>
+      <th>BlastHitAccession</th>
+      <th>Species</th>
+      <th>RefLen</th>
+      <th>MappedReads</th>
+      <th>RPKM</th>
+      <th>PercentMappedreads</th>
+      <th>PercentGenomeCovered</th>
+      <th>MeanCoverage</th>
+      <th>BlastIdentity</th>
+      <th>BlastQueryCoverage</th>
+      <th>Taxonomy</th>
+      <th>RefTitle</th>
+      <th>MappingGraph</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DRR208399</td>
+      <td>NC_031763.1</td>
+      <td>NC_031763</td>
+      <td>Dioscorea mosaic associated virus</td>
+      <td>3810</td>
+      <td>115158</td>
+      <td>1.511260e+09</td>
+      <td>575790.0</td>
+      <td>94.25</td>
+      <td>3117.1</td>
+      <td>92.13</td>
+      <td>100.0</td>
+      <td>Sadwavirus;Secoviridae</td>
+      <td>NC_031763.1 Dioscorea mosaic-associated virus isolate goiana segment RNA2, complete sequence</td>
+      <td><a href="image/DRR208399.NC_031763.1.coverage.png" target="_blank">DRR208399 NC_031763.1</a></td>
+    </tr>
+    <tr>
+      <td>DRR208399</td>
+      <td>NC_031766.1</td>
+      <td>NC_031766</td>
+      <td>Dioscorea mosaic associated virus</td>
+      <td>5979</td>
+      <td>127507</td>
+      <td>1.066290e+09</td>
+      <td>637535.0</td>
+      <td>100.00</td>
+      <td>2266.2</td>
+      <td>94.11</td>
+      <td>100.0</td>
+      <td>Sadwavirus;Secoviridae</td>
+      <td>NC_031766.1 Dioscorea mosaic-associated virus isolate goiana segment RNA1, complete sequence</td>
+      <td><a href="image/DRR208399.NC_031766.1.coverage.png" target="_blank">DRR208399 NC_031766.1</a></td>
+    </tr>
+    <tr>
+      <td>DRR208399</td>
+      <td>NC_004752.1</td>
+      <td>NC_004752</td>
+      <td>Yam mosaic virus</td>
+      <td>9608</td>
+      <td>30704</td>
+      <td>1.597835e+08</td>
+      <td>153520.0</td>
+      <td>95.00</td>
+      <td>399.6</td>
+      <td>92.42</td>
+      <td>100.0</td>
+      <td>Potyvirus;Potyviridae</td>
+      <td>NC_004752.1 Yam mosaic virus, complete genome</td>
+      <td><a href="image/DRR208399.NC_004752.1.coverage.png" target="_blank">DRR208399 NC_004752.1</a></td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3><a href="report.txt" target="_blank">View full mapping/report table</a></h3>
+      </article>
+
+    </div>
+  </section>
+</body>
+</html>

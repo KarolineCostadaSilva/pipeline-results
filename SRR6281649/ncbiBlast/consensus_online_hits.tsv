@@ -1,0 +1,2 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR6281649|NC_038561.1	SRR6281649	NC_038561.1	hit	consensus.blastn.online	NC_038561	0.0	94.14	100.0	Yam chlorotic necrotic mosaic virus isolate YS, complete genome	/data/output/report/ncbiBlast/xml/SRR6281649_NC_038561.1.xml	

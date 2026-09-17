@@ -1,0 +1,2 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR23826119|NC_003492.1	SRR23826119	NC_003492.1	hit	consensus.blastn.online	AM884180	0.0	95.5	99.97	Bean yellow mosaic virus gene for polyprotein, genomic RNA	/data/output/report/ncbiBlast/xml/SRR23826119_NC_003492.1.xml	

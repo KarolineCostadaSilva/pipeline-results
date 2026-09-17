@@ -54,7 +54,7 @@
       <h4>Contig annotation</h4>
       <a href="#blastx">Blastx (RVDB)</a>
       <a href="#selectContig">Selected contigs</a>
-      <a href="#megan">MEGAN6 files</a>
+      <a href="#krona">Krona BLASTX</a>
       <h4>Mapping</h4>
       <a href="#mapping">Map reads to reference</a>
     </div>
@@ -127,21 +127,21 @@
   <tbody>
     <tr>
       <td>SRR16108384_R1</td>
-      <td>14962842.0</td>
-      <td>2.2 Gbp</td>
+      <td>16663396.0</td>
+      <td>2.4 Gbp</td>
       <td>0.0</td>
       <td>36-151</td>
       <td>47.0</td>
-      <td>74.997686</td>
+      <td>70.837874</td>
     </tr>
     <tr>
       <td>SRR16108384_R2</td>
-      <td>14962842.0</td>
-      <td>2.1 Gbp</td>
+      <td>16663396.0</td>
+      <td>2.4 Gbp</td>
       <td>0.0</td>
       <td>36-151</td>
       <td>46.0</td>
-      <td>70.691381</td>
+      <td>66.926417</td>
     </tr>
   </tbody>
 </table>
@@ -175,9 +175,9 @@
       <td>95.72(F)|91.41(R)</td>
       <td>37.82(F)|36.70(R)</td>
       <td>12.99%</td>
-      <td>39567722 (77.81%)</td>
+      <td>0 (0.00%)</td>
       <td>0(F)|0(R)</td>
-      <td>29925684 (58.85%)</td>
+      <td>33326792 (65.53%)</td>
       <td>0 (0.00%)</td>
     </tr>
   </tbody>
@@ -195,6 +195,22 @@
         <a href="html/quast_multiqc.html" target="_blank">All samples quast multiQC</a>
       </article>
 
+      <article id="blastx">
+        <h1>DIAMOND blastx against RVDB</h1>No DIAMOND blastx hits found (analysis completed successfully)
+        <br>
+        <h3><a href="blastx.summary.tsv" target="_blank">View full DIAMOND blastx summary table</a></h3>
+      </article>
+    
+      <article id="krona">
+        <h1>Krona BLASTX visualization</h1>
+        <p>
+            Interactive Krona reports generated from filtered DIAMOND blastx results.
+            The filters are the same configured for selected contigs in the report.
+        </p>
+        <h3>Open Krona BLASTX reports:</h3>
+        <a href="html/krona_index.html" target="_blank">All BLASTX Krona reports</a>&emsp;&emsp;<a href="html/SRR16108384.blastx.krona.html" target="_blank">SRR16108384 - BLASTX Krona</a><br />
+      </article>
+
       <article id="selectContig">
         <h1>Selected contigs and their annotation</h1>No annotated contigs available (no blastx hits)
         <br>
@@ -202,18 +218,8 @@
         <h3><a href="blast.nx.tsv" target="_blank">View full blast.nx compatibility table</a></h3>
       </article>
 
-      <article id="megan">
-      <h1>MEGAN6 visualization files</h1>
-      <p>
-        These files were generated from DIAMOND blastx results.
-        Open the MEGANized DAA files in MEGAN6 for interactive taxonomic visualization.
-      </p>
-      <h3>Open/download MEGAN6 DAA files:</h3>
-      No MEGAN6 DAA files available
-      </article>
-
       <article id="mapping">
-        <h1>Mapping reads to references</h1>No mapping passed the reporting thresholds (MappedReads >= 100, PercentGenomeCovered >= 10.0, MeanCoverage >= 0.5).
+        <h1>Mapping reads to references</h1>No mapping passed the reporting thresholds (MappedReads >= 500, PercentGenomeCovered >= 30.0, MeanCoverage >= 5.0).
         <br>
         <h3><a href="report.txt" target="_blank">View full mapping/report table</a></h3>
       </article>

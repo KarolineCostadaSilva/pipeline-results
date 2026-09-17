@@ -1,0 +1,2 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR31829832|NC_055491.1	SRR31829832	NC_055491.1	hit	consensus.blastn.online	NC_055491	0.0	96.49	100.0	Yam chlorotic necrosis virus isolate YCNV-YJish, complete genome	/data/output/report/ncbiBlast/xml/SRR31829832_NC_055491.1.xml	

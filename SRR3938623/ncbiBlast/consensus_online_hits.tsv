@@ -1,3 +1,0 @@
-QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
-SRR3938623|NC_019412.1	SRR3938623	NC_019412.1	hit	consensus.blastn.online	NC_019412	0.0	100.0	100.0	Yam mild mosaic virus from Brazil, complete genome	/data/output/report/ncbiBlast/xml/SRR3938623_NC_019412.1.xml	
-SRR3938623|NC_075431.1	SRR3938623	NC_075431.1	hit	consensus.blastn.online	NC_075431	0.0	100.0	100.0	Dioscorea bacilliform virus isolate PNG10, complete genome	/data/output/report/ncbiBlast/xml/SRR3938623_NC_075431.1.xml	

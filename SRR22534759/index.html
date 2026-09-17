@@ -1,0 +1,647 @@
+
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; }
+    header { background-color: #666; padding: 10px; text-align: center; font-size: 35px; color: white; }
+    .sidenav {
+      height: 100%; width: 200px; position: fixed; z-index: 1; top: 0; left: 0;
+      background-color: #eee; overflow-x: hidden; padding-top: 20px;
+    }
+    .sidenav a { padding: 6px 8px 6px; text-decoration: none; font-size: 16px; color: #2196F3; display: block; }
+    .sidenav a:hover { color: #064579; }
+    .main { margin-left: 200px; font-size: 16px; padding: 0px 10px; }
+    article { float: left; padding: 20px; background-color: #f1f1f1; width: 100%; }
+  </style>
+  <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, alltables;
+      alltables = document.querySelectorAll("table[data-name=mytable]");
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      alltables.forEach(function(table){
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      });
+    }
+  </script>
+</head>
+<body>
+  <header><h1>HTS Report</h1></header>
+
+  <section>
+    <div class="sidenav">
+      <a href="#summary">Summary</a>
+      <h4>Sample QC</h4>
+      <a href="#rawQC">Raw reads QC</a>
+      <a href="#cleanQC">Clean reads QC</a>
+      <a href="#numQC">Reads number track</a>
+      <a href="#assemblyQC">Assembly QC</a>
+      <h4>Contig annotation</h4>
+      <a href="#blastx">Blastx (RVDB)</a>
+      <a href="#selectContig">Selected contigs</a>
+      <a href="#krona">Krona BLASTX</a>
+      <h4>Mapping</h4>
+      <a href="#mapping">Map reads to reference</a>
+    </div>
+
+    <div class="main">
+      <br>
+      <div class="card-body row no-gutters align-items-center pull-right">
+        <label>Filter sample </label>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="A sample name" title="Type in a sample name">
+      </div>
+
+      <article id="summary">
+        <h1>Virus NCBI blast</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>RefId</th>
+      <th>BlastHitAccession</th>
+      <th>Species</th>
+      <th>BlastType</th>
+      <th>BlastEvalue</th>
+      <th>BlastIdentity</th>
+      <th>BlastQueryCoverage</th>
+      <th>BlastDescription</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NC_026248.1</td>
+      <td>NC_026248</td>
+      <td>Yam latent virus</td>
+      <td>consensus.blastn.online</td>
+      <td>0.0</td>
+      <td>90.89</td>
+      <td>100.0</td>
+      <td>Yam latent virus isolate SG1, complete genome</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NC_000947.1</td>
+      <td>NC_000947</td>
+      <td>Japanese yam mosaic virus</td>
+      <td>consensus.blastn.online</td>
+      <td>0.0</td>
+      <td>90.52</td>
+      <td>100.0</td>
+      <td>Japanese yam mosaic virus, complete genome</td>
+    </tr>
+  </tbody>
+</table>
+        <h3><a href="finalConsensus.txt" target="_blank">View consensus</a></h3><br />
+      </article>
+
+      <article id="rawQC">
+        <h1>Raw reads QC</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Total Sequences</th>
+      <th>Total Bases</th>
+      <th>Sequences flagged as poor quality</th>
+      <th>Sequence length</th>
+      <th>%GC</th>
+      <th>total_deduplicated_percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR22534759_R1</td>
+      <td>23422818.0</td>
+      <td>3.5 Gbp</td>
+      <td>0.0</td>
+      <td>150.0</td>
+      <td>45.0</td>
+      <td>49.518223</td>
+    </tr>
+    <tr>
+      <td>SRR22534759_R2</td>
+      <td>23422818.0</td>
+      <td>3.5 Gbp</td>
+      <td>0.0</td>
+      <td>150.0</td>
+      <td>45.0</td>
+      <td>49.697453</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3>View raw reads FastQC report:</h3> <a href="html/SRR22534759_R1_fastqc.html" target="_blank">SRR22534759_R1</a> &emsp;&emsp; <a href="html/SRR22534759_R2_fastqc.html" target="_blank">SRR22534759_R2</a>
+        <br><br>
+        <a href="html/raw_multiqc.html">All samples raw reads multiQC</a>
+      </article>
+
+      <article id="cleanQC">
+        <h1>Clean reads QC</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Total Sequences</th>
+      <th>Total Bases</th>
+      <th>Sequences flagged as poor quality</th>
+      <th>Sequence length</th>
+      <th>%GC</th>
+      <th>total_deduplicated_percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR22534759_R1</td>
+      <td>21505865.0</td>
+      <td>3.1 Gbp</td>
+      <td>0.0</td>
+      <td>36-150</td>
+      <td>45.0</td>
+      <td>69.446369</td>
+    </tr>
+    <tr>
+      <td>SRR22534759_R2</td>
+      <td>21505865.0</td>
+      <td>3.1 Gbp</td>
+      <td>0.0</td>
+      <td>36-150</td>
+      <td>45.0</td>
+      <td>61.917543</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3>View clean reads FastQC report:</h3> <a href="html/SRR22534759_R1.trimmed_fastqc.html" target="_blank">SRR22534759_R1</a> &emsp;&emsp; <a href="html/SRR22534759_R2.trimmed_fastqc.html" target="_blank">SRR22534759_R2</a>
+        <br><br>
+        <a href="html/trimmed_multiqc.html">All samples clean reads multiQC</a>
+      </article>
+
+      <article id="numQC">
+        <h1>Read numbers in each QC step</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>RawReads</th>
+      <th>RawYield(Mbases)</th>
+      <th>Percent>=Q30Bases</th>
+      <th>RawMeanQualityScore</th>
+      <th>RibosomalRNA</th>
+      <th>ReadsAfterRemoveDuplicates</th>
+      <th>ControlReads</th>
+      <th>ReadsAfterTrim</th>
+      <th>PossiblePathogenReads</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR22534759</td>
+      <td>23422818(F)|23422818(R)</td>
+      <td>3513(F)|3513(R)</td>
+      <td>92.99(F)|92.35(R)</td>
+      <td>35.75(F)|35.67(R)</td>
+      <td>3.10%</td>
+      <td>0 (0.00%)</td>
+      <td>0(F)|0(R)</td>
+      <td>43011730 (91.82%)</td>
+      <td>0 (0.00%)</td>
+    </tr>
+  </tbody>
+</table>
+      </article>
+
+      <article id="assemblyQC">
+        <h1>Assembly QC</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Assembly</th>
+      <th># contigs (>= 0 bp)</th>
+      <th># contigs (>= 1000 bp)</th>
+      <th># contigs</th>
+      <th>Largest contig</th>
+      <th>Total length</th>
+      <th>GC (%)</th>
+      <th>N50</th>
+      <th>N90</th>
+      <th>auN</th>
+      <th>L50</th>
+      <th>L90</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR22534759</td>
+      <td>59773</td>
+      <td>4365</td>
+      <td>44706</td>
+      <td>6286</td>
+      <td>20719961</td>
+      <td>44.47</td>
+      <td>655</td>
+      <td>218</td>
+      <td>833.8</td>
+      <td>9290</td>
+      <td>32136</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3><a href="assembly_qc.tsv" target="_blank">View full Assembly QC table</a></h3>
+        <h3>View assembly QC quast report:</h3> <a href="html/SRR22534759.quast.html" target="_blank">SRR22534759</a>&emsp;&emsp;
+        <br>
+        <h3>View contigs FASTA files:</h3> <a href="assembly/SRR22534759.contigs.fasta" target="_blank">SRR22534759</a>&emsp;&emsp;
+        <br><br>
+        <a href="html/quast_multiqc.html" target="_blank">All samples quast multiQC</a>
+      </article>
+
+      <article id="blastx">
+        <h1>DIAMOND blastx against RVDB</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Contig</th>
+      <th>Percent_identity</th>
+      <th>E-value</th>
+      <th>Reference_name</th>
+      <th>Species</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_22408_length_213_cov_3.816667</td>
+      <td>100.0</td>
+      <td>1.310000e-46</td>
+      <td>acc|GENBANK|AML61117.1|GENBANK|KT717405|surface glycoprotein [Avian leukosis virus]</td>
+      <td>Avian leukosis virus</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_4224_length_487_cov_6841.594714</td>
+      <td>99.3</td>
+      <td>4.570000e-93</td>
+      <td>acc|GENBANK|WEY07650.1|GENBANK|OP219492|coat protein [Yam latent virus]</td>
+      <td>Yam latent virus</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_31078_length_1304_cov_3.290323</td>
+      <td>98.6</td>
+      <td>2.660000e-148</td>
+      <td>acc|GENBANK|WJR88141.1|GENBANK|OQ506337|replication-associated protein [Yam yellow spot mosaic virus]</td>
+      <td>Yam yellow spot mosaic virus</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_2710_length_241_cov_137.418269</td>
+      <td>98.4</td>
+      <td>8.120000e-35</td>
+      <td>acc|GENBANK|AUF82381.1|GENBANK|KY322437|ubiquitin family protein [Tetraselmis virus 1]</td>
+      <td>Tetraselmis virus 1</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_4126_length_2037_cov_1066.281437</td>
+      <td>97.1</td>
+      <td>0.000000e+00</td>
+      <td>acc|GENBANK|AJD23399.1|NEIGHBOR|KJ789140|polyprotein [Japanese yam mosaic virus]</td>
+      <td>Japanese yam mosaic virus</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_2209_length_492_cov_67.100218</td>
+      <td>95.7</td>
+      <td>6.240000e-71</td>
+      <td>acc|GENBANK|ARF10610.1|GENBANK|KY684104|ubiquitin family protein [Hokovirus HKV1]</td>
+      <td>Hokovirus HKV1</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_2907_length_226_cov_48.886010</td>
+      <td>95.5</td>
+      <td>1.650000e-35</td>
+      <td>acc|GENBANK|XKM46647.1|GENBANK|PQ442261|hypothetical protein [Micromonas commoda virus 20T]</td>
+      <td>Micromonas commoda virus 20T</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_9480_length_301_cov_4.365672</td>
+      <td>94.6</td>
+      <td>1.150000e-29</td>
+      <td>acc|GENBANK|WAX26015.1|GENBANK|OP721220|putative major capsid protein L1 [Human papillomavirus]</td>
+      <td>Human papillomavirus</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_2_length_248_cov_4.581395</td>
+      <td>92.7</td>
+      <td>1.300000e-45</td>
+      <td>acc|GENBANK|AAD44039.1|GENBANK|AF104022|polyprotein [Bovine viral diarrhea virus 2]</td>
+      <td>Bovine viral diarrhea virus 2</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_22646_length_295_cov_1.255725</td>
+      <td>91.4</td>
+      <td>1.050000e-17</td>
+      <td>acc|GENBANK|UYE99088.1|GENBANK|OP589943|hypothetical protein [Betabaculovirus sp.]</td>
+      <td>Betabaculovirus sp.</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3><a href="blastx.summary.tsv" target="_blank">View full DIAMOND blastx summary table</a></h3>
+      </article>
+    
+      <article id="krona">
+        <h1>Krona BLASTX visualization</h1>
+        <p>
+            Interactive Krona reports generated from filtered DIAMOND blastx results.
+            The filters are the same configured for selected contigs in the report.
+        </p>
+        <h3>Open Krona BLASTX reports:</h3>
+        <a href="html/krona_index.html" target="_blank">All BLASTX Krona reports</a>&emsp;&emsp;<a href="html/SRR22534759.blastx.krona.html" target="_blank">SRR22534759 - BLASTX Krona</a><br />
+      </article>
+
+      <article id="selectContig">
+        <h1>Selected contigs and their annotation</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Contig</th>
+      <th>Percent_identity</th>
+      <th>Contig_length</th>
+      <th>Reference_length</th>
+      <th>RefCoverage</th>
+      <th>E-value</th>
+      <th>Reference_name</th>
+      <th>Species</th>
+      <th>blastType</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_3649_length_2350_cov_47.138973</td>
+      <td>77.0</td>
+      <td>2350</td>
+      <td>102</td>
+      <td>0.852941</td>
+      <td>9.080000e-40</td>
+      <td>acc|GENBANK|CAD45443.1|GENBANK|AJ507397|coat protein [Iris mild mosaic virus]</td>
+      <td>Iris mild mosaic virus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_31078_length_1304_cov_3.290323</td>
+      <td>98.6</td>
+      <td>1304</td>
+      <td>254</td>
+      <td>0.818898</td>
+      <td>2.660000e-148</td>
+      <td>acc|GENBANK|WJR88141.1|GENBANK|OQ506337|replication-associated protein [Yam yellow spot mosaic virus]</td>
+      <td>Yam yellow spot mosaic virus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_6508_length_1160_cov_79.007098</td>
+      <td>72.9</td>
+      <td>1160</td>
+      <td>325</td>
+      <td>0.873846</td>
+      <td>1.300000e-139</td>
+      <td>acc|GENBANK|QDH91349.1|GENBANK|MN036178|hypothetical protein [Partitiviridae sp.]</td>
+      <td>Partitiviridae sp.</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_9806_length_1026_cov_30.189325</td>
+      <td>75.6</td>
+      <td>1026</td>
+      <td>129</td>
+      <td>0.953488</td>
+      <td>3.170000e-55</td>
+      <td>acc|GENBANK|AKE34115.1|GENBANK|KR068481|alpha karyopherin [Okra enation leaf curl virus]</td>
+      <td>Okra enation leaf curl virus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_38147_length_987_cov_11.627883</td>
+      <td>79.6</td>
+      <td>987</td>
+      <td>113</td>
+      <td>0.867257</td>
+      <td>1.880000e-43</td>
+      <td>acc|GENBANK|AGM61329.1|GENBANK|KC170726|histone H4 like-protein [Cotesia sesamiae bracovirus]</td>
+      <td>Cotesia sesamiae bracovirus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_2961_length_983_cov_49.986316</td>
+      <td>70.0</td>
+      <td>983</td>
+      <td>182</td>
+      <td>0.879121</td>
+      <td>4.290000e-81</td>
+      <td>acc|GENBANK|BDT62002.1|GENBANK|LC738871|hypothetical protein [Penaeus monodon majanivirus B]</td>
+      <td>Penaeus monodon majanivirus B</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_36427_length_953_cov_32.765217</td>
+      <td>75.0</td>
+      <td>953</td>
+      <td>129</td>
+      <td>0.961240</td>
+      <td>2.130000e-55</td>
+      <td>acc|GENBANK|AKE34115.1|GENBANK|KR068481|alpha karyopherin [Okra enation leaf curl virus]</td>
+      <td>Okra enation leaf curl virus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_1735_length_927_cov_4.072707</td>
+      <td>93.3</td>
+      <td>927</td>
+      <td>246</td>
+      <td>0.914634</td>
+      <td>1.450000e-140</td>
+      <td>acc|GENBANK|ARF10610.1|GENBANK|KY684104|ubiquitin family protein [Hokovirus HKV1]</td>
+      <td>Hokovirus HKV1</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_4477_length_794_cov_108.989488</td>
+      <td>71.2</td>
+      <td>794</td>
+      <td>124</td>
+      <td>0.951613</td>
+      <td>3.300000e-51</td>
+      <td>acc|GENBANK|QBK88266.1|GENBANK|MK500382|NifU-like protein [Marseillevirus LCMAC202]</td>
+      <td>Marseillevirus LCMAC202</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_36702_length_735_cov_52.541311</td>
+      <td>71.2</td>
+      <td>735</td>
+      <td>124</td>
+      <td>0.951613</td>
+      <td>7.150000e-51</td>
+      <td>acc|GENBANK|QBK88266.1|GENBANK|MK500382|NifU-like protein [Marseillevirus LCMAC202]</td>
+      <td>Marseillevirus LCMAC202</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_34197_length_710_cov_24.923191</td>
+      <td>70.7</td>
+      <td>710</td>
+      <td>212</td>
+      <td>0.787736</td>
+      <td>1.010000e-78</td>
+      <td>acc|GENBANK|AYV82031.1|GENBANK|MK072334|Ras-like protein Rab-11A [Homavirus sp.]</td>
+      <td>Homavirus sp.</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_5550_length_636_cov_30.837479</td>
+      <td>70.1</td>
+      <td>636</td>
+      <td>212</td>
+      <td>0.787736</td>
+      <td>2.900000e-79</td>
+      <td>acc|GENBANK|AYV82031.1|GENBANK|MK072334|Ras-like protein Rab-11A [Homavirus sp.]</td>
+      <td>Homavirus sp.</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_4554_length_626_cov_40.249578</td>
+      <td>78.6</td>
+      <td>626</td>
+      <td>113</td>
+      <td>0.867257</td>
+      <td>1.350000e-44</td>
+      <td>acc|GENBANK|AGM61329.1|GENBANK|KC170726|histone H4 like-protein [Cotesia sesamiae bracovirus]</td>
+      <td>Cotesia sesamiae bracovirus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_34701_length_621_cov_25.318027</td>
+      <td>71.5</td>
+      <td>621</td>
+      <td>212</td>
+      <td>0.712264</td>
+      <td>6.640000e-72</td>
+      <td>acc|GENBANK|AYV82031.1|GENBANK|MK072334|Ras-like protein Rab-11A [Homavirus sp.]</td>
+      <td>Homavirus sp.</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NODE_8245_length_539_cov_16.810277</td>
+      <td>98.3</td>
+      <td>539</td>
+      <td>77</td>
+      <td>0.766234</td>
+      <td>3.010000e-31</td>
+      <td>acc|GENBANK|AUF82381.1|GENBANK|KY322437|ubiquitin family protein [Tetraselmis virus 1]</td>
+      <td>Tetraselmis virus 1</td>
+      <td>Blastx</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3><a href="blastx.summary.tsv" target="_blank">View full DIAMOND blastx summary table</a></h3>
+        <h3><a href="blast.nx.tsv" target="_blank">View full blast.nx compatibility table</a></h3>
+      </article>
+
+      <article id="mapping">
+        <h1>Mapping reads to references</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>RefId</th>
+      <th>BlastHitAccession</th>
+      <th>Species</th>
+      <th>RefLen</th>
+      <th>MappedReads</th>
+      <th>RPKM</th>
+      <th>PercentMappedreads</th>
+      <th>PercentGenomeCovered</th>
+      <th>MeanCoverage</th>
+      <th>BlastIdentity</th>
+      <th>BlastQueryCoverage</th>
+      <th>Taxonomy</th>
+      <th>RefTitle</th>
+      <th>MappingGraph</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NC_026248.1</td>
+      <td>NC_026248</td>
+      <td>Yam latent virus</td>
+      <td>8531</td>
+      <td>204651</td>
+      <td>1.199455e+09</td>
+      <td>1023255.0</td>
+      <td>99.95</td>
+      <td>2937.6</td>
+      <td>90.89</td>
+      <td>100.0</td>
+      <td>Quinvirinae;Betaflexiviridae</td>
+      <td>NC_026248.1 Yam latent virus isolate SG1, complete genome</td>
+      <td><a href="image/SRR22534759.NC_026248.1.coverage.png" target="_blank">SRR22534759 NC_026248.1</a></td>
+    </tr>
+    <tr>
+      <td>SRR22534759</td>
+      <td>NC_000947.1</td>
+      <td>NC_000947</td>
+      <td>Japanese yam mosaic virus</td>
+      <td>9760</td>
+      <td>46623</td>
+      <td>2.388473e+08</td>
+      <td>233115.0</td>
+      <td>69.12</td>
+      <td>477.0</td>
+      <td>90.52</td>
+      <td>100.0</td>
+      <td>Potyvirus;Potyviridae</td>
+      <td>NC_000947.1 Japanese yam mosaic virus, complete genome</td>
+      <td><a href="image/SRR22534759.NC_000947.1.coverage.png" target="_blank">SRR22534759 NC_000947.1</a></td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3><a href="report.txt" target="_blank">View full mapping/report table</a></h3>
+      </article>
+
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,4 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR9203062|NC_004752.1	SRR9203062	NC_004752.1	hit	consensus.blastn.online	NC_004752	0.0	96.45	100.0	Yam mosaic virus, complete genome	/data/output/report/ncbiBlast/xml/SRR9203062_NC_004752.1.xml	
+SRR9203062|NC_019412.1	SRR9203062	NC_019412.1	hit	consensus.blastn.online	NC_019412	0.0	91.1	100.0	Yam mild mosaic virus from Brazil, complete genome	/data/output/report/ncbiBlast/xml/SRR9203062_NC_019412.1.xml	
+SRR9203062|NC_055506.1	SRR9203062	NC_055506.1	hit	consensus.blastn.online	NC_055506	0.0	91.82	100.0	Dioscorea mosaic virus isolate DMV-FL, complete genome	/data/output/report/ncbiBlast/xml/SRR9203062_NC_055506.1.xml	

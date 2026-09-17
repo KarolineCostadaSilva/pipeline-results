@@ -1,0 +1,4 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR13683865|NC_019412.1	SRR13683865	NC_019412.1	hit	consensus.blastn.online	NC_019412	0.0	90.39	100.0	Yam mild mosaic virus from Brazil, complete genome	/data/output/report/ncbiBlast/xml/SRR13683865_NC_019412.1.xml	
+SRR13683865|NC_055491.1	SRR13683865	NC_055491.1	hit	consensus.blastn.online	NC_055491	0.0	91.3	100.0	Yam chlorotic necrosis virus isolate YCNV-YJish, complete genome	/data/output/report/ncbiBlast/xml/SRR13683865_NC_055491.1.xml	
+SRR13683865|NC_076495.1	SRR13683865	NC_076495.1	hit	consensus.blastn.online	NC_076495	0.0	96.0	100.0	Yam asymptomatic virus 1 isolate VU567Da, complete genome	/data/output/report/ncbiBlast/xml/SRR13683865_NC_076495.1.xml	

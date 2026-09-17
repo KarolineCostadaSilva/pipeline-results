@@ -1,0 +1,2 @@
+Sample	RawReads	RawYield(Mbases)	Percent>=Q30Bases	RawMeanQualityScore	RibosomalRNA	ReadsAfterRemoveDuplicates	ControlReads	ReadsAfterTrim	PossiblePathogenReads
+DRR045125	87369952(F)|87369952(R)	8737(F)|8737(R)	89.86(F)|86.57(R)	35.24(F)|34.19(R)	3.86%	0 (0.00%)	0(F)|0(R)	148051542 (84.73%)	0 (0.00%)

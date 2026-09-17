@@ -1,5 +1,0 @@
-QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
-SRR17635181|NC_000947.1	SRR17635181	NC_000947.1	error							/data/output/report/ncbiBlast/xml/SRR17635181_NC_000947.1.xml	<urlopen error [Errno -2] Name or service not known>
-SRR17635181|NC_003003.1	SRR17635181	NC_003003.1	error							/data/output/report/ncbiBlast/xml/SRR17635181_NC_003003.1.xml	<urlopen error [Errno -2] Name or service not known>
-SRR17635181|NC_003004.1	SRR17635181	NC_003004.1	error							/data/output/report/ncbiBlast/xml/SRR17635181_NC_003004.1.xml	<urlopen error [Errno -2] Name or service not known>
-SRR17635181|NC_026248.1	SRR17635181	NC_026248.1	error							/data/output/report/ncbiBlast/xml/SRR17635181_NC_026248.1.xml	<urlopen error [Errno -2] Name or service not known>

@@ -54,7 +54,7 @@
       <h4>Contig annotation</h4>
       <a href="#blastx">Blastx (RVDB)</a>
       <a href="#selectContig">Selected contigs</a>
-      <a href="#megan">MEGAN6 files</a>
+      <a href="#krona">Krona BLASTX</a>
       <h4>Mapping</h4>
       <a href="#mapping">Map reads to reference</a>
     </div>
@@ -89,7 +89,7 @@
       <td>Yam mild mosaic virus</td>
       <td>consensus.blastn.online</td>
       <td>0.0</td>
-      <td>90.03</td>
+      <td>90.05</td>
       <td>99.81</td>
       <td>Yam mild mosaic virus isolate CN20, complete genome</td>
     </tr>
@@ -154,21 +154,21 @@
   <tbody>
     <tr>
       <td>SRR14574589_R1</td>
-      <td>12642652.0</td>
-      <td>1.8 Gbp</td>
+      <td>16536763.0</td>
+      <td>2.4 Gbp</td>
       <td>0.0</td>
       <td>36-150</td>
       <td>46.0</td>
-      <td>79.978420</td>
+      <td>69.898713</td>
     </tr>
     <tr>
       <td>SRR14574589_R2</td>
-      <td>12642652.0</td>
-      <td>1.7 Gbp</td>
+      <td>16536763.0</td>
+      <td>2.3 Gbp</td>
       <td>0.0</td>
       <td>36-150</td>
       <td>46.0</td>
-      <td>70.566504</td>
+      <td>61.448356</td>
     </tr>
   </tbody>
 </table>
@@ -202,9 +202,9 @@
       <td>97.34(F)|89.90(R)</td>
       <td>39.86(F)|37.67(R)</td>
       <td>1.07%</td>
-      <td>27820166 (76.83%)</td>
+      <td>0 (0.00%)</td>
       <td>0(F)|0(R)</td>
-      <td>25285304 (69.83%)</td>
+      <td>33073526 (91.34%)</td>
       <td>0 (0.00%)</td>
     </tr>
   </tbody>
@@ -232,17 +232,17 @@
   <tbody>
     <tr>
       <td>SRR14574589</td>
-      <td>98600</td>
-      <td>8062</td>
-      <td>85912</td>
-      <td>6191</td>
-      <td>37175487</td>
-      <td>45.77</td>
-      <td>593</td>
-      <td>210</td>
-      <td>913.8</td>
-      <td>15280</td>
-      <td>64507</td>
+      <td>109205</td>
+      <td>7262</td>
+      <td>90293</td>
+      <td>8292</td>
+      <td>37088207</td>
+      <td>45.83</td>
+      <td>526</td>
+      <td>207</td>
+      <td>811.7</td>
+      <td>17463</td>
+      <td>68342</td>
     </tr>
   </tbody>
 </table>
@@ -255,21 +255,317 @@
         <a href="html/quast_multiqc.html" target="_blank">All samples quast multiQC</a>
       </article>
 
+      <article id="blastx">
+        <h1>DIAMOND blastx against RVDB</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Contig</th>
+      <th>Percent_identity</th>
+      <th>E-value</th>
+      <th>Reference_name</th>
+      <th>Species</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_22720_length_672_cov_2.862285</td>
+      <td>100.0</td>
+      <td>1.640000e-149</td>
+      <td>acc|GENBANK|WWU04043.1|GENBANK|OR798738|AAA domain protein [Endornaviridae sp.]</td>
+      <td>Endornaviridae sp.</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_10060_length_319_cov_2780.080420</td>
+      <td>100.0</td>
+      <td>1.430000e-62</td>
+      <td>acc|GENBANK|WOZ17734.1|NEIGHBOR|OR762540|polyprotein [Yam mild mosaic virus]</td>
+      <td>Yam mild mosaic virus</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_99722_length_249_cov_2.166667</td>
+      <td>100.0</td>
+      <td>1.100000e-49</td>
+      <td>acc|GENBANK|AAD44039.1|GENBANK|AF104022|polyprotein [Bovine viral diarrhea virus 2]</td>
+      <td>Bovine viral diarrhea virus 2</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_53469_length_203_cov_66.858824</td>
+      <td>100.0</td>
+      <td>1.560000e-15</td>
+      <td>acc|GENBANK|WZO77402.1|GENBANK|PP681867|ubiquitin domain-containing protein [Chlorovirus sp.]</td>
+      <td>Chlorovirus sp.</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_22625_length_284_cov_2.796813</td>
+      <td>98.9</td>
+      <td>7.830000e-54</td>
+      <td>acc|GENBANK|ABU95029.1|GENBANK|EF592522|polyprotein [Potato virus Y]</td>
+      <td>Potato virus Y</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_7967_length_368_cov_68.313433</td>
+      <td>98.7</td>
+      <td>9.990000e-45</td>
+      <td>acc|GENBANK|XKM46647.1|GENBANK|PQ442261|hypothetical protein [Micromonas commoda virus 20T]</td>
+      <td>Micromonas commoda virus 20T</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_62535_length_229_cov_2.494898</td>
+      <td>97.3</td>
+      <td>6.850000e-41</td>
+      <td>acc|GENBANK|QBK87539.1|GENBANK|MK500357|ubiquitin [Marseillevirus LCMAC201]</td>
+      <td>Marseillevirus LCMAC201</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_104038_length_267_cov_1.000000</td>
+      <td>97.0</td>
+      <td>9.180000e-14</td>
+      <td>acc|GENBANK|AYV75877.1|GENBANK|MK071981|polyubiquitin [Terrestrivirus sp.]</td>
+      <td>Terrestrivirus sp.</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_22792_length_255_cov_2.099099</td>
+      <td>96.4</td>
+      <td>5.660000e-55</td>
+      <td>acc|GENBANK|AJD23413.1|GENBANK|KJ854435|replication-associated protein [Yam yellow spot mosaic virus]</td>
+      <td>Yam yellow spot mosaic virus</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_3213_length_295_cov_67.645038</td>
+      <td>95.9</td>
+      <td>9.190000e-57</td>
+      <td>acc|GENBANK|ARF10610.1|GENBANK|KY684104|ubiquitin family protein [Hokovirus HKV1]</td>
+      <td>Hokovirus HKV1</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3><a href="blastx.summary.tsv" target="_blank">View full DIAMOND blastx summary table</a></h3>
+      </article>
+    
+      <article id="krona">
+        <h1>Krona BLASTX visualization</h1>
+        <p>
+            Interactive Krona reports generated from filtered DIAMOND blastx results.
+            The filters are the same configured for selected contigs in the report.
+        </p>
+        <h3>Open Krona BLASTX reports:</h3>
+        <a href="html/krona_index.html" target="_blank">All BLASTX Krona reports</a>&emsp;&emsp;<a href="html/SRR14574589.blastx.krona.html" target="_blank">SRR14574589 - BLASTX Krona</a><br />
+      </article>
+
       <article id="selectContig">
-        <h1>Selected contigs and their annotation</h1>No annotated contigs available (no blastx hits)
+        <h1>Selected contigs and their annotation</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Contig</th>
+      <th>Percent_identity</th>
+      <th>Contig_length</th>
+      <th>Reference_length</th>
+      <th>RefCoverage</th>
+      <th>E-value</th>
+      <th>Reference_name</th>
+      <th>Species</th>
+      <th>blastType</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_55822_length_1393_cov_69.202941</td>
+      <td>75.8</td>
+      <td>1393</td>
+      <td>129</td>
+      <td>0.961240</td>
+      <td>1.400000e-54</td>
+      <td>acc|GENBANK|AKE34115.1|GENBANK|KR068481|alpha karyopherin [Okra enation leaf curl virus]</td>
+      <td>Okra enation leaf curl virus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_30821_length_1136_cov_3.588395</td>
+      <td>73.8</td>
+      <td>1136</td>
+      <td>277</td>
+      <td>0.880866</td>
+      <td>7.000000e-133</td>
+      <td>acc|GENBANK|BDT61648.1|GENBANK|LC738868|protein gustavus-like protein [Marsupenaeus japonicus endogenous nimavirus]</td>
+      <td>Marsupenaeus japonicus endogenous nimavirus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_12981_length_1102_cov_13.698784</td>
+      <td>72.4</td>
+      <td>1102</td>
+      <td>378</td>
+      <td>0.814815</td>
+      <td>7.020000e-157</td>
+      <td>acc|GENBANK|QBK85319.1|GENBANK|MK500315|ribonucleoside diphosphate reductase, beta [Iridovirus LCIVAC01]</td>
+      <td>Iridovirus LCIVAC01</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_9476_length_1098_cov_73.468545</td>
+      <td>70.0</td>
+      <td>1098</td>
+      <td>182</td>
+      <td>0.879121</td>
+      <td>1.570000e-80</td>
+      <td>acc|GENBANK|BDT62002.1|GENBANK|LC738871|hypothetical protein [Penaeus monodon majanivirus B]</td>
+      <td>Penaeus monodon majanivirus B</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_7281_length_980_cov_54.063358</td>
+      <td>75.6</td>
+      <td>980</td>
+      <td>129</td>
+      <td>0.953488</td>
+      <td>4.940000e-56</td>
+      <td>acc|GENBANK|AKE34115.1|GENBANK|KR068481|alpha karyopherin [Okra enation leaf curl virus]</td>
+      <td>Okra enation leaf curl virus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_74452_length_958_cov_4.300541</td>
+      <td>99.1</td>
+      <td>958</td>
+      <td>413</td>
+      <td>0.772397</td>
+      <td>1.060000e-217</td>
+      <td>acc|GENBANK|WWU03958.1|GENBANK|OR798653|polyprotein [Endornaviridae sp.]</td>
+      <td>Endornaviridae sp.</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_4746_length_941_cov_26.433921</td>
+      <td>70.8</td>
+      <td>941</td>
+      <td>212</td>
+      <td>0.792453</td>
+      <td>1.920000e-78</td>
+      <td>acc|GENBANK|AYV82031.1|GENBANK|MK072334|Ras-like protein Rab-11A [Homavirus sp.]</td>
+      <td>Homavirus sp.</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_47771_length_906_cov_3.234822</td>
+      <td>74.7</td>
+      <td>906</td>
+      <td>354</td>
+      <td>0.824859</td>
+      <td>3.140000e-154</td>
+      <td>acc|REFSEQ|YP_008319229.1|REFSEQ|NC_021858|Ribonucleoside-diphosphate reductase small [Pandoravirus dulcis]</td>
+      <td>Pandoravirus dulcis</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_53949_length_738_cov_17.611348</td>
+      <td>74.8</td>
+      <td>738</td>
+      <td>159</td>
+      <td>0.974843</td>
+      <td>8.420000e-73</td>
+      <td>acc|GENBANK|AYV78925.1|GENBANK|MK072116|polyubiquitin [Edafosvirus sp.]</td>
+      <td>Edafosvirus sp.</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_9020_length_696_cov_74.294118</td>
+      <td>77.0</td>
+      <td>696</td>
+      <td>102</td>
+      <td>0.852941</td>
+      <td>6.080000e-44</td>
+      <td>acc|GENBANK|CAD45443.1|GENBANK|AJ507397|coat protein [Iris mild mosaic virus]</td>
+      <td>Iris mild mosaic virus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_47285_length_642_cov_5.430213</td>
+      <td>79.8</td>
+      <td>642</td>
+      <td>127</td>
+      <td>0.700787</td>
+      <td>6.730000e-42</td>
+      <td>acc|GENBANK|QZB49175.1|GENBANK|MZ645207|histone H4-like protein [Cotesia vestalis bracovirus]</td>
+      <td>Cotesia vestalis bracovirus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_14836_length_638_cov_25.304132</td>
+      <td>79.6</td>
+      <td>638</td>
+      <td>113</td>
+      <td>0.867257</td>
+      <td>2.710000e-45</td>
+      <td>acc|GENBANK|AGM61329.1|GENBANK|KC170726|histone H4 like-protein [Cotesia sesamiae bracovirus]</td>
+      <td>Cotesia sesamiae bracovirus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_3387_length_637_cov_21.688742</td>
+      <td>79.6</td>
+      <td>637</td>
+      <td>113</td>
+      <td>0.867257</td>
+      <td>3.840000e-45</td>
+      <td>acc|GENBANK|AGM61329.1|GENBANK|KC170726|histone H4 like-protein [Cotesia sesamiae bracovirus]</td>
+      <td>Cotesia sesamiae bracovirus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_38583_length_628_cov_5.060504</td>
+      <td>86.5</td>
+      <td>628</td>
+      <td>127</td>
+      <td>0.700787</td>
+      <td>3.780000e-45</td>
+      <td>acc|GENBANK|QZB49175.1|GENBANK|MZ645207|histone H4-like protein [Cotesia vestalis bracovirus]</td>
+      <td>Cotesia vestalis bracovirus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR14574589</td>
+      <td>NODE_44953_length_614_cov_40.041308</td>
+      <td>71.5</td>
+      <td>614</td>
+      <td>212</td>
+      <td>0.712264</td>
+      <td>1.460000e-72</td>
+      <td>acc|GENBANK|AYV82031.1|GENBANK|MK072334|Ras-like protein Rab-11A [Homavirus sp.]</td>
+      <td>Homavirus sp.</td>
+      <td>Blastx</td>
+    </tr>
+  </tbody>
+</table>
         <br>
         <h3><a href="blastx.summary.tsv" target="_blank">View full DIAMOND blastx summary table</a></h3>
         <h3><a href="blast.nx.tsv" target="_blank">View full blast.nx compatibility table</a></h3>
-      </article>
-
-      <article id="megan">
-      <h1>MEGAN6 visualization files</h1>
-      <p>
-        These files were generated from DIAMOND blastx results.
-        Open the MEGANized DAA files in MEGAN6 for interactive taxonomic visualization.
-      </p>
-      <h3>Open/download MEGAN6 DAA files:</h3>
-      No MEGAN6 DAA files available
       </article>
 
       <article id="mapping">
@@ -300,12 +596,12 @@
       <td>KC473517</td>
       <td>Yam mild mosaic virus</td>
       <td>9538</td>
-      <td>225650</td>
-      <td>935.64</td>
-      <td>0.89</td>
-      <td>96.54</td>
-      <td>2743.5</td>
-      <td>90.03</td>
+      <td>310165</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>95.69</td>
+      <td>3782.7</td>
+      <td>90.05</td>
       <td>99.81</td>
       <td>Potyvirus;Potyviridae</td>
       <td>NC_019412.1 Yam mild mosaic virus from Brazil, complete genome</td>

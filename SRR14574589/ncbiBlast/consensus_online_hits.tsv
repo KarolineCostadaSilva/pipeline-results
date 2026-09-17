@@ -1,2 +1,2 @@
 QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
-SRR14574589|NC_019412.1	SRR14574589	NC_019412.1	hit	consensus.blastn.online	KC473517	0.0	90.03	99.81	Yam mild mosaic virus isolate CN20, complete genome	/data/output/report/ncbiBlast/xml/SRR14574589_NC_019412.1.xml	
+SRR14574589|NC_019412.1	SRR14574589	NC_019412.1	hit	consensus.blastn.online	KC473517	0.0	90.05	99.81	Yam mild mosaic virus isolate CN20, complete genome	/data/output/report/ncbiBlast/xml/SRR14574589_NC_019412.1.xml	

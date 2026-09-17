@@ -1,0 +1,5 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR8627711|NC_003003.1	SRR8627711	NC_003003.1	hit	consensus.blastn.online	NC_003003	0.0	96.71	100.0	Broad bean wilt virus 2 RNA 1, complete sequence	/data/output/report/ncbiBlast/xml/SRR8627711_NC_003003.1.xml	
+SRR8627711|NC_003004.1	SRR8627711	NC_003004.1	hit	consensus.blastn.online	NC_003004	0.0	92.05	100.0	Broad bean wilt virus 2 RNA 2, complete sequence	/data/output/report/ncbiBlast/xml/SRR8627711_NC_003004.1.xml	
+SRR8627711|NC_018455.1	SRR8627711	NC_018455.1	hit	consensus.blastn.online	NC_018455	0.0	91.6	100.0	Chinese yam necrotic mosaic virus, complete genome	/data/output/report/ncbiBlast/xml/SRR8627711_NC_018455.1.xml	
+SRR8627711|NC_038561.1	SRR8627711	NC_038561.1	hit	consensus.blastn.online	NC_038561	0.0	96.02	100.0	Yam chlorotic necrotic mosaic virus isolate YS, complete genome	/data/output/report/ncbiBlast/xml/SRR8627711_NC_038561.1.xml	

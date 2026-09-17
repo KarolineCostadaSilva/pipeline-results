@@ -1,0 +1,2 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR8819982|NC_038381.1	SRR8819982	NC_038381.1	hit	consensus.blastn.online	NC_038381	0.0	94.27	100.0	Dioscorea bacilliform AL virus isolate DBALV-[3RT], complete genome	/data/output/report/ncbiBlast/xml/SRR8819982_NC_038381.1.xml	

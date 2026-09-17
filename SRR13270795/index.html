@@ -1,0 +1,675 @@
+
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; }
+    header { background-color: #666; padding: 10px; text-align: center; font-size: 35px; color: white; }
+    .sidenav {
+      height: 100%; width: 200px; position: fixed; z-index: 1; top: 0; left: 0;
+      background-color: #eee; overflow-x: hidden; padding-top: 20px;
+    }
+    .sidenav a { padding: 6px 8px 6px; text-decoration: none; font-size: 16px; color: #2196F3; display: block; }
+    .sidenav a:hover { color: #064579; }
+    .main { margin-left: 200px; font-size: 16px; padding: 0px 10px; }
+    article { float: left; padding: 20px; background-color: #f1f1f1; width: 100%; }
+  </style>
+  <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, alltables;
+      alltables = document.querySelectorAll("table[data-name=mytable]");
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      alltables.forEach(function(table){
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      });
+    }
+  </script>
+</head>
+<body>
+  <header><h1>HTS Report</h1></header>
+
+  <section>
+    <div class="sidenav">
+      <a href="#summary">Summary</a>
+      <h4>Sample QC</h4>
+      <a href="#rawQC">Raw reads QC</a>
+      <a href="#cleanQC">Clean reads QC</a>
+      <a href="#numQC">Reads number track</a>
+      <a href="#assemblyQC">Assembly QC</a>
+      <h4>Contig annotation</h4>
+      <a href="#blastx">Blastx (RVDB)</a>
+      <a href="#selectContig">Selected contigs</a>
+      <a href="#krona">Krona BLASTX</a>
+      <h4>Mapping</h4>
+      <a href="#mapping">Map reads to reference</a>
+    </div>
+
+    <div class="main">
+      <br>
+      <div class="card-body row no-gutters align-items-center pull-right">
+        <label>Filter sample </label>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="A sample name" title="Type in a sample name">
+      </div>
+
+      <article id="summary">
+        <h1>Virus NCBI blast</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>RefId</th>
+      <th>BlastHitAccession</th>
+      <th>Species</th>
+      <th>BlastType</th>
+      <th>BlastEvalue</th>
+      <th>BlastIdentity</th>
+      <th>BlastQueryCoverage</th>
+      <th>BlastDescription</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NC_026248.1</td>
+      <td>NC_026248</td>
+      <td>Yam latent virus</td>
+      <td>consensus.blastn.online</td>
+      <td>0.0</td>
+      <td>91.95</td>
+      <td>100.0</td>
+      <td>Yam latent virus isolate SG1, complete genome</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NC_003003.1</td>
+      <td>NC_003003</td>
+      <td>Broad bean wilt virus 2</td>
+      <td>consensus.blastn.online</td>
+      <td>0.0</td>
+      <td>92.99</td>
+      <td>100.0</td>
+      <td>Broad bean wilt virus 2 RNA 1, complete sequence</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NC_003004.1</td>
+      <td>NC_003004</td>
+      <td>Broad bean wilt virus 2</td>
+      <td>consensus.blastn.online</td>
+      <td>0.0</td>
+      <td>92.1</td>
+      <td>100.0</td>
+      <td>Broad bean wilt virus 2 RNA 2, complete sequence</td>
+    </tr>
+  </tbody>
+</table>
+        <h3><a href="finalConsensus.txt" target="_blank">View consensus</a></h3><br />
+      </article>
+
+      <article id="rawQC">
+        <h1>Raw reads QC</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Total Sequences</th>
+      <th>Total Bases</th>
+      <th>Sequences flagged as poor quality</th>
+      <th>Sequence length</th>
+      <th>%GC</th>
+      <th>total_deduplicated_percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR13270795_R1</td>
+      <td>23330964.0</td>
+      <td>3.5 Gbp</td>
+      <td>0.0</td>
+      <td>151.0</td>
+      <td>46.0</td>
+      <td>41.493511</td>
+    </tr>
+    <tr>
+      <td>SRR13270795_R2</td>
+      <td>23330964.0</td>
+      <td>3.5 Gbp</td>
+      <td>0.0</td>
+      <td>151.0</td>
+      <td>46.0</td>
+      <td>43.557939</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3>View raw reads FastQC report:</h3> <a href="html/SRR13270795_R1_fastqc.html" target="_blank">SRR13270795_R1</a> &emsp;&emsp; <a href="html/SRR13270795_R2_fastqc.html" target="_blank">SRR13270795_R2</a>
+        <br><br>
+        <a href="html/raw_multiqc.html">All samples raw reads multiQC</a>
+      </article>
+
+      <article id="cleanQC">
+        <h1>Clean reads QC</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Total Sequences</th>
+      <th>Total Bases</th>
+      <th>Sequences flagged as poor quality</th>
+      <th>Sequence length</th>
+      <th>%GC</th>
+      <th>total_deduplicated_percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR13270795_R1</td>
+      <td>21073859.0</td>
+      <td>3.1 Gbp</td>
+      <td>0.0</td>
+      <td>36-151</td>
+      <td>46.0</td>
+      <td>68.920204</td>
+    </tr>
+    <tr>
+      <td>SRR13270795_R2</td>
+      <td>21073859.0</td>
+      <td>3.1 Gbp</td>
+      <td>0.0</td>
+      <td>36-151</td>
+      <td>46.0</td>
+      <td>60.845994</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3>View clean reads FastQC report:</h3> <a href="html/SRR13270795_R1.trimmed_fastqc.html" target="_blank">SRR13270795_R1</a> &emsp;&emsp; <a href="html/SRR13270795_R2.trimmed_fastqc.html" target="_blank">SRR13270795_R2</a>
+        <br><br>
+        <a href="html/trimmed_multiqc.html">All samples clean reads multiQC</a>
+      </article>
+
+      <article id="numQC">
+        <h1>Read numbers in each QC step</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>RawReads</th>
+      <th>RawYield(Mbases)</th>
+      <th>Percent>=Q30Bases</th>
+      <th>RawMeanQualityScore</th>
+      <th>RibosomalRNA</th>
+      <th>ReadsAfterRemoveDuplicates</th>
+      <th>ControlReads</th>
+      <th>ReadsAfterTrim</th>
+      <th>PossiblePathogenReads</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR13270795</td>
+      <td>23330964(F)|23330964(R)</td>
+      <td>3523(F)|3523(R)</td>
+      <td>94.82(F)|92.57(R)</td>
+      <td>36.12(F)|35.72(R)</td>
+      <td>3.91%</td>
+      <td>0 (0.00%)</td>
+      <td>0(F)|0(R)</td>
+      <td>42147718 (90.33%)</td>
+      <td>0 (0.00%)</td>
+    </tr>
+  </tbody>
+</table>
+      </article>
+
+      <article id="assemblyQC">
+        <h1>Assembly QC</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Assembly</th>
+      <th># contigs (>= 0 bp)</th>
+      <th># contigs (>= 1000 bp)</th>
+      <th># contigs</th>
+      <th>Largest contig</th>
+      <th>Total length</th>
+      <th>GC (%)</th>
+      <th>N50</th>
+      <th>N90</th>
+      <th>auN</th>
+      <th>L50</th>
+      <th>L90</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR13270795</td>
+      <td>73366</td>
+      <td>5743</td>
+      <td>62500</td>
+      <td>9011</td>
+      <td>28093912</td>
+      <td>43.93</td>
+      <td>602</td>
+      <td>219</td>
+      <td>884.0</td>
+      <td>12291</td>
+      <td>47038</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3><a href="assembly_qc.tsv" target="_blank">View full Assembly QC table</a></h3>
+        <h3>View assembly QC quast report:</h3> <a href="html/SRR13270795.quast.html" target="_blank">SRR13270795</a>&emsp;&emsp;
+        <br>
+        <h3>View contigs FASTA files:</h3> <a href="assembly/SRR13270795.contigs.fasta" target="_blank">SRR13270795</a>&emsp;&emsp;
+        <br><br>
+        <a href="html/quast_multiqc.html" target="_blank">All samples quast multiQC</a>
+      </article>
+
+      <article id="blastx">
+        <h1>DIAMOND blastx against RVDB</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Contig</th>
+      <th>Percent_identity</th>
+      <th>E-value</th>
+      <th>Reference_name</th>
+      <th>Species</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_72909_length_442_cov_1.442543</td>
+      <td>100.0</td>
+      <td>9.120000e-91</td>
+      <td>acc|GENBANK|QFF92668.1|GENBANK|MN164461|protein E1 [human papillomavirus 18]</td>
+      <td>human papillomavirus 18</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_44544_length_376_cov_2.448980</td>
+      <td>100.0</td>
+      <td>9.170000e-88</td>
+      <td>acc|GENBANK|WJR88141.1|GENBANK|OQ506337|replication-associated protein [Yam yellow spot mosaic virus]</td>
+      <td>Yam yellow spot mosaic virus</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_72150_length_304_cov_1.520295</td>
+      <td>100.0</td>
+      <td>1.730000e-72</td>
+      <td>acc|GENBANK|AAQ10077.1|GENBANK|AF532607|envelope protein [Murine leukemia virus]</td>
+      <td>Murine leukemia virus</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_40368_length_325_cov_2.332192</td>
+      <td>100.0</td>
+      <td>1.720000e-67</td>
+      <td>acc|GENBANK|CAA42007.1|GENBANK|X59357|Epstein-Barr virus small RNA associated protein [Homo sapiens]</td>
+      <td>Homo sapiens</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_12851_length_263_cov_2.039130</td>
+      <td>100.0</td>
+      <td>9.430000e-61</td>
+      <td>acc|GENBANK|AAA43661.1|GENBANK|M34335|hemagglutinin [Influenza A virus (A/Puerto Rico/8/1934(H1N1))]</td>
+      <td>Influenza A virus (A/Puerto Rico/8/1934(H1N1))</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_23563_length_266_cov_1.884120</td>
+      <td>100.0</td>
+      <td>9.760000e-61</td>
+      <td>acc|GENBANK|ACX47673.1|NEIGHBOR|CY045987|matrix protein 2 [Influenza A virus (A/reassortant/RESVIR9(Nanchang/933/1995 x Puerto]</td>
+      <td>Influenza A virus (A/reassortant/RESVIR9(Nanchang/933/1995 x Puerto</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_32604_length_418_cov_2.490909</td>
+      <td>100.0</td>
+      <td>8.840000e-45</td>
+      <td>acc|REFSEQ|YP_009447989.1|REFSEQ|NC_036582|ubiquitin family protein [Flamingopox virus FGPVKD09]</td>
+      <td>Flamingopox virus FGPVKD09</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_14861_length_208_cov_1.331429</td>
+      <td>100.0</td>
+      <td>1.770000e-44</td>
+      <td>acc|GENBANK|QTJ15551.1|GENBANK|MW843919|polymerase PA [Influenza A virus]</td>
+      <td>Influenza A virus</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_26315_length_204_cov_2.766082</td>
+      <td>100.0</td>
+      <td>1.840000e-43</td>
+      <td>acc|GENBANK|CAA44771.1|GENBANK|X63045|nef [Human immunodeficiency virus 1]</td>
+      <td>Human immunodeficiency virus 1</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_16403_length_1524_cov_5.263581</td>
+      <td>99.8</td>
+      <td>0.000000e+00</td>
+      <td>acc|REFSEQ|NP_057935.1|REFSEQ|NC_001501|gPr80 [Moloney murine leukemia virus]</td>
+      <td>Moloney murine leukemia virus</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3><a href="blastx.summary.tsv" target="_blank">View full DIAMOND blastx summary table</a></h3>
+      </article>
+    
+      <article id="krona">
+        <h1>Krona BLASTX visualization</h1>
+        <p>
+            Interactive Krona reports generated from filtered DIAMOND blastx results.
+            The filters are the same configured for selected contigs in the report.
+        </p>
+        <h3>Open Krona BLASTX reports:</h3>
+        <a href="html/krona_index.html" target="_blank">All BLASTX Krona reports</a>&emsp;&emsp;<a href="html/SRR13270795.blastx.krona.html" target="_blank">SRR13270795 - BLASTX Krona</a><br />
+      </article>
+
+      <article id="selectContig">
+        <h1>Selected contigs and their annotation</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Contig</th>
+      <th>Percent_identity</th>
+      <th>Contig_length</th>
+      <th>Reference_length</th>
+      <th>RefCoverage</th>
+      <th>E-value</th>
+      <th>Reference_name</th>
+      <th>Species</th>
+      <th>blastType</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_5828_length_5977_cov_45411.361541</td>
+      <td>99.4</td>
+      <td>5977</td>
+      <td>1870</td>
+      <td>1.000000</td>
+      <td>0.000000e+00</td>
+      <td>acc|GENBANK|AJD23393.1|NEIGHBOR|KJ789136|polyprotein [Broad bean wilt virus 2]</td>
+      <td>Broad bean wilt virus 2</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_1588_length_3347_cov_72.084188</td>
+      <td>77.0</td>
+      <td>3347</td>
+      <td>102</td>
+      <td>0.852941</td>
+      <td>1.630000e-39</td>
+      <td>acc|GENBANK|CAD45443.1|GENBANK|AJ507397|coat protein [Iris mild mosaic virus]</td>
+      <td>Iris mild mosaic virus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_40350_length_2487_cov_8.547270</td>
+      <td>80.7</td>
+      <td>2487</td>
+      <td>686</td>
+      <td>0.973761</td>
+      <td>0.000000e+00</td>
+      <td>acc|GENBANK|WNO13952.1|GENBANK|OQ968299|coat protein [Guapo partitivirus]</td>
+      <td>Guapo partitivirus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_3262_length_2239_cov_74.919311</td>
+      <td>79.0</td>
+      <td>2239</td>
+      <td>686</td>
+      <td>0.978134</td>
+      <td>0.000000e+00</td>
+      <td>acc|GENBANK|WNO13952.1|GENBANK|OQ968299|coat protein [Guapo partitivirus]</td>
+      <td>Guapo partitivirus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_47413_length_1594_cov_45.493274</td>
+      <td>75.6</td>
+      <td>1594</td>
+      <td>129</td>
+      <td>0.953488</td>
+      <td>3.300000e-53</td>
+      <td>acc|GENBANK|AKE34115.1|GENBANK|KR068481|alpha karyopherin [Okra enation leaf curl virus]</td>
+      <td>Okra enation leaf curl virus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_16403_length_1524_cov_5.263581</td>
+      <td>99.8</td>
+      <td>1524</td>
+      <td>665</td>
+      <td>0.763910</td>
+      <td>0.000000e+00</td>
+      <td>acc|REFSEQ|NP_057935.1|REFSEQ|NC_001501|gPr80 [Moloney murine leukemia virus]</td>
+      <td>Moloney murine leukemia virus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_44489_length_1261_cov_3.128664</td>
+      <td>99.8</td>
+      <td>1261</td>
+      <td>497</td>
+      <td>0.814889</td>
+      <td>3.940000e-290</td>
+      <td>acc|GENBANK|AEX92896.1|NEIGHBOR|CY105915|nucleocapsid protein [Influenza A virus (A/Puerto Rico/8-SV4/1934(H1N1))]</td>
+      <td>Influenza A virus (A/Puerto Rico/8-SV4/1934(H1N1))</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_1847_length_1061_cov_65.714981</td>
+      <td>74.2</td>
+      <td>1061</td>
+      <td>129</td>
+      <td>0.961240</td>
+      <td>1.230000e-54</td>
+      <td>acc|GENBANK|AKE34115.1|GENBANK|KR068481|alpha karyopherin [Okra enation leaf curl virus]</td>
+      <td>Okra enation leaf curl virus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_102_length_987_cov_7.190776</td>
+      <td>71.3</td>
+      <td>987</td>
+      <td>378</td>
+      <td>0.746032</td>
+      <td>2.400000e-140</td>
+      <td>acc|GENBANK|QBK85319.1|GENBANK|MK500315|ribonucleoside diphosphate reductase, beta [Iridovirus LCIVAC01]</td>
+      <td>Iridovirus LCIVAC01</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_4665_length_916_cov_4.329558</td>
+      <td>98.4</td>
+      <td>916</td>
+      <td>77</td>
+      <td>0.805195</td>
+      <td>5.970000e-32</td>
+      <td>acc|GENBANK|AUF82381.1|GENBANK|KY322437|ubiquitin family protein [Tetraselmis virus 1]</td>
+      <td>Tetraselmis virus 1</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_18876_length_893_cov_2.518605</td>
+      <td>71.9</td>
+      <td>893</td>
+      <td>205</td>
+      <td>0.746341</td>
+      <td>3.010000e-69</td>
+      <td>acc|GENBANK|AEX61645.1|GENBANK|JN885991|putative heat shock 70 kDa protein [Megavirus courdo7]</td>
+      <td>Megavirus courdo7</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_850_length_858_cov_42.312727</td>
+      <td>70.0</td>
+      <td>858</td>
+      <td>182</td>
+      <td>0.879121</td>
+      <td>1.040000e-81</td>
+      <td>acc|GENBANK|BDT62002.1|GENBANK|LC738871|hypothetical protein [Penaeus monodon majanivirus B]</td>
+      <td>Penaeus monodon majanivirus B</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_42754_length_807_cov_11.158915</td>
+      <td>78.1</td>
+      <td>807</td>
+      <td>214</td>
+      <td>0.981308</td>
+      <td>1.180000e-119</td>
+      <td>acc|GENBANK|UZE89726.1|GENBANK|ON704650|hypothetical protein [Parapoynx stagnalis nucleopolyhedrovirus]</td>
+      <td>Parapoynx stagnalis nucleopolyhedrovirus</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_33959_length_763_cov_6.091781</td>
+      <td>70.4</td>
+      <td>763</td>
+      <td>221</td>
+      <td>0.764706</td>
+      <td>4.020000e-75</td>
+      <td>acc|GENBANK|AYV75487.1|GENBANK|MK071979|GTP-binding protein YPTC1 [Terrestrivirus sp.]</td>
+      <td>Terrestrivirus sp.</td>
+      <td>Blastx</td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NODE_26188_length_731_cov_16.492837</td>
+      <td>70.7</td>
+      <td>731</td>
+      <td>212</td>
+      <td>0.787736</td>
+      <td>1.310000e-78</td>
+      <td>acc|GENBANK|AYV82031.1|GENBANK|MK072334|Ras-like protein Rab-11A [Homavirus sp.]</td>
+      <td>Homavirus sp.</td>
+      <td>Blastx</td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3><a href="blastx.summary.tsv" target="_blank">View full DIAMOND blastx summary table</a></h3>
+        <h3><a href="blast.nx.tsv" target="_blank">View full blast.nx compatibility table</a></h3>
+      </article>
+
+      <article id="mapping">
+        <h1>Mapping reads to references</h1><table class="table table-striped" data-name="mytable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>RefId</th>
+      <th>BlastHitAccession</th>
+      <th>Species</th>
+      <th>RefLen</th>
+      <th>MappedReads</th>
+      <th>RPKM</th>
+      <th>PercentMappedreads</th>
+      <th>PercentGenomeCovered</th>
+      <th>MeanCoverage</th>
+      <th>BlastIdentity</th>
+      <th>BlastQueryCoverage</th>
+      <th>Taxonomy</th>
+      <th>RefTitle</th>
+      <th>MappingGraph</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NC_026248.1</td>
+      <td>NC_026248</td>
+      <td>Yam latent virus</td>
+      <td>8531</td>
+      <td>2462</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>81.50</td>
+      <td>36.9</td>
+      <td>91.95</td>
+      <td>100.0</td>
+      <td>Quinvirinae;Betaflexiviridae</td>
+      <td>NC_026248.1 Yam latent virus isolate SG1, complete genome</td>
+      <td><a href="image/SRR13270795.NC_026248.1.coverage.png" target="_blank">SRR13270795 NC_026248.1</a></td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NC_003003.1</td>
+      <td>NC_003003</td>
+      <td>Broad bean wilt virus 2</td>
+      <td>5951</td>
+      <td>455752</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>62.88</td>
+      <td>6584.7</td>
+      <td>92.99</td>
+      <td>100.0</td>
+      <td>Comovirinae;Secoviridae</td>
+      <td>NC_003003.1 Broad bean wilt virus 2 RNA 1, complete sequence</td>
+      <td><a href="image/SRR13270795.NC_003003.1.coverage.png" target="_blank">SRR13270795 NC_003003.1</a></td>
+    </tr>
+    <tr>
+      <td>SRR13270795</td>
+      <td>NC_003004.1</td>
+      <td>NC_003004</td>
+      <td>Broad bean wilt virus 2</td>
+      <td>3607</td>
+      <td>1690794</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>67.17</td>
+      <td>44369.9</td>
+      <td>92.10</td>
+      <td>100.0</td>
+      <td>Comovirinae;Secoviridae</td>
+      <td>NC_003004.1 Broad bean wilt virus 2 RNA 2, complete sequence</td>
+      <td><a href="image/SRR13270795.NC_003004.1.coverage.png" target="_blank">SRR13270795 NC_003004.1</a></td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <h3><a href="report.txt" target="_blank">View full mapping/report table</a></h3>
+      </article>
+
+    </div>
+  </section>
+</body>
+</html>

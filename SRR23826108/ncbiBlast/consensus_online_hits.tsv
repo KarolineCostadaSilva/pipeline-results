@@ -1,0 +1,3 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR23826108|NC_003004.1	SRR23826108	NC_003004.1	hit	consensus.blastn.online	NC_003004	0.0	97.53	100.0	Broad bean wilt virus 2 RNA 2, complete sequence	/data/output/report/ncbiBlast/xml/SRR23826108_NC_003004.1.xml	
+SRR23826108|NC_003492.1	SRR23826108	NC_003492.1	hit	consensus.blastn.online	AM884180	0.0	95.34	99.97	Bean yellow mosaic virus gene for polyprotein, genomic RNA	/data/output/report/ncbiBlast/xml/SRR23826108_NC_003492.1.xml	

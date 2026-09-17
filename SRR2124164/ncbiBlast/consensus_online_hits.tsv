@@ -1,0 +1,2 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR2124164|NC_000947.1	SRR2124164	NC_000947.1	hit	consensus.blastn.online	NC_000947	0.0	94.33	100.0	Japanese yam mosaic virus, complete genome	/data/output/report/ncbiBlast/xml/SRR2124164_NC_000947.1.xml	

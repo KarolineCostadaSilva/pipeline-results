@@ -1,0 +1,4 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR25002071|NC_000947.1	SRR25002071	NC_000947.1	hit	consensus.blastn.online	NC_000947	0.0	90.86	100.0	Japanese yam mosaic virus, complete genome	/data/output/report/ncbiBlast/xml/SRR25002071_NC_000947.1.xml	
+SRR25002071|NC_003003.1	SRR25002071	NC_003003.1	hit	consensus.blastn.online	NC_003003	0.0	96.03	100.0	Broad bean wilt virus 2 RNA 1, complete sequence	/data/output/report/ncbiBlast/xml/SRR25002071_NC_003003.1.xml	
+SRR25002071|NC_003004.1	SRR25002071	NC_003004.1	hit	consensus.blastn.online	NC_003004	0.0	93.93	100.0	Broad bean wilt virus 2 RNA 2, complete sequence	/data/output/report/ncbiBlast/xml/SRR25002071_NC_003004.1.xml	

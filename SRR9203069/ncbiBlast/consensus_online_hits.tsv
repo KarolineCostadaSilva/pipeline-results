@@ -1,0 +1,2 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR9203069|NC_004752.1	SRR9203069	NC_004752.1	hit	consensus.blastn.online	NC_004752	0.0	90.43	100.0	Yam mosaic virus, complete genome	/data/output/report/ncbiBlast/xml/SRR9203069_NC_004752.1.xml	
