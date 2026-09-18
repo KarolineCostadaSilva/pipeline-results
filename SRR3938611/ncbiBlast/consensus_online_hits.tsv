@@ -1,0 +1,7 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR3938611|NC_009010.1	SRR3938611	NC_009010.1	hit	consensus.blastn.online	NC_009010	0.0	94.28	100.0	Dioscorea bacilliform virus, complete genome	/data/output/report/ncbiBlast/xml/SRR3938611_NC_009010.1.xml	
+SRR3938611|NC_031763.1	SRR3938611	NC_031763.1	hit	consensus.blastn.online	NC_031763	0.0	92.55	100.0	Dioscorea mosaic-associated virus isolate goiana segment RNA2, complete sequence	/data/output/report/ncbiBlast/xml/SRR3938611_NC_031763.1.xml	
+SRR3938611|NC_031766.1	SRR3938611	NC_031766.1	hit	consensus.blastn.online	NC_031766	0.0	94.58	100.0	Dioscorea mosaic-associated virus isolate goiana segment RNA1, complete sequence	/data/output/report/ncbiBlast/xml/SRR3938611_NC_031766.1.xml	
+SRR3938611|NC_038381.1	SRR3938611	NC_038381.1	hit	consensus.blastn.online	NC_038381	0.0	91.63	100.0	Dioscorea bacilliform AL virus isolate DBALV-[3RT], complete genome	/data/output/report/ncbiBlast/xml/SRR3938611_NC_038381.1.xml	
+SRR3938611|NC_038995.1	SRR3938611	NC_038995.1	hit	consensus.blastn.online	NC_038995	0.0	99.44	100.0	Dioscorea bacilliform TR virus strain DBV9, complete genome	/data/output/report/ncbiBlast/xml/SRR3938611_NC_038995.1.xml	
+SRR3938611|NC_076205.1	SRR3938611	NC_076205.1	hit	consensus.blastn.online	PX314966	0.0	92.31	99.97	Badnavirus zetadioscorea isolate DBRTV3-CI2019-Dabak, complete genome	/data/output/report/ncbiBlast/xml/SRR3938611_NC_076205.1.xml	

@@ -1,0 +1,2 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR8819987|NC_018175.1	SRR8819987	NC_018175.1	hit	consensus.blastn.online	MH706739	0.0	96.87	99.99	Potato virus H isolate JL, complete genome	/data/output/report/ncbiBlast/xml/SRR8819987_NC_018175.1.xml	

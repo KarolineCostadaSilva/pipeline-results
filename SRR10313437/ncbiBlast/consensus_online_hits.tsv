@@ -1,0 +1,4 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR10313437|NC_001841.1	SRR10313437	NC_001841.1	hit	consensus.blastn.online	KY296451	0.0	98.57	99.97	Sweet potato feathery mottle virus strain RC, complete genome	/data/output/report/ncbiBlast/xml/SRR10313437_NC_001841.1.xml	
+SRR10313437|NC_014742.1	SRR10313437	NC_014742.1	hit	consensus.blastn.online	MK778815	0.0	97.99	99.45	Sweet potato virus C isolate 19-2 polyprotein gene, complete cds	/data/output/report/ncbiBlast/xml/SRR10313437_NC_014742.1.xml	
+SRR10313437|NC_018093.1	SRR10313437	NC_018093.1	hit	consensus.blastn.online	MK778828	0.0	99.39	99.47	Sweet potato virus G isolate CH-L11 polyprotein gene, complete cds	/data/output/report/ncbiBlast/xml/SRR10313437_NC_018093.1.xml	

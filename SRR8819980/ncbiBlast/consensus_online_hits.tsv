@@ -1,0 +1,3 @@
+QueryId	Sample	RefId	Status	BlastType	BlastHitAccession	BlastEvalue	BlastIdentity	BlastQueryCoverage	BlastDescription	XmlFile	Error
+SRR8819980|NC_018175.1	SRR8819980	NC_018175.1	hit	consensus.blastn.online	MH706739	0.0	96.86	99.99	Potato virus H isolate JL, complete genome	/data/output/report/ncbiBlast/xml/SRR8819980_NC_018175.1.xml	
+SRR8819980|NC_038381.1	SRR8819980	NC_038381.1	hit	consensus.blastn.online	NC_038381	0.0	94.11	100.0	Dioscorea bacilliform AL virus isolate DBALV-[3RT], complete genome	/data/output/report/ncbiBlast/xml/SRR8819980_NC_038381.1.xml	
